@@ -32,22 +32,17 @@ vila-taxi-77/
 ├── public/
 │   ├── images/
 │   │   ├── logo/
-│   │   │   ├── logo-vila.svg
-│   │   │   └── logo-vila-white.svg
+│   │   │   └── .gitkeep
 │   │   ├── hero/
-│   │   │   └── hero-taxi.webp
+│   │   │   └── .gitkeep
 │   │   ├── fleet/
-│   │   │   ├── vf5-exterior.webp
-│   │   │   └── vf5-interior.webp
+│   │   │   └── .gitkeep
 │   │   ├── services/
-│   │   │   ├── airport.webp
-│   │   │   ├── local-trip.webp
-│   │   │   └── province-trip.webp
+│   │   │   └── .gitkeep
 │   │   └── about/
-│   │       └── taxi-vila-driver.webp
+│   │       └── .gitkeep
 │   └── icons/
-│       ├── zalo.svg
-│       └── phone.svg
+│       └── .gitkeep
 │
 ├── src/
 │   ├── app/
