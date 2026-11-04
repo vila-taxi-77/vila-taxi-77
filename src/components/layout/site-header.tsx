@@ -2,34 +2,11 @@
 "use client";
 
 import { MobileMenu } from "@/components/layout/mobile-menu";
+import { SiteLogo } from "@/components/ui/site-logo";
 import { mainNavigation } from "@/config/navigation";
 import { siteConfig, siteContact } from "@/config/site";
 import { useMobileMenu } from "@/hooks/use-mobile-menu";
 import { useScrollHeader } from "@/hooks/use-scroll-header";
-
-function BrandLogo() {
-  return (
-    <span className="flex min-w-0 items-center gap-2.5" aria-label={siteConfig.name}>
-      <span className="relative grid h-10 w-10 shrink-0 place-items-center rounded-[11px] bg-[#0563d8] text-[23px] font-black italic text-white shadow-[0_8px_18px_rgba(5,99,216,0.28)]">
-        V
-        <span className="absolute -right-1 -top-1 grid h-[17px] w-[17px] place-items-center rounded-full bg-[#ffac00] text-[#071a36] ring-2 ring-white">
-          <svg aria-hidden="true" viewBox="0 0 16 16" className="h-3 w-3" fill="currentColor">
-            <path d="M9.4 1.2 3.6 8h3.3l-.8 6.8L12.4 7H9.1l.3-5.8Z" />
-          </svg>
-        </span>
-      </span>
-
-      <span className="min-w-0 leading-none">
-        <span className="block whitespace-nowrap text-[19px] font-black tracking-[0.02em] text-[#0a192f]">
-          TAXI <span className="text-[#0563d8]">VILA</span>
-        </span>
-        <span className="mt-1 block whitespace-nowrap text-[9px] font-extrabold uppercase tracking-[0.23em] text-[#77859a]">
-          {siteConfig.tagline}
-        </span>
-      </span>
-    </span>
-  );
-}
 
 function ZaloMark() {
   return (
@@ -60,30 +37,30 @@ export function SiteHeader() {
             : "bg-white/90 backdrop-blur-md"
         }`}
       >
-        <div className="mx-auto flex h-[72px] max-w-[1220px] items-center justify-between gap-5 px-4 sm:px-6 lg:px-5">
+        <div className="site-container site-header-height flex items-center justify-between gap-5">
           <a href="#top" className="shrink-0" aria-label="Về đầu trang">
-            <BrandLogo />
+            <SiteLogo priority />
           </a>
 
-          <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Điều hướng chính">
+          <nav className="header-desktop-nav items-center gap-0.5" aria-label="Điều hướng chính">
             {mainNavigation.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-3.5 py-2 text-[14px] font-bold text-[#263750] transition-colors hover:bg-[#eaf4ff] hover:text-[#0563d8]"
+                className="rounded-full px-3.5 py-2 text-[14px] font-bold text-[#263750] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]"
               >
                 {item.label}
               </a>
             ))}
           </nav>
 
-          <div className="flex shrink-0 items-center gap-2.5">
+          <div className="site-header-actions flex shrink-0 items-center gap-2.5">
             <a
               href={siteContact.zaloUrl}
               target="_blank"
               rel="noreferrer"
               aria-label="Nhắn Taxi VILA qua Zalo"
-              className="hidden h-11 items-center gap-1.5 rounded-full border border-[#c8d1de] px-4 text-sm font-extrabold text-[#0563d8] transition-colors hover:border-[#0563d8] md:flex"
+              className="header-zalo-action h-11 items-center gap-1.5 rounded-full border border-[#c8d1de] px-4 text-sm font-extrabold text-[#0563d8] transition-colors hover:border-[#0563d8]"
             >
               <ZaloMark />
               Zalo
@@ -91,12 +68,12 @@ export function SiteHeader() {
 
             <a
               href={siteContact.telephoneUrl}
-              className="flex h-11 items-center gap-2.5 whitespace-nowrap rounded-full bg-[#ffac00] px-5 text-[15px] font-black text-[#071a36] shadow-[0_9px_24px_rgba(255,172,0,0.28)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[#f5a400]"
+              className="site-header-call cta-call-attention flex h-11 items-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-primary)] px-5 text-[15px] font-black text-white shadow-[0_9px_24px_rgba(215,25,32,0.25)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-primary-dark)]"
               aria-label={`Gọi Taxi VILA theo số ${siteConfig.phoneDisplay}`}
             >
               <PhoneIcon />
-              <span className="hidden sm:inline">{siteConfig.phoneDisplay}</span>
-              <span className="sm:hidden">Gọi xe</span>
+              <span className="header-phone-full">{siteConfig.phoneDisplay}</span>
+              <span className="header-phone-short">Gọi Xe</span>
             </a>
 
             <button
@@ -104,7 +81,7 @@ export function SiteHeader() {
               onClick={menu.openMenu}
               aria-label="Mở menu"
               aria-expanded={menu.isOpen}
-              className="grid h-11 w-11 place-items-center rounded-full border border-[#c8d1de] text-[#0a192f] lg:hidden"
+              className="header-menu-trigger h-11 w-11 place-items-center rounded-full border border-[#c8d1de] text-[var(--brand-primary)] transition-colors hover:border-[var(--brand-primary)]"
             >
               <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />

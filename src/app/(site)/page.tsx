@@ -1,4 +1,12 @@
 
+import { HeroSection } from "@/components/sections/hero-section";
+import { TrustStrip } from "@/components/sections/trust-strip";
+
 export default function HomePage() {
-  return <main id="top" className="min-h-screen bg-[#f5f7fb] pt-[72px]" />;
+  return (
+    <main className="page-below-header bg-[#f5f7fb]">
+      <HeroSection />
+      <TrustStrip />
+    </main>
+  );
 }
