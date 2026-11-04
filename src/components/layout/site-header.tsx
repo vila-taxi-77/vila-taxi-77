@@ -68,7 +68,7 @@ export function SiteHeader() {
 
             <a
               href={siteContact.telephoneUrl}
-              className="site-header-call cta-call-attention flex h-11 items-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-primary)] px-5 text-[15px] font-black text-white shadow-[0_9px_24px_rgba(215,25,32,0.25)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-primary-dark)]"
+              className="site-header-call cta-call-attention cta-call-accent flex h-11 items-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-5 text-[15px] font-black !text-white shadow-[0_9px_24px_rgba(245,158,11,0.28)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)]"
               aria-label={`Gọi Taxi VILA theo số ${siteConfig.phoneDisplay}`}
             >
               <PhoneIcon />

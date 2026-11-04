@@ -52,7 +52,7 @@ export function HeroSection() {
 
           <h1 className="hero-fade-up hero-delay-1 mt-6 max-w-3xl text-[clamp(2.35rem,6vw,4.9rem)] font-black leading-[0.98] tracking-[-0.04em]">
             100% xe thuần điện.
-            <span className="mt-2 block text-[var(--brand-primary)]">Biết giá trước,</span>
+            <span className="mt-2 block text-[var(--brand-accent)]">Biết giá trước,</span>
             <span className="mt-2 block">an tâm lên xe.</span>
           </h1>
 
@@ -64,10 +64,10 @@ export function HeroSection() {
             Taxi VILA phục vụ đưa đón sân bay Phù Cát, taxi nội khu, đi tỉnh và các chuyến xe theo yêu cầu. Với 100% xe thuần điện, dòng xe linh hoạt và chi phí được báo trước, chúng tôi mong muốn mang đến hành trình êm ái, tiết kiệm và an tâm cho khách hàng.
           </p>
 
-          <div className="hero-fade-up hero-delay-3 hero-price mt-7 inline-flex items-end gap-3 rounded-2xl border border-[var(--brand-primary)]/40 bg-[var(--brand-primary)]/12 px-5 py-4 sm:px-6 sm:py-5">
+          <div className="hero-fade-up hero-delay-3 hero-price mt-7 inline-flex items-end gap-3 rounded-2xl border border-white/25 bg-transparent px-5 py-4 sm:px-6 sm:py-5">
             <div>
               <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-white/60">Giá tham khảo</p>
-              <p className="mt-1 text-[clamp(2rem,5vw,3.1rem)] font-black leading-none tracking-[-0.04em] text-[var(--brand-primary)]">
+              <p className="mt-1 text-[clamp(2rem,5vw,3.1rem)] font-black leading-none tracking-[-0.04em] text-[var(--brand-accent)]">
                 {siteConfig.priceRange}
               </p>
             </div>
@@ -95,7 +95,7 @@ export function HeroSection() {
               <p className="text-xl font-black sm:text-2xl">Bạn muốn đặt xe?</p>
               <p className="mt-1 text-sm leading-relaxed text-[#64748b]">Gọi hoặc nhắn Zalo để được tư vấn hành trình và báo giá trước.</p>
             </div>
-            <span className="rounded-full bg-[var(--brand-primary-soft)] px-3 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-[var(--brand-primary)]">Liên hệ nhanh</span>
+            <span className="shrink-0 whitespace-nowrap rounded-full bg-[#fff7e6] px-3 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-[var(--brand-accent-dark)]">Liên hệ nhanh</span>
           </div>
 
           <div className="mt-6 rounded-2xl bg-[#f8fafc] p-4">
@@ -107,7 +107,7 @@ export function HeroSection() {
           </div>
 
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
-            <a href={siteContact.telephoneUrl} className="cta-call-attention inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[var(--brand-primary)] px-4 text-sm font-black text-white transition-colors hover:bg-[var(--brand-primary-dark)]"><PhoneIcon /> Gọi ngay</a>
+            <a href={siteContact.telephoneUrl} className="cta-call-attention cta-call-accent inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-4 text-sm font-black !text-white transition-colors hover:bg-[var(--brand-accent-dark)]"><PhoneIcon /> Gọi ngay</a>
             <a href={siteContact.zaloUrl} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-[#dce3ed] px-4 text-sm font-black text-[#0563d8] transition-colors hover:border-[#0563d8] hover:bg-[#eff6ff]"><ZaloIcon /> Nhắn Zalo</a>
           </div>
 

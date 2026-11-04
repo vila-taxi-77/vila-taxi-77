@@ -7,6 +7,8 @@
   --brand-primary: #d71920;
   --brand-primary-dark: #b5141a;
   --brand-primary-soft: #fff0f1;
+  --brand-accent: #f59e0b;
+  --brand-accent-dark: #d97706;
 }
 
 @theme inline {
@@ -104,11 +106,15 @@ a {
   overflow: visible;
 }
 
+.cta-call-accent {
+  --cta-ring-color: var(--brand-accent);
+}
+
 .cta-call-attention::after {
   position: absolute;
   inset: -4px;
   z-index: 1;
-  border: 2px solid color-mix(in srgb, var(--brand-primary) 65%, white);
+  border: 2px solid color-mix(in srgb, var(--cta-ring-color, var(--brand-primary)) 65%, white);
   border-radius: inherit;
   content: "";
   pointer-events: none;
