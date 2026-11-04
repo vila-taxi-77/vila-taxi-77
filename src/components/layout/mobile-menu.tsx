@@ -3,6 +3,7 @@
 
 import { mainNavigation } from "@/config/navigation";
 import { siteConfig, siteContact } from "@/config/site";
+import { SiteLogo } from "@/components/ui/site-logo";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -13,7 +14,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <div
       aria-hidden={!isOpen}
-      className={`fixed inset-0 z-[60] lg:hidden ${isOpen ? "pointer-events-auto" : "pointer-events-none"}`}
+      className={`mobile-menu-root fixed inset-0 z-[60] ${isOpen ? "pointer-events-auto" : "pointer-events-none"}`}
     >
       <button
         type="button"
@@ -26,10 +27,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         role="dialog"
         aria-modal="true"
         aria-label="Menu điều hướng"
-        className={`absolute right-0 top-0 flex h-full w-[min(86vw,340px)] flex-col bg-white p-6 shadow-2xl transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`mobile-drawer absolute right-0 top-0 flex h-full flex-col bg-white p-6 shadow-2xl transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex items-center justify-between">
-          <span className="text-lg font-black text-[#0a192f]">{siteConfig.name}</span>
+          <SiteLogo />
           <button
             type="button"
             onClick={onClose}
@@ -48,7 +49,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               key={item.href}
               href={item.href}
               onClick={onClose}
-              className="rounded-xl px-4 py-3 text-base font-bold text-[#24344d] transition-colors hover:bg-[#eaf4ff] hover:text-[#0563d8]"
+              className="rounded-xl px-4 py-3 text-base font-bold text-[#24344d] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]"
             >
               {item.label}
             </a>
@@ -66,7 +67,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           </a>
           <a
             href={siteContact.telephoneUrl}
-            className="flex h-12 items-center justify-center rounded-full bg-[#ffac00] font-black text-[#071a36]"
+            className="flex h-12 items-center justify-center rounded-full bg-[var(--brand-primary)] font-black text-white transition-colors hover:bg-[var(--brand-primary-dark)]"
           >
             Gọi xe · {siteConfig.phoneDisplay}
           </a>
