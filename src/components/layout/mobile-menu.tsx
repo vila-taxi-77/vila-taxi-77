@@ -13,21 +13,24 @@ type MobileMenuProps = {
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <div
+      id="mobile-navigation"
+      data-state={isOpen ? "open" : "closed"}
       aria-hidden={!isOpen}
-      className={`mobile-menu-root fixed inset-0 z-[60] ${isOpen ? "pointer-events-auto" : "pointer-events-none"}`}
+      inert={!isOpen}
+      className="mobile-menu-root fixed inset-0 z-[60]"
     >
       <button
         type="button"
-        aria-label="Đóng menu"
         onClick={onClose}
-        className={`absolute inset-0 bg-[#08182f]/45 transition-opacity duration-300 ${isOpen ? "opacity-100" : "opacity-0"}`}
+        aria-label="Đóng menu"
+        className="mobile-menu-overlay absolute inset-0 z-0 cursor-pointer bg-[#08182f]/45 transition-opacity duration-300"
       />
 
       <div
         role="dialog"
         aria-modal="true"
         aria-label="Menu điều hướng"
-        className={`mobile-drawer absolute right-0 top-0 flex h-full flex-col bg-white p-6 shadow-2xl transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+        className="mobile-drawer absolute right-0 top-0 z-10 flex h-full flex-col bg-white p-6 shadow-2xl transition-transform duration-300"
       >
         <div className="flex items-center justify-between">
           <SiteLogo />
@@ -35,7 +38,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             type="button"
             onClick={onClose}
             aria-label="Đóng menu"
-            className="grid h-10 w-10 place-items-center rounded-full border border-[#dce3ed] text-[#0a192f]"
+            className="grid h-10 w-10 cursor-pointer place-items-center rounded-full border border-[#dce3ed] text-[#0a192f]"
           >
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M6 6l12 12M18 6 6 18" strokeLinecap="round" />

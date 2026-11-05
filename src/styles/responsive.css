@@ -71,6 +71,29 @@
 
 .mobile-menu-root {
   display: block;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu-overlay {
+  opacity: 0;
+}
+
+.mobile-drawer {
+  transform: translateX(100%);
+}
+
+.mobile-menu-root[data-state="open"] {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-root[data-state="open"] .mobile-menu-overlay {
+  opacity: 1;
+}
+
+.mobile-menu-root[data-state="open"] .mobile-drawer {
+  transform: translateX(0);
 }
 
 @media (max-width: 29.999rem) {
