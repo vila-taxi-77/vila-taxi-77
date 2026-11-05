@@ -48,10 +48,10 @@ export function SiteFooter() {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,23,47,0.9)_0%,rgba(7,23,47,0.78)_55%,rgba(7,23,47,0.68)_100%),linear-gradient(180deg,rgba(7,23,47,0.14)_0%,rgba(7,23,47,0.18)_55%,rgba(7,23,47,0.55)_100%)]" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1220px] px-4 pb-7 pt-8 sm:px-6 sm:pt-10 lg:px-5 lg:pt-12">
-        <div className="flex flex-col gap-5 rounded-[1.75rem] bg-[var(--brand-accent)] px-5 py-5 text-[#0a192f] sm:px-7 sm:py-6 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:px-8">
+        <div className="flex flex-col gap-5 rounded-[1.75rem] bg-[var(--brand-accent)] px-5 py-5 text-white sm:px-7 sm:py-6 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:px-8">
           <div>
             <h2 className="text-2xl font-black leading-tight tracking-[-0.03em] sm:text-3xl lg:text-4xl">Cần xe ngay bây giờ?</h2>
-            <p className="mt-2 text-sm font-medium leading-relaxed text-[#0a192f]/80 sm:text-base">Gọi Taxi VILA để được tư vấn và sắp xếp xe tại Phù Cát – Phù Mỹ.</p>
+            <p className="mt-2 text-sm font-medium leading-relaxed sm:text-base">Gọi Taxi VILA để được tư vấn và sắp xếp xe tại Phù Cát – Phù Mỹ.</p>
           </div>
           <a
             href={siteContact.telephoneUrl}
@@ -65,7 +65,7 @@ export function SiteFooter() {
           </a>
         </div>
 
-        <div className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_0.8fr] lg:gap-16 lg:py-16">
+        <div className="grid gap-10 pb-14 pt-10 sm:grid-cols-2 sm:pt-12 lg:grid-cols-[1.5fr_1fr_0.8fr] lg:gap-16 lg:pb-16 lg:pt-12">
           <div className="max-w-md">
             <a href="#top" aria-label="Taxi VILA - về đầu trang" className="inline-flex items-center gap-3">
               <Image src="/images/logo/taxi-vila-logo.png" alt="" width={64} height={64} className="h-14 w-14 rounded-full object-contain" />
