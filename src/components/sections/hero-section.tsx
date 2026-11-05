@@ -34,7 +34,7 @@ export function HeroSection() {
     <section id="top" className="hero-section relative isolate overflow-hidden bg-[#081a35] text-white">
       <div className="hero-media pointer-events-none absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/hero/taxi-vila-hero.png"
+          src="/images/hero/taxi-vila-charging.jpg"
           alt=""
           fill
           priority
@@ -43,7 +43,7 @@ export function HeroSection() {
         />
       </div>
       <div className="hero-background-art pointer-events-none absolute inset-0" aria-hidden="true" />
-      <div className="hero-grid relative mx-auto grid max-w-[1220px] items-center gap-12 px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[1.06fr_0.94fr] lg:gap-8 lg:px-5 lg:pb-8 lg:pt-8">
+      <div className="hero-grid relative z-10 mx-auto grid max-w-[1220px] items-center gap-12 px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[1.06fr_0.94fr] lg:gap-8 lg:px-5 lg:pb-8 lg:pt-8">
         <div className="hero-copy relative z-10">
           <p className="hero-fade-up inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-bold text-white/90 backdrop-blur-md sm:text-sm">
             <span className="h-2 w-2 rounded-full bg-[var(--brand-primary)] shadow-[0_0_14px_rgba(215,25,32,0.9)]" />
@@ -64,14 +64,14 @@ export function HeroSection() {
             Taxi VILA phục vụ đưa đón sân bay Phù Cát, taxi nội khu, đi tỉnh và các chuyến xe theo yêu cầu. Với 100% xe thuần điện, dòng xe linh hoạt và chi phí được báo trước, chúng tôi mong muốn mang đến hành trình êm ái, tiết kiệm và an tâm cho khách hàng.
           </p>
 
-          <div className="hero-fade-up hero-delay-3 hero-price mt-7 inline-flex items-end gap-3 rounded-2xl border border-white/25 bg-transparent px-5 py-4 sm:px-6 sm:py-5">
-            <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-white/60">Giá tham khảo</p>
-              <p className="mt-1 text-[clamp(2rem,5vw,3.1rem)] font-black leading-none tracking-[-0.04em] text-[var(--brand-accent)]">
-                {siteConfig.priceRange}
-              </p>
-            </div>
-            <span className="mb-0.5 max-w-[180px] text-xs leading-relaxed text-white/65">{siteConfig.priceNote}</span>
+          <div className="hero-fade-up hero-delay-3 hero-price mt-7 flex w-full max-w-2xl flex-col items-start rounded-2xl border border-white/25 bg-transparent px-5 py-4 sm:px-6 sm:py-5">
+            <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-white/60">Giá tham khảo</p>
+            <p className="mt-1 whitespace-nowrap text-[clamp(2rem,5vw,3.1rem)] font-black leading-none tracking-[-0.04em] text-[var(--brand-accent)]">
+              {siteConfig.priceRange}
+            </p>
+            <span className="mt-2 whitespace-nowrap text-[10px] leading-relaxed text-white/65 sm:text-xs">
+              {siteConfig.priceNote}
+            </span>
           </div>
 
           <div className="hero-fade-up hero-delay-3 hero-promo mt-4 flex max-w-xl items-center gap-3 rounded-2xl border border-white/12 bg-white/8 px-4 py-3 text-sm font-bold text-white/90 backdrop-blur-sm sm:px-5">
@@ -79,11 +79,11 @@ export function HeroSection() {
             <span>{siteConfig.prebookMessage}</span>
           </div>
 
-          <div className="hero-fade-up hero-delay-4 mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <a href={siteContact.telephoneUrl} className="hero-call-cta cta-call-attention cta-call-accent inline-flex h-14 items-center justify-center gap-2.5 rounded-full bg-[var(--brand-accent)] px-6 text-base font-black !text-white shadow-[0_14px_32px_rgba(245,158,11,0.32)] transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)] hover:shadow-[0_18px_38px_rgba(245,158,11,0.42)]">
+          <div className="hero-fade-up hero-delay-4 mt-7 flex flex-col gap-3 sm:flex-row sm:flex-nowrap">
+            <a href={siteContact.telephoneUrl} className="hero-call-cta cta-call-attention cta-call-accent inline-flex h-14 items-center justify-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-5 text-sm font-black !text-white shadow-[0_14px_32px_rgba(245,158,11,0.32)] transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)] hover:shadow-[0_18px_38px_rgba(245,158,11,0.42)] xl:px-6 xl:text-base">
               <PhoneIcon /> Gọi xe ngay – {siteConfig.phoneDisplay}
             </a>
-            <a href={siteContact.telephoneUrl} className="inline-flex h-14 items-center justify-center gap-2 rounded-full border border-white/25 bg-white/8 px-6 text-base font-bold !text-white backdrop-blur-md transition-colors hover:border-[var(--brand-accent)] hover:bg-[var(--brand-accent)]">
+            <a href={siteContact.telephoneUrl} className="inline-flex h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/25 bg-white/8 px-5 text-sm font-bold !text-white backdrop-blur-md transition-colors hover:border-[var(--brand-accent)] hover:bg-[var(--brand-accent)] xl:px-6 xl:text-base">
               Đặt lịch trước – Nhận ưu đãi <ArrowIcon />
             </a>
           </div>
@@ -115,7 +115,7 @@ export function HeroSection() {
         </aside>
       </div>
 
-      <div className="hero-road-line relative mx-auto h-1.5 max-w-[1220px]" aria-hidden="true" />
+      <div className="hero-road-line relative z-10 mx-auto h-1.5 max-w-[1220px]" aria-hidden="true" />
     </section>
   );
 }

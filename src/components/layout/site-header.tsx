@@ -81,7 +81,8 @@ export function SiteHeader() {
               onClick={menu.openMenu}
               aria-label="Mở menu"
               aria-expanded={menu.isOpen}
-              className="header-menu-trigger h-11 w-11 place-items-center rounded-full border border-[#c8d1de] text-[var(--brand-primary)] transition-colors hover:border-[var(--brand-primary)]"
+              aria-controls="mobile-navigation"
+              className="header-menu-trigger relative z-20 h-11 w-11 cursor-pointer touch-manipulation place-items-center rounded-full border border-[#c8d1de] text-[var(--brand-primary)] transition-colors hover:border-[var(--brand-primary)]"
             >
               <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
