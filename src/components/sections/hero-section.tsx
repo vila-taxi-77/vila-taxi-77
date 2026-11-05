@@ -115,7 +115,7 @@ export function HeroSection() {
         </aside>
       </div>
 
-      <div className="hero-road-line relative z-10 mx-auto h-1.5 max-w-[1220px]" aria-hidden="true" />
+      <div className="hero-road-line relative z-10 h-1.5 w-full" aria-hidden="true" />
     </section>
   );
 }
