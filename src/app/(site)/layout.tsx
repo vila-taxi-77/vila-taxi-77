@@ -1,4 +1,5 @@
 
+import { FloatingContact } from "@/components/layout/floating-contact";
 import { SiteHeader } from "@/components/layout/site-header";
 
 export default function SiteLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -6,6 +7,7 @@ export default function SiteLayout({ children }: Readonly<{ children: React.Reac
     <>
       <SiteHeader />
       {children}
+      <FloatingContact />
     </>
   );
 }

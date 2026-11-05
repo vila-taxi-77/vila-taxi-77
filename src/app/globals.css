@@ -121,6 +121,33 @@ a {
   animation: cta-call-ring 3.8s ease-out 1.2s infinite;
 }
 
+@keyframes floating-phone-ripple {
+  0% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  75%,
+  100% {
+    opacity: 0;
+    transform: scale(1.55);
+  }
+}
+
+.floating-phone::before,
+.floating-phone::after {
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--brand-accent);
+  border-radius: inherit;
+  content: "";
+  pointer-events: none;
+  animation: floating-phone-ripple 2.8s ease-out infinite;
+}
+
+.floating-phone::after {
+  animation-delay: 1.4s;
+}
+
 .hero-delay-1 { animation-delay: 80ms; }
 .hero-delay-2 { animation-delay: 160ms; }
 .hero-delay-3 { animation-delay: 240ms; }
@@ -240,8 +267,15 @@ a {
   .hero-call-cta,
   .hero-promo,
   .cta-call-attention::after,
+  .floating-phone::before,
+  .floating-phone::after,
   .hero-road-line {
     transition: none;
     animation: none;
+  }
+
+  .floating-phone::before,
+  .floating-phone::after {
+    opacity: 0;
   }
 }

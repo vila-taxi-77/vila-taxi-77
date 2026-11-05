@@ -71,6 +71,7 @@ export function FleetSection() {
                 sizes="(min-width: 1024px) 35vw, 100vw"
                 className="object-cover object-[50%_90%]"
               />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#302451]/25 via-[#241b48]/30 to-[#07172f]/45" aria-hidden="true" />
               <figcaption className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-[#0a192f] shadow-sm backdrop-blur-sm">
                 Xe VILA tại trạm sạc
               </figcaption>
