@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { PriceFirstSection } from "@/components/sections/price-first-section";
 import { ServicesSection } from "@/components/sections/services-section";
 import { TrustStrip } from "@/components/sections/trust-strip";
+import { WhyVilaSection } from "@/components/sections/why-vila-section";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <TrustStrip />
       <ServicesSection />
       <PriceFirstSection />
+      <WhyVilaSection />
     </main>
   );
 }
