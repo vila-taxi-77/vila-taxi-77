@@ -49,7 +49,7 @@ export function SiteFooter() {
       </div>
       <div className="relative z-10 mx-auto max-w-[1220px] px-4 pb-7 pt-8 sm:px-6 sm:pt-10 lg:px-5 lg:pt-12">
         <div className="flex flex-col gap-5 rounded-[1.75rem] bg-[var(--brand-accent)] px-5 py-5 text-white sm:px-7 sm:py-6 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:px-8">
-          <div>
+          <div className="[text-shadow:0_1px_3px_rgba(7,23,47,0.35)]">
             <h2 className="text-2xl font-black leading-tight tracking-[-0.03em] sm:text-3xl lg:text-4xl">Cần xe ngay bây giờ?</h2>
             <p className="mt-2 text-sm font-medium leading-relaxed sm:text-base">Gọi Taxi VILA để được tư vấn và sắp xếp xe tại Phù Cát – Phù Mỹ.</p>
           </div>
@@ -65,8 +65,8 @@ export function SiteFooter() {
           </a>
         </div>
 
-        <div className="grid gap-10 pb-14 pt-10 sm:grid-cols-2 sm:pt-12 lg:grid-cols-[1.5fr_1fr_0.8fr] lg:gap-16 lg:pb-16 lg:pt-12">
-          <div className="max-w-md">
+        <div className="grid gap-8 pb-12 pt-9 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-9 sm:pb-14 sm:pt-10 lg:grid-cols-[1.3fr_1fr_0.8fr] lg:gap-12 lg:pb-16 lg:pt-12">
+          <div className="max-w-md sm:col-span-2 lg:col-span-1">
             <a href="#top" aria-label="Taxi VILA - về đầu trang" className="inline-flex items-center gap-3">
               <Image src="/images/logo/taxi-vila-logo.png" alt="" width={64} height={64} className="h-14 w-14 rounded-full object-contain" />
               <span className="leading-none">
@@ -100,7 +100,7 @@ export function SiteFooter() {
           </nav>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-[#8795aa] sm:flex-row sm:items-center sm:justify-between sm:text-sm">
+        <div className="flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-[#8795aa] sm:text-sm xl:flex-row xl:items-center xl:justify-between">
           <p>© {new Date().getFullYear()} Taxi VILA. Taxi điện Phù Cát – Phù Mỹ.</p>
           <a href="#top" className="w-fit transition-colors hover:text-white">Về đầu trang ↑</a>
         </div>
