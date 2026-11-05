@@ -37,7 +37,7 @@ export function SiteHeader() {
             : "bg-white/90 backdrop-blur-md"
         }`}
       >
-        <div className="site-container site-header-height flex items-center justify-between gap-5">
+        <div className="site-container site-header-height flex items-center justify-between gap-3 xl:gap-5">
           <a href="#top" className="shrink-0" aria-label="Về đầu trang">
             <SiteLogo priority />
           </a>
@@ -47,7 +47,7 @@ export function SiteHeader() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-3.5 py-2 text-[14px] font-bold text-[#263750] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]"
+                className="whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-bold text-[#263750] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)] xl:px-3.5 xl:text-[14px]"
               >
                 {item.label}
               </a>
