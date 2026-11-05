@@ -1,4 +1,6 @@
 
+import Image from "next/image";
+
 import {
   meterTaxiDrawbacks,
   priceFirstHighlights,
@@ -54,12 +56,20 @@ function PriceStepIcon({ name }: { name: PriceStepIconName }) {
 export function PriceFirstSection() {
   return (
     <section id="bao-gia" className="relative isolate scroll-mt-24 overflow-hidden bg-[#07172f] py-14 text-white sm:py-16 lg:py-20">
+      <Image
+        src="/images/hero/taxi-vila-charging.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0 object-cover object-[68%_72%] opacity-90 brightness-[0.94] saturate-90 lg:object-[center_92%]"
+      />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_84%_18%,rgba(245,158,11,0.1),transparent_25rem),linear-gradient(135deg,rgba(255,255,255,0.025),transparent_48%)]"
+        className="pointer-events-none absolute inset-0 z-[1] bg-[linear-gradient(90deg,rgba(7,23,47,0.87)_0%,rgba(7,23,47,0.7)_44%,rgba(7,23,47,0.43)_100%),linear-gradient(180deg,rgba(7,23,47,0.58)_0%,rgba(7,23,47,0.08)_48%,rgba(7,23,47,0.64)_100%)]"
       />
 
-      <div className="mx-auto grid max-w-[1220px] gap-12 px-4 sm:px-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-10 lg:px-5 xl:gap-14">
+      <div className="relative z-10 mx-auto grid max-w-[1220px] gap-12 px-4 sm:px-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-10 lg:px-5 xl:gap-14">
         <div>
           <p className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-[var(--brand-accent)] sm:text-sm">
             <span className="h-px w-10 bg-[var(--brand-accent)]" />
@@ -84,7 +94,7 @@ export function PriceFirstSection() {
 
         <div>
           <div className="grid w-full max-w-[40rem] gap-4 sm:grid-cols-2">
-            <article className="rounded-[1.25rem] border border-white/15 bg-white/[0.035] p-4 sm:p-5">
+            <article className="rounded-[1.25rem] border border-white/20 bg-[#10223c]/80 p-4 backdrop-blur-sm sm:p-5">
               <p className="text-[11px] font-black uppercase tracking-[0.14em] text-white/55 sm:text-xs">
                 Tính theo đồng hồ
               </p>
@@ -117,7 +127,7 @@ export function PriceFirstSection() {
             {priceFirstSteps.map((step) => (
               <li
                 key={step.number}
-                className="group rounded-[1.25rem] border border-white/15 bg-white/[0.025] p-4 transition-[transform,border-color,background-color] duration-300 hover:-translate-y-1 hover:border-[var(--brand-accent)]/55 hover:bg-white/[0.05] sm:p-5"
+                className="group rounded-[1.25rem] border border-white/20 bg-[#0b1b34]/75 p-4 backdrop-blur-sm transition-[transform,border-color,background-color] duration-300 hover:-translate-y-1 hover:border-[var(--brand-accent)]/55 hover:bg-[#142743]/90 sm:p-5"
               >
                 <div className="flex items-center justify-between gap-3">
                   <span className="text-4xl font-black tracking-[-0.04em] text-[var(--brand-accent)]">

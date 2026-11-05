@@ -30,9 +30,9 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         role="dialog"
         aria-modal="true"
         aria-label="Menu điều hướng"
-        className="mobile-drawer absolute right-0 top-0 z-10 flex h-full flex-col bg-white p-6 shadow-2xl transition-transform duration-300"
+        className="mobile-drawer absolute right-0 top-0 z-10 flex h-full min-h-0 flex-col bg-white p-6 shadow-2xl transition-transform duration-300"
       >
-        <div className="flex items-center justify-between">
+        <div className="flex shrink-0 items-center justify-between">
           <SiteLogo />
           <button
             type="button"
@@ -46,20 +46,20 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           </button>
         </div>
 
-        <nav className="mt-8 flex flex-col gap-1" aria-label="Điều hướng trên điện thoại">
+        <nav className="mt-6 min-h-0 flex-1 overflow-y-auto overscroll-contain" aria-label="Điều hướng trên điện thoại">
           {mainNavigation.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={onClose}
-              className="rounded-xl px-4 py-3 text-base font-bold text-[#24344d] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]"
+              className="block rounded-xl px-4 py-3 text-base font-bold text-[#24344d] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <div className="mt-auto grid gap-3">
+        <div className="grid shrink-0 gap-3 border-t border-[#e7ebf0] pt-4">
           <a
             href={siteContact.zaloUrl}
             target="_blank"
@@ -70,7 +70,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           </a>
           <a
             href={siteContact.telephoneUrl}
-            className="flex h-12 items-center justify-center rounded-full bg-[var(--brand-primary)] font-black text-white transition-colors hover:bg-[var(--brand-primary-dark)]"
+            className="flex h-12 items-center justify-center rounded-full bg-[var(--brand-accent)] font-black !text-white transition-colors hover:bg-[var(--brand-accent-dark)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-accent)]"
           >
             Gọi xe · {siteConfig.phoneDisplay}
           </a>
