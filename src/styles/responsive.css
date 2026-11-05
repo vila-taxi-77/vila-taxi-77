@@ -73,6 +73,7 @@
   display: block;
   visibility: hidden;
   pointer-events: none;
+  transition: visibility 0s linear 300ms;
 }
 
 .mobile-menu-overlay {
@@ -86,6 +87,7 @@
 .mobile-menu-root[data-state="open"] {
   visibility: visible;
   pointer-events: auto;
+  transition-delay: 0s;
 }
 
 .mobile-menu-root[data-state="open"] .mobile-menu-overlay {
@@ -94,6 +96,17 @@
 
 .mobile-menu-root[data-state="open"] .mobile-drawer {
   transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-root {
+    transition-delay: 0s;
+  }
+
+  .mobile-menu-overlay,
+  .mobile-drawer {
+    transition-duration: 0ms;
+  }
 }
 
 @media (max-width: 29.999rem) {
