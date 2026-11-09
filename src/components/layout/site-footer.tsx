@@ -3,9 +3,7 @@ import Image from "next/image";
 import { mainNavigation } from "@/config/navigation";
 import { siteConfig, siteContact } from "@/config/site";
 
-const footerNavigation = mainNavigation.filter(({ href }) =>
-  ["#dich-vu", "#bao-gia", "#doi-xe", "#gioi-thieu"].includes(href),
-);
+const footerNavigation = mainNavigation;
 
 function FooterIcon({ name }: { name: "phone" | "location" | "clock" | "wallet" }) {
   const attributes = {
@@ -47,7 +45,7 @@ export function SiteFooter() {
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,23,47,0.9)_0%,rgba(7,23,47,0.78)_55%,rgba(7,23,47,0.68)_100%),linear-gradient(180deg,rgba(7,23,47,0.14)_0%,rgba(7,23,47,0.18)_55%,rgba(7,23,47,0.55)_100%)]" />
       </div>
-      <div className="relative z-10 mx-auto max-w-[1220px] px-4 pb-7 pt-8 sm:px-6 sm:pt-10 lg:px-5 lg:pt-12">
+      <div className="relative z-10 mx-auto max-w-[1220px] px-4 pb-28 pt-8 sm:px-6 sm:pt-10 lg:px-5 lg:pb-7 lg:pt-12">
         <div className="flex flex-col gap-5 rounded-[1.75rem] bg-[var(--brand-accent)] px-5 py-5 text-white sm:px-7 sm:py-6 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:px-8">
           <div className="[text-shadow:0_1px_3px_rgba(7,23,47,0.35)]">
             <h2 className="text-2xl font-black leading-tight tracking-[-0.03em] sm:text-3xl lg:text-4xl">Cần xe ngay bây giờ?</h2>

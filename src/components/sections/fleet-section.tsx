@@ -81,7 +81,7 @@ export function FleetSection() {
               <article key={feature.title} className="flex min-h-[8.75rem] flex-col justify-center rounded-[1.3rem] border border-[#dce4ee] bg-white p-3 sm:p-5">
                 <span className="mb-3 text-[var(--brand-accent-dark)]"><FleetIcon name={feature.icon} /></span>
                 <h3 className="text-sm font-black leading-snug text-[#0a192f] sm:text-base">{feature.title}</h3>
-                <p className="mt-1 text-xs font-medium leading-relaxed text-[#64748b] sm:text-sm">{feature.description}</p>
+                <p className="mt-1 text-sm font-medium leading-relaxed text-[var(--text-muted)]">{feature.description}</p>
               </article>
             ))}
           </div>

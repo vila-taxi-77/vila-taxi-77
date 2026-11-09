@@ -9,6 +9,11 @@
   --brand-primary-soft: #fff0f1;
   --brand-accent: #f59e0b;
   --brand-accent-dark: #d97706;
+  --accent-soft: #fff7e6;
+  --surface-muted: #f8fafc;
+  --border-soft: #dce4ee;
+  --text-muted: #53657d;
+  --focus-ring: #0b63ce;
 }
 
 @theme inline {
@@ -23,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--site-header-height) + 1rem);
 }
 
 body {
@@ -35,6 +41,62 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button,
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(a, button, summary, input, select, textarea):focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 100;
+  transform: translateY(-150%);
+  border-radius: 999px;
+  background: #ffffff;
+  padding: 0.75rem 1rem;
+  color: var(--foreground);
+  font-weight: 800;
+  box-shadow: 0 10px 30px rgba(7, 23, 47, 0.2);
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.section-title {
+  color: var(--foreground);
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.section-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--brand-accent-dark);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.section-eyebrow > span {
+  width: 2.5rem;
+  height: 1px;
+  background: currentColor;
 }
 
 @keyframes hero-fade-up {
@@ -258,6 +320,15 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
   .hero-fade-up,
   .hero-promo,
   .hero-price {

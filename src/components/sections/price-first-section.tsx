@@ -78,7 +78,7 @@ export function PriceFirstSection() {
           <h2 className="mt-4 max-w-2xl text-[clamp(2.35rem,5vw,4rem)] font-black leading-[1.02] tracking-[-0.045em] text-white lg:text-[3.1rem] xl:text-[3.4rem]">
             Biết giá trước – An tâm mọi chuyến đi
           </h2>
-          <p className="mt-5 max-w-2xl text-base font-medium leading-relaxed text-white/70 sm:text-xl lg:text-base xl:text-lg">
+          <p className="mt-5 max-w-2xl text-base font-medium leading-relaxed text-white/82 sm:text-xl lg:text-base xl:text-lg">
             Tại Taxi VILA, chi phí được trao đổi và thống nhất trước khi khởi hành. Bạn nắm rõ mức giá, không băn khoăn về chi phí phát sinh trong quá trình di chuyển.
           </p>
 
@@ -95,13 +95,13 @@ export function PriceFirstSection() {
         <div>
           <div className="grid w-full max-w-[40rem] gap-4 sm:grid-cols-2">
             <article className="rounded-[1.25rem] border border-white/20 bg-[#10223c]/80 p-4 backdrop-blur-sm sm:p-5">
-              <p className="text-[11px] font-black uppercase tracking-[0.14em] text-white/55 sm:text-xs">
+              <p className="text-xs font-black uppercase tracking-[0.14em] text-white/75">
                 Tính theo đồng hồ
               </p>
               <ul className="mt-3 space-y-2.5">
                 {meterTaxiDrawbacks.map((item) => (
-                  <li key={item} className="flex gap-2.5 text-[13px] font-medium leading-snug text-white/68 sm:text-sm">
-                    <span className="mt-0.5 text-white/40"><CloseIcon /></span>
+                  <li key={item} className="flex gap-2.5 text-sm font-medium leading-snug text-white/82">
+                    <span className="mt-0.5 text-white/60"><CloseIcon /></span>
                     {item}
                   </li>
                 ))}
@@ -109,12 +109,12 @@ export function PriceFirstSection() {
             </article>
 
             <article className="rounded-[1.25rem] bg-[var(--brand-accent)] p-4 text-[#0a192f] shadow-[0_24px_70px_rgba(245,158,11,0.14)] sm:p-5">
-              <p className="text-[11px] font-black uppercase tracking-[0.14em] sm:text-xs">
+              <p className="text-xs font-black uppercase tracking-[0.14em]">
                 Taxi VILA
               </p>
               <ul className="mt-3 space-y-2.5">
                 {vilaPriceBenefits.map((item) => (
-                  <li key={item} className="flex gap-2.5 text-[13px] font-extrabold leading-snug sm:text-sm">
+                  <li key={item} className="flex gap-2.5 text-sm font-extrabold leading-snug">
                     <span className="mt-0.5"><CheckIcon /></span>
                     {item}
                   </li>
@@ -133,14 +133,14 @@ export function PriceFirstSection() {
                   <span className="text-4xl font-black tracking-[-0.04em] text-[var(--brand-accent)]">
                     {step.number}
                   </span>
-                  <span className="text-white/50 transition-colors group-hover:text-[var(--brand-accent)]">
+                  <span className="text-white/65 transition-colors group-hover:text-[var(--brand-accent)]">
                     <PriceStepIcon name={step.icon} />
                   </span>
                 </div>
                 <h3 className="mt-4 text-base font-black leading-snug text-white sm:text-lg">
                   {step.title}
                 </h3>
-                <p className="mt-1.5 text-[13px] font-medium leading-relaxed text-white/58 sm:text-sm">
+                <p className="mt-1.5 text-sm font-medium leading-relaxed text-white/75">
                   {step.description}
                 </p>
               </li>

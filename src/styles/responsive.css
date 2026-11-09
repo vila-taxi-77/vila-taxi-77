@@ -165,7 +165,7 @@
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 80rem) {
   :root {
     --site-gutter: 1.25rem;
   }
