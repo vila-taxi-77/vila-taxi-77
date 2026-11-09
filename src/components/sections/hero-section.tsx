@@ -83,7 +83,7 @@ export function HeroSection() {
             <a href={siteContact.telephoneUrl} className="hero-call-cta cta-call-attention cta-call-accent inline-flex h-14 items-center justify-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-5 text-sm font-black !text-white shadow-[0_14px_32px_rgba(245,158,11,0.32)] transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)] hover:shadow-[0_18px_38px_rgba(245,158,11,0.42)] xl:px-6 xl:text-base">
               <PhoneIcon /> Gọi xe ngay – {siteConfig.phoneDisplay}
             </a>
-            <a href={siteContact.zaloUrl} target="_blank" rel="noreferrer" className="inline-flex h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/35 bg-white/10 px-5 text-sm font-bold !text-white backdrop-blur-md transition-colors hover:border-[var(--brand-accent)] hover:bg-[var(--brand-accent)] xl:px-6 xl:text-base">
+            <a href="#dat-xe-truc-tuyen" className="inline-flex h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/35 bg-white/10 px-5 text-sm font-bold !text-white backdrop-blur-md transition-colors hover:border-[var(--brand-accent)] hover:bg-[var(--brand-accent)] xl:px-6 xl:text-base">
               Đặt lịch trước – Nhận ưu đãi <ArrowIcon />
             </a>
           </div>

@@ -1,5 +1,6 @@
 
 import { FaqSection } from "@/components/sections/faq-section";
+import { AboutSection } from "@/components/sections/about-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { FleetSection } from "@/components/sections/fleet-section";
 import { PriceFirstSection } from "@/components/sections/price-first-section";
@@ -7,6 +8,7 @@ import { ServicesSection } from "@/components/sections/services-section";
 import { ServiceAreasSection } from "@/components/sections/service-areas-section";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { WhyVilaSection } from "@/components/sections/why-vila-section";
+import { BookingSection } from "@/features/booking/components/booking-section";
 
 export default function HomePage() {
   return (
@@ -18,6 +20,8 @@ export default function HomePage() {
       <WhyVilaSection />
       <FleetSection />
       <ServiceAreasSection />
+      <BookingSection />
+      <AboutSection />
       <FaqSection />
     </main>
   );
