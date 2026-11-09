@@ -7,6 +7,7 @@ import { ServicesSection } from "@/components/sections/services-section";
 import { ServiceAreasSection } from "@/components/sections/service-areas-section";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { WhyVilaSection } from "@/components/sections/why-vila-section";
+import { BookingSection } from "@/features/booking/components/booking-section";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <WhyVilaSection />
       <FleetSection />
       <ServiceAreasSection />
+      <BookingSection />
       <FaqSection />
     </main>
   );
