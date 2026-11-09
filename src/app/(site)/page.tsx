@@ -1,5 +1,6 @@
 
 import { FaqSection } from "@/components/sections/faq-section";
+import { AboutSection } from "@/components/sections/about-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { FleetSection } from "@/components/sections/fleet-section";
 import { PriceFirstSection } from "@/components/sections/price-first-section";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <FleetSection />
       <ServiceAreasSection />
       <BookingSection />
+      <AboutSection />
       <FaqSection />
     </main>
   );

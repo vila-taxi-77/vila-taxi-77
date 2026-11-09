@@ -60,7 +60,7 @@ function WhyVilaIcon({ name }: { name: WhyVilaIconName }) {
 
 export function WhyVilaSection() {
   return (
-    <section id="gioi-thieu" aria-labelledby="why-vila-title" className="scroll-mt-24 bg-white py-16 sm:py-20 lg:py-24">
+    <section id="ly-do-chon" aria-labelledby="why-vila-title" className="scroll-mt-24 bg-white py-16 sm:py-20 lg:py-24">
       <div className="mx-auto grid max-w-[1220px] gap-10 px-4 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:gap-12 lg:px-5">
         <div className="lg:flex lg:h-full lg:flex-col">
           <p className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-[var(--brand-accent)] sm:text-sm">
