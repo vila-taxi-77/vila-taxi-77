@@ -50,7 +50,7 @@ export function HeroSection() {
             Taxi điện Phù Cát – Phù Mỹ
           </p>
 
-          <h1 className="hero-fade-up hero-delay-1 mt-6 max-w-3xl text-[clamp(2.35rem,6vw,4.9rem)] font-black leading-[0.98] tracking-[-0.04em]">
+          <h1 className="hero-fade-up hero-delay-1 mt-6 max-w-3xl text-[clamp(2.35rem,6vw,4.9rem)] font-black leading-[0.98] tracking-[-0.04em] [text-wrap:balance]">
             100% xe thuần điện.
             <span className="mt-2 block text-[var(--brand-accent)]">Biết giá trước,</span>
             <span className="mt-2 block">an tâm lên xe.</span>
@@ -69,7 +69,7 @@ export function HeroSection() {
             <p className="mt-1 whitespace-nowrap text-[clamp(2rem,5vw,3.1rem)] font-black leading-none tracking-[-0.04em] text-[var(--brand-accent)]">
               {siteConfig.priceRange}
             </p>
-            <span className="mt-2 whitespace-nowrap text-[10px] leading-relaxed text-white/65 sm:text-xs">
+            <span className="mt-2 max-w-xl text-sm leading-relaxed text-white/80">
               {siteConfig.priceNote}
             </span>
           </div>
@@ -83,13 +83,13 @@ export function HeroSection() {
             <a href={siteContact.telephoneUrl} className="hero-call-cta cta-call-attention cta-call-accent inline-flex h-14 items-center justify-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-5 text-sm font-black !text-white shadow-[0_14px_32px_rgba(245,158,11,0.32)] transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)] hover:shadow-[0_18px_38px_rgba(245,158,11,0.42)] xl:px-6 xl:text-base">
               <PhoneIcon /> Gọi xe ngay – {siteConfig.phoneDisplay}
             </a>
-            <a href={siteContact.telephoneUrl} className="inline-flex h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/25 bg-white/8 px-5 text-sm font-bold !text-white backdrop-blur-md transition-colors hover:border-[var(--brand-accent)] hover:bg-[var(--brand-accent)] xl:px-6 xl:text-base">
+            <a href={siteContact.zaloUrl} target="_blank" rel="noreferrer" className="inline-flex h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/35 bg-white/10 px-5 text-sm font-bold !text-white backdrop-blur-md transition-colors hover:border-[var(--brand-accent)] hover:bg-[var(--brand-accent)] xl:px-6 xl:text-base">
               Đặt lịch trước – Nhận ưu đãi <ArrowIcon />
             </a>
           </div>
         </div>
 
-        <aside className="hero-fade-up hero-delay-2 hero-contact-card relative z-10 -translate-y-4 rounded-[1.75rem] border border-white/12 bg-white p-5 text-[#0a192f] shadow-[0_30px_90px_rgba(0,0,0,0.34)] sm:p-7 lg:-translate-y-6 lg:justify-self-end">
+        <aside id="dat-xe" className="hero-fade-up hero-delay-2 hero-contact-card relative z-10 scroll-mt-28 rounded-[1.75rem] border border-white/12 bg-white p-5 text-[#0a192f] shadow-[0_30px_90px_rgba(0,0,0,0.34)] sm:p-7 lg:-translate-y-6 lg:justify-self-end">
           <div className="flex items-start justify-between gap-4">
             <div>
               <p className="text-xl font-black sm:text-2xl">Bạn muốn đặt xe?</p>
@@ -111,7 +111,7 @@ export function HeroSection() {
             <a href={siteContact.zaloUrl} target="_blank" rel="noreferrer" className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-[#dce3ed] px-4 text-sm font-black text-[#0563d8] transition-colors hover:border-[#0563d8] hover:bg-[#eff6ff]"><ZaloIcon /> Nhắn Zalo</a>
           </div>
 
-          <p className="mt-5 border-t border-[#e7ebf0] pt-4 text-xs leading-relaxed text-[#64748b]">Giá và điều kiện ưu đãi sẽ được trao đổi, xác nhận trước khi chuyến đi được chốt.</p>
+          <p className="mt-5 border-t border-[#e7ebf0] pt-4 text-sm leading-relaxed text-[#64748b]">Giá và điều kiện ưu đãi sẽ được trao đổi, xác nhận trước khi chuyến đi được chốt.</p>
         </aside>
       </div>
 

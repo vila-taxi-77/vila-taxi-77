@@ -77,6 +77,7 @@ export function SiteHeader() {
             </a>
 
             <button
+              ref={menu.triggerRef}
               type="button"
               onClick={menu.openMenu}
               aria-label="Mở menu"
@@ -92,7 +93,11 @@ export function SiteHeader() {
         </div>
       </header>
 
-      <MobileMenu isOpen={menu.isOpen} onClose={menu.closeMenu} />
+      <MobileMenu
+        isOpen={menu.isOpen}
+        onClose={menu.closeMenu}
+        onNavigate={menu.closeMenuWithoutFocus}
+      />
     </>
   );
 }

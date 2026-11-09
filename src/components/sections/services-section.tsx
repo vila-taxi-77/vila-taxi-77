@@ -5,6 +5,7 @@ import {
   type ServiceIcon as ServiceIconName,
   type TaxiService,
 } from "@/content/services";
+import { siteContact } from "@/config/site";
 
 type IconProps = {
   name: ServiceIconName;
@@ -84,7 +85,7 @@ function ServiceCard({ service }: ServiceCardProps) {
             {service.description}
           </p>
           <a
-            href="#dat-xe"
+            href={siteContact.telephoneUrl}
             className="mt-5 inline-flex w-fit items-center gap-1.5 text-sm font-black !text-[var(--brand-accent)] transition-[gap,color] hover:gap-2.5 hover:!text-[var(--brand-accent-dark)]"
             aria-label={`Đặt dịch vụ ${service.title}`}
           >
@@ -107,7 +108,7 @@ function ServiceCard({ service }: ServiceCardProps) {
         {service.description}
       </p>
       <a
-        href="#dat-xe"
+        href={siteContact.telephoneUrl}
         className="mt-6 inline-flex w-fit items-center gap-1.5 text-sm font-black !text-[var(--brand-accent)] transition-[gap,color] hover:gap-2.5 hover:!text-[var(--brand-accent-dark)]"
         aria-label={`Đặt dịch vụ ${service.title}`}
       >

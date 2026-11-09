@@ -1,6 +1,7 @@
 
 "use client";
 
+import { useEffect, useRef } from "react";
 import { mainNavigation } from "@/config/navigation";
 import { siteConfig, siteContact } from "@/config/site";
 import { SiteLogo } from "@/components/ui/site-logo";
@@ -8,9 +9,47 @@ import { SiteLogo } from "@/components/ui/site-logo";
 type MobileMenuProps = {
   isOpen: boolean;
   onClose: () => void;
+  onNavigate: () => void;
 };
 
-export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
+export function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuProps) {
+  const drawerRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    closeButtonRef.current?.focus();
+
+    const drawer = drawerRef.current;
+    if (!drawer) return;
+
+    const keepFocusInside = (event: KeyboardEvent) => {
+      if (event.key !== "Tab") return;
+
+      const focusable = Array.from(
+        drawer.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      ).filter((element) => !element.hasAttribute("inert"));
+
+      const first = focusable[0];
+      const last = focusable.at(-1);
+      if (!first || !last) return;
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    drawer.addEventListener("keydown", keepFocusInside);
+    return () => drawer.removeEventListener("keydown", keepFocusInside);
+  }, [isOpen]);
+
   return (
     <div
       id="mobile-navigation"
@@ -27,6 +66,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       />
 
       <div
+        ref={drawerRef}
         role="dialog"
         aria-modal="true"
         aria-label="Menu điều hướng"
@@ -35,10 +75,11 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <div className="flex shrink-0 items-center justify-between">
           <SiteLogo />
           <button
+            ref={closeButtonRef}
             type="button"
             onClick={onClose}
             aria-label="Đóng menu"
-            className="grid h-10 w-10 cursor-pointer place-items-center rounded-full border border-[#dce3ed] text-[#0a192f]"
+            className="grid h-11 w-11 cursor-pointer place-items-center rounded-full border border-[#dce3ed] text-[#0a192f] transition-colors hover:border-[var(--brand-primary)] hover:bg-[var(--brand-primary-soft)]"
           >
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M6 6l12 12M18 6 6 18" strokeLinecap="round" />
@@ -51,8 +92,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <a
               key={item.href}
               href={item.href}
-              onClick={onClose}
-              className="block rounded-xl px-4 py-3 text-base font-bold text-[#24344d] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]"
+              onClick={onNavigate}
+              className="flex min-h-12 items-center rounded-xl px-4 py-3 text-base font-bold text-[#24344d] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]"
             >
               {item.label}
             </a>
@@ -64,12 +105,14 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             href={siteContact.zaloUrl}
             target="_blank"
             rel="noreferrer"
+            onClick={onNavigate}
             className="flex h-12 items-center justify-center rounded-full border border-[#cdd7e5] font-bold text-[#0563d8]"
           >
             Nhắn Zalo
           </a>
           <a
             href={siteContact.telephoneUrl}
+            onClick={onNavigate}
             className="flex h-12 items-center justify-center rounded-full bg-[var(--brand-accent)] font-black !text-white transition-colors hover:bg-[var(--brand-accent-dark)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-accent)]"
           >
             Gọi xe · {siteConfig.phoneDisplay}
