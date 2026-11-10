@@ -9,20 +9,32 @@ import { ServiceAreasSection } from "@/components/sections/service-areas-section
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { WhyVilaSection } from "@/components/sections/why-vila-section";
 import { BookingSection } from "@/features/booking/components/booking-section";
+import { faqs } from "@/content/faqs";
+import { createFaqJsonLd, createWebsiteJsonLd, serializeJsonLd } from "@/config/seo";
 
 export default function HomePage() {
   return (
-    <main id="main-content" tabIndex={-1} className="page-below-header bg-[#f5f7fb] outline-none">
-      <HeroSection />
-      <TrustStrip />
-      <ServicesSection />
-      <PriceFirstSection />
-      <WhyVilaSection />
-      <FleetSection />
-      <ServiceAreasSection />
-      <BookingSection />
-      <AboutSection />
-      <FaqSection />
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(createWebsiteJsonLd()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(createFaqJsonLd(faqs)) }}
+      />
+      <main id="main-content" tabIndex={-1} className="page-below-header bg-[#f5f7fb] outline-none">
+        <HeroSection />
+        <TrustStrip />
+        <ServicesSection />
+        <PriceFirstSection />
+        <WhyVilaSection />
+        <FleetSection />
+        <ServiceAreasSection />
+        <BookingSection />
+        <AboutSection />
+        <FaqSection />
+      </main>
+    </>
   );
 }
