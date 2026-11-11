@@ -37,7 +37,7 @@ export function SiteHeader() {
             : "bg-white/90 backdrop-blur-md"
         }`}
       >
-        <div className="site-container site-header-height flex items-center justify-between gap-5">
+        <div className="site-container site-header-height flex items-center justify-between gap-3 xl:gap-5">
           <a href="#top" className="shrink-0" aria-label="Về đầu trang">
             <SiteLogo priority />
           </a>
@@ -47,7 +47,7 @@ export function SiteHeader() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-3.5 py-2 text-[14px] font-bold text-[#263750] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)]"
+                className="whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-bold text-[#263750] transition-colors hover:bg-[var(--brand-primary-soft)] hover:text-[var(--brand-primary)] xl:px-3.5 xl:text-[14px]"
               >
                 {item.label}
               </a>
@@ -68,7 +68,7 @@ export function SiteHeader() {
 
             <a
               href={siteContact.telephoneUrl}
-              className="site-header-call cta-call-attention flex h-11 items-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-primary)] px-5 text-[15px] font-black text-white shadow-[0_9px_24px_rgba(215,25,32,0.25)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-primary-dark)]"
+              className="site-header-call cta-call-attention cta-call-accent flex h-11 items-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-5 text-[15px] font-black !text-white shadow-[0_9px_24px_rgba(245,158,11,0.28)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)]"
               aria-label={`Gọi Taxi VILA theo số ${siteConfig.phoneDisplay}`}
             >
               <PhoneIcon />
@@ -77,11 +77,13 @@ export function SiteHeader() {
             </a>
 
             <button
+              ref={menu.triggerRef}
               type="button"
               onClick={menu.openMenu}
               aria-label="Mở menu"
               aria-expanded={menu.isOpen}
-              className="header-menu-trigger h-11 w-11 place-items-center rounded-full border border-[#c8d1de] text-[var(--brand-primary)] transition-colors hover:border-[var(--brand-primary)]"
+              aria-controls="mobile-navigation"
+              className="header-menu-trigger relative z-20 h-11 w-11 cursor-pointer touch-manipulation place-items-center rounded-full border border-[#c8d1de] text-[var(--brand-primary)] transition-colors hover:border-[var(--brand-primary)]"
             >
               <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
@@ -91,7 +93,11 @@ export function SiteHeader() {
         </div>
       </header>
 
-      <MobileMenu isOpen={menu.isOpen} onClose={menu.closeMenu} />
+      <MobileMenu
+        isOpen={menu.isOpen}
+        onClose={menu.closeMenu}
+        onNavigate={menu.closeMenuWithoutFocus}
+      />
     </>
   );
 }

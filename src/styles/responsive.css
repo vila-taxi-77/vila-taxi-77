@@ -71,6 +71,42 @@
 
 .mobile-menu-root {
   display: block;
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility 0s linear 300ms;
+}
+
+.mobile-menu-overlay {
+  opacity: 0;
+}
+
+.mobile-drawer {
+  transform: translateX(100%);
+}
+
+.mobile-menu-root[data-state="open"] {
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+.mobile-menu-root[data-state="open"] .mobile-menu-overlay {
+  opacity: 1;
+}
+
+.mobile-menu-root[data-state="open"] .mobile-drawer {
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-root {
+    transition-delay: 0s;
+  }
+
+  .mobile-menu-overlay,
+  .mobile-drawer {
+    transition-duration: 0ms;
+  }
 }
 
 @media (max-width: 29.999rem) {
@@ -129,7 +165,7 @@
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 80rem) {
   :root {
     --site-gutter: 1.25rem;
   }

@@ -1,16 +1,19 @@
 
 import type { MetadataRoute } from "next";
+import { getSiteUrl } from "@/config/seo";
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: getPublicUrl(),
+      url: `${getSiteUrl()}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
   ];
 }
+
 
 function getPublicUrl() {
   const deploymentUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;

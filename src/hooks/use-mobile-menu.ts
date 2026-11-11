@@ -1,12 +1,27 @@
 
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export function useMobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const openMenu = useCallback(() => setIsOpen(true), []);
-  const closeMenu = useCallback(() => setIsOpen(false), []);
+  const closeMenuWithoutFocus = useCallback(() => setIsOpen(false), []);
+  const closeMenu = useCallback(() => {
+    setIsOpen(false);
+    window.requestAnimationFrame(() => triggerRef.current?.focus());
+  }, []);
+
+  useEffect(() => {
+    const desktop = window.matchMedia("(min-width: 80rem)");
+    const closeOnDesktop = () => {
+      if (desktop.matches) closeMenuWithoutFocus();
+    };
+
+    desktop.addEventListener("change", closeOnDesktop);
+    return () => desktop.removeEventListener("change", closeOnDesktop);
+  }, [closeMenuWithoutFocus]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -25,5 +40,5 @@ export function useMobileMenu() {
     };
   }, [closeMenu, isOpen]);
 
-  return { isOpen, openMenu, closeMenu };
+  return { isOpen, openMenu, closeMenu, closeMenuWithoutFocus, triggerRef };
 }
