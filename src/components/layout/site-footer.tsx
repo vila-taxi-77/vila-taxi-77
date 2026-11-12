@@ -37,7 +37,7 @@ export function SiteFooter() {
     <footer className="relative isolate overflow-hidden bg-[#07172f] text-white">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/hero/taxi-vila-charging.jpg"
+          src="/images/footer/footer-airport-night.png"
           alt=""
           fill
           sizes="100vw"

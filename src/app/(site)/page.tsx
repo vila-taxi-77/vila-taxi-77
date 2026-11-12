@@ -10,7 +10,7 @@ import { TrustStrip } from "@/components/sections/trust-strip";
 import { WhyVilaSection } from "@/components/sections/why-vila-section";
 import { BookingSection } from "@/features/booking/components/booking-section";
 import { faqs } from "@/content/faqs";
-import { createFaqJsonLd, createWebsiteJsonLd, serializeJsonLd } from "@/config/seo";
+import { createFaqJsonLd, createFleetJsonLd, createWebsiteJsonLd, serializeJsonLd } from "@/config/seo";
 
 export default function HomePage() {
   return (
@@ -22,6 +22,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(createFaqJsonLd(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(createFleetJsonLd()) }}
       />
       <main id="main-content" tabIndex={-1} className="page-below-header bg-[#f5f7fb] outline-none">
         <HeroSection />

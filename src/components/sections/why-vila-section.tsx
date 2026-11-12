@@ -76,11 +76,11 @@ export function WhyVilaSection() {
 
           <figure className="relative mt-9 h-[19rem] overflow-hidden rounded-[1.75rem] bg-[#eaf0f6] sm:h-[23rem] lg:min-h-[21rem] lg:flex-1 lg:h-auto">
             <Image
-              src="/images/hero/taxi-vila-hero.png"
+              src="/images/hero/taxi-vila-airport-pickup-service.png"
               alt="Xe taxi điện VILA sẵn sàng đón khách"
               fill
               sizes="(min-width: 1024px) 40vw, (min-width: 640px) 80vw, 100vw"
-              className="object-cover object-[65%_50%]"
+              className="object-cover object-[52%_58%]"
             />
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#07172f]/45 to-transparent" aria-hidden="true" />
             <figcaption className="absolute inset-x-4 bottom-4 rounded-2xl bg-white/95 px-4 py-3 shadow-[0_12px_35px_rgba(10,25,47,0.16)] backdrop-blur-sm sm:inset-x-5 sm:bottom-5 sm:px-5">

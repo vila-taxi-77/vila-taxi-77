@@ -27,7 +27,7 @@ export function BookingSection() {
     <section id="dat-xe-truc-tuyen" aria-labelledby="booking-title" className="relative scroll-mt-24 overflow-hidden bg-[#07172f] py-10 text-white sm:py-12 lg:py-14">
       <div aria-hidden="true" className="absolute inset-0">
         <Image
-          src="/images/hero/taxi-vila-charging.jpg"
+          src="/images/booking/booking-background.png"
           alt=""
           fill
           sizes="100vw"
