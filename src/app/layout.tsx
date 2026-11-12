@@ -61,7 +61,9 @@ export const metadata: Metadata = {
     google: seoConfig.googleSiteVerification,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/logo/taxi-vila-logo.png",
+    shortcut: "/images/logo/taxi-vila-logo.png",
+    apple: "/images/logo/taxi-vila-logo.png",
   },
   other: {
     "geo.position": `${seoConfig.latitude};${seoConfig.longitude}`,

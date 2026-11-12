@@ -7,11 +7,11 @@ import { siteConfig } from "@/config/site";
 const fallbackSiteUrl = "https://taxivila.com";
 
 export const seoConfig = {
-  businessName: "Taxi Vila",
+  businessName: "Taxi VILA",
   displayName: "Taxi VILA",
-  title: "Taxi Vila – Taxi điện 5–7 chỗ Phù Cát, Phù Mỹ, sân bay Phù Cát",
+  title: "Taxi Vila – Taxi điện 5–7 chỗ Phù Cát, Phù Mỹ | Đưa đón sân bay Phù Cát",
   description:
-    "Taxi VILA phục vụ taxi điện 5–7 chỗ tại Phù Cát, Phù Mỹ, sân bay Phù Cát, Quy Nhơn và các tuyến lân cận. Đội xe đa dạng, êm ái, báo giá trước chuyến đi.",
+    "Taxi VILA phục vụ taxi điện 5–7 chỗ tại Phù Cát, Phù Mỹ, sân bay Phù Cát, Quy Nhơn và các tuyến liên tỉnh. Đội xe đa dạng, êm ái, báo giá trước chuyến đi, gọi đặt xe nhanh.",
   keywords: [
     "Taxi Vila",
     "taxi Phù Cát",
