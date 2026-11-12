@@ -3,7 +3,8 @@ import type { FaqItem } from "@/content/faqs";
 import { fleetGallery } from "@/content/fleet";
 import { siteConfig } from "@/config/site";
 
-const fallbackSiteUrl = "https://vila-taxi-77.vercel.app";
+// Production canonical origin. Keep NEXT_PUBLIC_SITE_URL in Vercel aligned with this value.
+const fallbackSiteUrl = "https://taxivila.com";
 
 export const seoConfig = {
   businessName: "Taxi Vila",
