@@ -19,7 +19,7 @@ export const taxiServices: TaxiService[] = [
       "Đón, tiễn tại sân bay Phù Cát về Phù Mỹ, Phù Cát, Quy Nhơn và các địa điểm theo yêu cầu. Đặt trước theo lịch bay – không lo chờ đợi.",
     icon: "airport",
     image: {
-      src: "https://images.unsplash.com/photo-1603792835233-f4f7c2497d4f?auto=format&fit=crop&w=1400&q=85",
+      src: "/images/hero/taxi-vila-phu-cat-airport-service.png",
       alt: "Hành khách tại nhà ga sân bay",
       position: "50% 28%",
     },
@@ -36,7 +36,7 @@ export const taxiServices: TaxiService[] = [
       "Du lịch, công tác, thăm người thân: xe riêng theo lịch trình của bạn.",
     icon: "route",
     image: {
-      src: "https://images.unsplash.com/photo-1684805670451-cf87260590d2?auto=format&fit=crop&w=1400&q=85",
+      src: "/images/hero/taxi-vila-route-coastal-service.png",
       alt: "Phong cảnh biển và núi tại Bình Định",
     },
   },

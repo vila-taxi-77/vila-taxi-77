@@ -57,12 +57,12 @@ export function PriceFirstSection() {
   return (
     <section id="bao-gia" className="relative isolate scroll-mt-24 overflow-hidden bg-[#07172f] py-14 text-white sm:py-16 lg:py-20">
       <Image
-        src="/images/hero/taxi-vila-charging.jpg"
+        src="/images/hero/taxi-vila-interior-fleet-hero.png"
         alt=""
         fill
         sizes="100vw"
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-0 object-cover object-[68%_72%] opacity-90 brightness-[0.94] saturate-90 lg:object-[center_92%]"
+        className="pointer-events-none absolute inset-0 z-0 object-cover object-[center_62%] opacity-90 brightness-[0.9] saturate-90 lg:object-[center_62%]"
       />
       <div
         aria-hidden="true"

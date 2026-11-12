@@ -1,18 +1,11 @@
 import Image from "next/image";
+import { PromotionBanner } from "@/components/sections/promotion-banner";
 import { siteConfig, siteContact } from "@/config/site";
 
 function PhoneIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2">
       <path d="M7.2 3.8 9.5 8l-2.1 1.8c1.1 2.5 2.9 4.3 5.4 5.4l1.8-2.1 4.2 2.3-.5 3.5c-.2 1.1-1.2 1.9-2.3 1.8C9.2 20 4 14.8 3.3 8c-.1-1.1.7-2.1 1.8-2.3l2.1-.4Z" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-function GiftIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7H8.5a2.5 2.5 0 1 1 2.5-2.5C11 5.9 12 7 12 7Zm0 0h3.5A2.5 2.5 0 1 0 13 4.5C13 5.9 12 7 12 7Z" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -34,7 +27,7 @@ export function HeroSection() {
     <section id="top" className="hero-section relative isolate overflow-hidden bg-[#081a35] text-white">
       <div className="hero-media pointer-events-none absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/hero/taxi-vila-charging.jpg"
+              src="/images/hero/taxi-vila-fleet-lineup-hero.png"
           alt=""
           fill
           priority
@@ -45,10 +38,16 @@ export function HeroSection() {
       <div className="hero-background-art pointer-events-none absolute inset-0" aria-hidden="true" />
       <div className="hero-grid relative z-10 mx-auto grid max-w-[1220px] items-center gap-12 px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[1.06fr_0.94fr] lg:gap-8 lg:px-5 lg:pb-8 lg:pt-8">
         <div className="hero-copy relative z-10">
-          <p className="hero-fade-up inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-bold text-white/90 backdrop-blur-md sm:text-sm">
-            <span className="h-2 w-2 rounded-full bg-[var(--brand-primary)] shadow-[0_0_14px_rgba(215,25,32,0.9)]" />
-            Taxi điện Phù Cát – Phù Mỹ
-          </p>
+          <div className="hero-status-row hero-fade-up">
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-bold text-white/90 backdrop-blur-md sm:text-sm">
+              <span className="hero-brand-status-dot h-2 w-2 rounded-full bg-[var(--brand-primary)]" />
+              Taxi điện Phù Cát – Phù Mỹ
+            </p>
+            <p className="hero-support-badge inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-bold sm:text-sm">
+              <span className="hero-support-status-dot h-2 w-2 shrink-0 rounded-full" />
+              Hỗ trợ đặt xe 24/7
+            </p>
+          </div>
 
           <h1 className="hero-fade-up hero-delay-1 mt-6 max-w-3xl text-[clamp(2.35rem,6vw,4.9rem)] font-black leading-[0.98] tracking-[-0.04em] [text-wrap:balance]">
             100% xe thuần điện.
@@ -74,10 +73,7 @@ export function HeroSection() {
             </span>
           </div>
 
-          <div className="hero-fade-up hero-delay-3 hero-promo mt-4 flex max-w-xl items-center gap-3 rounded-2xl border border-white/12 bg-white/8 px-4 py-3 text-sm font-bold text-white/90 backdrop-blur-sm sm:px-5">
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-[var(--brand-primary)] text-white"><GiftIcon /></span>
-            <span>{siteConfig.prebookMessage}</span>
-          </div>
+          <PromotionBanner />
 
           <div className="hero-fade-up hero-delay-4 mt-7 flex flex-col gap-3 sm:flex-row sm:flex-nowrap">
             <a href={siteContact.telephoneUrl} className="hero-call-cta cta-call-attention cta-call-accent inline-flex h-14 items-center justify-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-5 text-sm font-black !text-white shadow-[0_14px_32px_rgba(245,158,11,0.32)] transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)] hover:shadow-[0_18px_38px_rgba(245,158,11,0.42)] xl:px-6 xl:text-base">

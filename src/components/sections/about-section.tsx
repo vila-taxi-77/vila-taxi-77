@@ -61,8 +61,8 @@ export function AboutSection() {
 
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/70 bg-[#dce4ee] shadow-[0_28px_70px_rgba(10,25,47,0.14)]">
             <Image
-              src="/images/hero/taxt-vila-byd.png"
-              alt="Xe điện BYD của Taxi VILA"
+              src="/images/fleet/exterior/byd-white-77h09558-family-pickup.png"
+              alt="Xe điện BYD và VinFast của đội xe Taxi VILA phục vụ đón khách"
               fill
               sizes="(max-width: 1023px) 100vw, 48vw"
               className="object-cover object-[52%_58%]"
