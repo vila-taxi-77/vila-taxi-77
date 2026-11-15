@@ -59,6 +59,9 @@ export const popularRoutes: PopularRoute[] = [
     origin: "Phù Cát – Phù Mỹ",
     destination: "Các tỉnh lân cận",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Ph%C3%B9+C%C3%A1t%2C+Gia+Lai",
+    featured: true,
+    href: "/taxi-di-tinh",
+    ctaLabel: "Xem dịch vụ",
   },
 ];
 
