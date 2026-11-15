@@ -20,6 +20,8 @@ export const seoConfig = {
     "taxi điện Phù Cát",
     "taxi Phù Cát đi Quy Nhơn",
     "taxi đi tỉnh",
+    "taxi đi tỉnh từ Phù Cát",
+    "taxi đường dài Phù Mỹ",
     "taxi điện 5 chỗ",
     "taxi điện 7 chỗ",
     "đội xe Taxi VILA",

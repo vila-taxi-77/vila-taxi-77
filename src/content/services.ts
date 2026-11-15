@@ -39,6 +39,8 @@ export const taxiServices: TaxiService[] = [
     description:
       "Du lịch, công tác, thăm người thân: xe riêng theo lịch trình của bạn.",
     icon: "route",
+    href: "/taxi-di-tinh",
+    ctaLabel: "Xem dịch vụ",
     image: {
       src: "/images/hero/taxi-vila-route-coastal-service.png",
       alt: "Phong cảnh biển và núi tại Bình Định",

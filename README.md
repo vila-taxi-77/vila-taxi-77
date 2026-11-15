@@ -74,7 +74,7 @@ Khối giới thiệu truyền tải định hướng phục vụ của Taxi VIL
 
 ### 7. Landing page SEO
 
-Website hiện có hai trang dịch vụ độc lập. Mỗi trang có H1, metadata, nội dung, FAQ, liên kết nội bộ và JSON-LD riêng.
+Website hiện có ba trang dịch vụ độc lập. Mỗi trang có H1, metadata, nội dung, FAQ, liên kết nội bộ và JSON-LD riêng.
 
 #### Taxi sân bay Phù Cát
 
@@ -84,6 +84,10 @@ Website hiện có hai trang dịch vụ độc lập. Mỗi trang có H1, metad
 
 ![Trang Taxi Phù Cát đi Quy Nhơn](docs/screenshots/service-phu-cat-quy-nhon.png)
 
+#### Taxi đi tỉnh từ Phù Cát – Phù Mỹ
+
+![Trang Taxi đi tỉnh từ Phù Cát – Phù Mỹ](docs/screenshots/service-interprovincial.png)
+
 ## Các route chính
 
 | Route | Mục đích |
@@ -91,6 +95,7 @@ Website hiện có hai trang dịch vụ độc lập. Mỗi trang có H1, metad
 | `/` | Trang chủ và toàn bộ thông tin tổng quan |
 | `/taxi-san-bay-phu-cat` | Landing page SEO dịch vụ sân bay Phù Cát |
 | `/taxi-phu-cat-di-quy-nhon` | Landing page SEO tuyến Phù Cát – Quy Nhơn |
+| `/taxi-di-tinh` | Landing page SEO taxi đi tỉnh và tuyến đường dài |
 | `/sitemap.xml` | Danh sách URL gửi cho công cụ tìm kiếm |
 | `/robots.txt` | Quy tắc thu thập dữ liệu |
 | `/admin` | Bộ khung khu vực quản trị, chưa dùng trong production |
@@ -223,6 +228,7 @@ Gom toàn bộ nghiệp vụ đặt xe: form, validate dữ liệu, type và hư
 | FAQ | `src/content/faqs.ts` |
 | Nội dung trang sân bay | `src/content/airport-service.ts` |
 | Nội dung trang Phù Cát – Quy Nhơn | `src/content/quy-nhon-service.ts` |
+| Nội dung trang taxi đi tỉnh | `src/content/interprovincial-service.ts` |
 | Thứ tự section trang chủ | `src/app/(site)/page.tsx` |
 
 ## SEO đang được triển khai
@@ -233,7 +239,7 @@ Gom toàn bộ nghiệp vụ đặt xe: form, validate dữ liệu, type và hư
 - Canonical URL dùng domain `https://taxivila.com`.
 - Open Graph và Twitter metadata để chia sẻ liên kết.
 - `robots.txt` cho phép thu thập trang công khai và chặn `/admin`, `/api`.
-- `sitemap.xml` gồm trang chủ và hai trang dịch vụ.
+- `sitemap.xml` gồm trang chủ và ba trang dịch vụ.
 - Google Search Console verification qua biến môi trường.
 - JSON-LD cho `Organization`, `WebSite`, `Service`, `FAQPage` và thư viện đội xe.
 - Ảnh có nội dung `alt` cụ thể theo dịch vụ.
