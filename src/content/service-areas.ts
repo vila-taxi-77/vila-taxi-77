@@ -4,6 +4,8 @@ export type PopularRoute = {
   destination: string;
   mapUrl: string;
   featured?: boolean;
+  href?: string;
+  ctaLabel?: string;
 };
 
 function createDirectionsUrl(origin: string, destination: string) {
@@ -30,6 +32,8 @@ export const popularRoutes: PopularRoute[] = [
     destination: "Quy Nhơn",
     mapUrl: createDirectionsUrl("Phù Cát, Gia Lai", "Quy Nhơn, Gia Lai"),
     featured: true,
+    href: "/taxi-phu-cat-di-quy-nhon",
+    ctaLabel: "Xem tuyến này",
   },
   {
     label: "Liên huyện",
