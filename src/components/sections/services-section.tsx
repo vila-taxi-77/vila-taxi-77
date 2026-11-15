@@ -131,7 +131,7 @@ export function ServicesSection() {
             Một cuộc gọi – đi đâu cũng được đưa đón tận nơi
           </h2>
           <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-[#64748b] sm:text-xl">
-            Từ chuyến ra sân bay lúc sáng sớm đến chuyến về quê cuối tuần, chọn dịch vụ phù hợp và để Taxi VILA lo phần còn lại.
+            Dịch vụ taxi điện tại Phù Cát – Phù Mỹ phục vụ từ chuyến ra sân bay lúc sáng sớm đến chuyến về quê cuối tuần. Chọn hành trình phù hợp và để Taxi VILA lo phần còn lại.
           </p>
         </div>
 
