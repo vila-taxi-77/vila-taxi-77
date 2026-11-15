@@ -85,17 +85,17 @@ export function ServiceAreasSection() {
                   <RouteIcon /> Xem lộ trình
                 </a>
                 <a
-                  href={siteContact.zaloUrl}
-                  target="_blank"
-                  rel="noreferrer"
+                  href={route.href ?? siteContact.zaloUrl}
+                  target={route.href ? undefined : "_blank"}
+                  rel={route.href ? undefined : "noreferrer"}
                   className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 text-sm font-black !text-white transition-[transform,background-color] hover:-translate-y-0.5 ${
                     route.featured
                       ? "bg-[var(--brand-accent)] hover:bg-[var(--brand-accent-dark)]"
                       : "bg-[#07172f] hover:bg-[#102a50]"
                   }`}
-                  aria-label={`Nhận báo giá tuyến ${route.origin} đến ${route.destination}`}
+                  aria-label={`${route.ctaLabel ?? "Báo giá tuyến này"}: ${route.origin} đến ${route.destination}`}
                 >
-                  Báo giá tuyến này <ArrowIcon />
+                  {route.ctaLabel ?? "Báo giá tuyến này"} <ArrowIcon />
                 </a>
               </div>
             </article>
