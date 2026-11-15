@@ -38,7 +38,7 @@ export function SiteHeader() {
         }`}
       >
         <div className="site-container site-header-height flex items-center justify-between gap-3 xl:gap-5">
-          <a href="#top" className="shrink-0" aria-label="Về đầu trang">
+          <a href="/" className="shrink-0" aria-label="Về trang chủ Taxi VILA">
             <SiteLogo priority />
           </a>
 
