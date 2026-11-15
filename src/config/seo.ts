@@ -14,6 +14,7 @@ export const seoConfig = {
     "Taxi VILA phục vụ taxi điện 5–7 chỗ tại Phù Cát, Phù Mỹ, sân bay Phù Cát, Quy Nhơn và các tuyến liên tỉnh. Đội xe đa dạng, êm ái, báo giá trước chuyến đi, gọi đặt xe nhanh.",
   keywords: [
     "Taxi Vila",
+    "Dịch vụ taxi Phù Cát Phù Mỹ",
     "taxi Phù Cát",
     "taxi Phù Mỹ",
     "taxi sân bay Phù Cát",
@@ -26,6 +27,8 @@ export const seoConfig = {
     "taxi điện 7 chỗ",
     "đội xe Taxi VILA",
     "xe điện Phù Mỹ",
+    "Taxi điện Bình Định",
+    "Taxi Gia Lai",
   ],
   locale: "vi_VN",
   language: "vi-VN",
@@ -94,7 +97,7 @@ export function createWebsiteJsonLd() {
         "@type": "Service",
         "@id": `${siteUrl}/#taxi-service`,
         name: "Dịch vụ taxi điện Taxi Vila",
-        serviceType: "Dịch vụ taxi điện, đưa đón sân bay và đi tỉnh",
+        serviceType: "Dịch vụ taxi Phù Cát Phù Mỹ, đưa đón sân bay và đi tỉnh",
         url: siteUrl,
         provider: { "@id": `${siteUrl}/#organization` },
         areaServed: seoConfig.serviceAreas.map((name) => ({
