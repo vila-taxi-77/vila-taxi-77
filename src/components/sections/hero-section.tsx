@@ -50,7 +50,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="hero-fade-up hero-delay-1 mt-6 max-w-3xl text-[clamp(2.35rem,6vw,4.9rem)] font-black leading-[0.98] tracking-[-0.04em] [text-wrap:balance]">
-            100% xe thuần điện.
+            Taxi điện Phù Cát – Phù Mỹ.
             <span className="mt-2 block text-[var(--brand-accent)]">Biết giá trước,</span>
             <span className="mt-2 block">an tâm lên xe.</span>
           </h1>

@@ -61,6 +61,8 @@ type ServiceCardProps = {
 
 function ServiceCard({ service }: ServiceCardProps) {
   const hasImage = Boolean(service.image);
+  const serviceHref = service.href ?? siteContact.telephoneUrl;
+  const serviceCtaLabel = service.ctaLabel ?? "Đặt dịch vụ này";
 
   if (hasImage && service.image) {
     return (
@@ -85,11 +87,11 @@ function ServiceCard({ service }: ServiceCardProps) {
             {service.description}
           </p>
           <a
-            href={siteContact.telephoneUrl}
+            href={serviceHref}
             className="mt-5 inline-flex w-fit items-center gap-1.5 text-sm font-black !text-[var(--brand-accent)] transition-[gap,color] hover:gap-2.5 hover:!text-[var(--brand-accent-dark)]"
-            aria-label={`Đặt dịch vụ ${service.title}`}
+            aria-label={`${serviceCtaLabel}: ${service.title}`}
           >
-            Đặt dịch vụ này <ArrowIcon />
+            {serviceCtaLabel} <ArrowIcon />
           </a>
         </div>
       </article>
@@ -108,11 +110,11 @@ function ServiceCard({ service }: ServiceCardProps) {
         {service.description}
       </p>
       <a
-        href={siteContact.telephoneUrl}
+        href={serviceHref}
         className="mt-6 inline-flex w-fit items-center gap-1.5 text-sm font-black !text-[var(--brand-accent)] transition-[gap,color] hover:gap-2.5 hover:!text-[var(--brand-accent-dark)]"
-        aria-label={`Đặt dịch vụ ${service.title}`}
+        aria-label={`${serviceCtaLabel}: ${service.title}`}
       >
-        Đặt dịch vụ này <ArrowIcon />
+        {serviceCtaLabel} <ArrowIcon />
       </a>
     </article>
   );
@@ -131,7 +133,7 @@ export function ServicesSection() {
             Một cuộc gọi – đi đâu cũng được đưa đón tận nơi
           </h2>
           <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-[#64748b] sm:text-xl">
-            Từ chuyến ra sân bay lúc sáng sớm đến chuyến về quê cuối tuần, chọn dịch vụ phù hợp và để Taxi VILA lo phần còn lại.
+            Dịch vụ taxi điện tại Phù Cát – Phù Mỹ phục vụ từ chuyến ra sân bay lúc sáng sớm đến chuyến về quê cuối tuần. Chọn hành trình phù hợp và để Taxi VILA lo phần còn lại.
           </p>
         </div>
 

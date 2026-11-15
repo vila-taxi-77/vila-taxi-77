@@ -5,6 +5,8 @@ export type TaxiService = {
   title: string;
   description: string;
   icon: ServiceIcon;
+  href?: string;
+  ctaLabel?: string;
   image?: {
     src: string;
     alt: string;
@@ -18,9 +20,11 @@ export const taxiServices: TaxiService[] = [
     description:
       "Đón, tiễn tại sân bay Phù Cát về Phù Mỹ, Phù Cát, Quy Nhơn và các địa điểm theo yêu cầu. Đặt trước theo lịch bay – không lo chờ đợi.",
     icon: "airport",
+    href: "/taxi-san-bay-phu-cat",
+    ctaLabel: "Xem dịch vụ",
     image: {
       src: "/images/hero/taxi-vila-phu-cat-airport-service.png",
-      alt: "Hành khách tại nhà ga sân bay",
+      alt: "Taxi VILA đưa đón khách tại sân bay Phù Cát",
       position: "50% 28%",
     },
   },
