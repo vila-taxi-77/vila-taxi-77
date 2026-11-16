@@ -60,7 +60,7 @@ export function HeroSection() {
           </p>
 
           <p className="hero-fade-up hero-delay-2 mt-5 max-w-2xl text-pretty text-base leading-relaxed text-white/72 sm:text-[17px] lg:text-base xl:text-[17px]">
-            Taxi VILA phục vụ đưa đón sân bay Phù Cát, taxi nội khu, đi tỉnh và các chuyến xe theo yêu cầu. Với 100% xe thuần điện, dòng xe linh hoạt và chi phí được báo trước, chúng tôi mong muốn mang đến hành trình êm ái, tiết kiệm và an tâm cho khách hàng.
+            Taxi Vila phục vụ đưa đón sân bay Phù Cát, taxi nội khu, đi tỉnh và các chuyến xe theo yêu cầu. Với 100% xe thuần điện, dòng xe linh hoạt và chi phí được báo trước, chúng tôi mong muốn mang đến hành trình êm ái, tiết kiệm và an tâm cho khách hàng.
           </p>
 
           <div className="hero-fade-up hero-delay-3 hero-price mt-7 flex w-full max-w-2xl flex-col items-start rounded-2xl border border-white/25 bg-transparent px-5 py-4 sm:px-6 sm:py-5">
@@ -95,7 +95,7 @@ export function HeroSection() {
           </div>
 
           <div className="mt-6 rounded-2xl bg-[#f8fafc] p-4">
-            <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#64748b]">Hotline Taxi VILA</p>
+            <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#64748b]">Hotline Taxi Vila</p>
             <a href={siteContact.telephoneUrl} className="mt-2 flex items-center gap-2 text-2xl font-black text-[var(--brand-primary)] sm:text-3xl">
               <PhoneIcon /> {siteConfig.phoneDisplay}
             </a>

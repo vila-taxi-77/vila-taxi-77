@@ -62,7 +62,7 @@ export function AboutSection() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/70 bg-[#dce4ee] shadow-[0_28px_70px_rgba(10,25,47,0.14)]">
             <Image
               src="/images/fleet/exterior/byd-white-77h09558-family-pickup.png"
-              alt="Xe điện BYD và VinFast của đội xe Taxi VILA phục vụ đón khách"
+              alt="Xe điện BYD và VinFast của đội xe Taxi Vila phục vụ đón khách"
               fill
               sizes="(max-width: 1023px) 100vw, 48vw"
               className="object-cover object-[52%_58%]"
@@ -70,7 +70,7 @@ export function AboutSection() {
             <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,23,47,0.02)_45%,rgba(7,23,47,0.68)_100%)]" />
 
             <span className="absolute left-4 top-4 rounded-full border border-white/55 bg-white/90 px-4 py-2 text-xs font-black uppercase tracking-[0.1em] text-[#07172f] shadow-lg backdrop-blur sm:left-5 sm:top-5">
-              Xe điện Taxi VILA
+              Xe điện Taxi Vila
             </span>
 
             <div className="absolute bottom-4 left-4 right-4 rounded-[1.35rem] border border-white/15 bg-[#07172f]/92 p-4 text-white shadow-[0_18px_45px_rgba(0,0,0,0.24)] backdrop-blur-md sm:bottom-5 sm:left-auto sm:right-5 sm:max-w-[20rem] sm:p-5">
@@ -83,12 +83,12 @@ export function AboutSection() {
         </div>
 
         <div>
-          <p className="section-eyebrow"><span aria-hidden="true" />Về Taxi VILA</p>
+          <p className="section-eyebrow"><span aria-hidden="true" />Về Taxi Vila</p>
           <h2 id="about-title" className="section-title mt-4 max-w-2xl">
             Hạnh phúc khi được phục vụ!
           </h2>
           <p className="mt-5 max-w-2xl text-base font-medium leading-relaxed text-[var(--text-muted)] sm:text-lg">
-            Taxi VILA mong muốn mang đến những hành trình thuận tiện, an tâm và thoải mái bằng dịch vụ taxi điện tại Phù Cát – Phù Mỹ cùng các khu vực lân cận.
+            Taxi Vila mong muốn mang đến những hành trình thuận tiện, an tâm và thoải mái bằng dịch vụ taxi điện tại Phù Cát – Phù Mỹ cùng các khu vực lân cận.
           </p>
           <p className="mt-4 max-w-2xl text-base font-medium leading-relaxed text-[var(--text-muted)] sm:text-lg">
             Mỗi chuyến đi có một mục đích riêng. Vì vậy, chúng tôi chú trọng sự tận tâm trong phục vụ, chủ động trao đổi lịch trình và minh bạch chi phí trước khi khởi hành.

@@ -1,19 +1,19 @@
-# Taxi VILA
+# Taxi Vila
 
-Website giới thiệu và hỗ trợ đặt xe cho **Taxi VILA**, tập trung vào dịch vụ taxi điện tại Phù Cát, Phù Mỹ, sân bay Phù Cát, Quy Nhơn và các tuyến theo yêu cầu.
+Website giới thiệu và hỗ trợ đặt xe cho **Taxi Vila**, tập trung vào dịch vụ taxi điện tại Phù Cát, Phù Mỹ, sân bay Phù Cát, Quy Nhơn và các tuyến theo yêu cầu.
 
 - Website: [https://taxivila.com](https://taxivila.com)
 - Hotline: [0978 063 463](tel:0978063463)
 - Zalo: [zalo.me/0978063463](https://zalo.me/0978063463)
-- Google Maps: [Hồ sơ Taxi VILA](https://maps.app.goo.gl/Fz2Ghzd5mpxrmN7Y7)
+- Google Maps: [Hồ sơ Taxi Vila](https://maps.app.goo.gl/Fz2Ghzd5mpxrmN7Y7)
 
-![Trang chủ Taxi VILA](docs/screenshots/home-hero.png)
+![Trang chủ Taxi Vila](docs/screenshots/home-hero.png)
 
 ## Mục tiêu dự án
 
 Website được xây dựng để:
 
-- Giới thiệu rõ dịch vụ, đội xe và khu vực Taxi VILA đang phục vụ.
+- Giới thiệu rõ dịch vụ, đội xe và khu vực Taxi Vila đang phục vụ.
 - Giúp khách gọi điện hoặc nhắn Zalo nhanh trên cả desktop và mobile.
 - Thu thập thông tin chuyến đi bằng form, sau đó chuyển nội dung sang Zalo để tư vấn.
 - Phát triển SEO địa phương cho các truy vấn như `taxi điện Phù Cát`, `taxi sân bay Phù Cát` và `taxi Phù Cát đi Quy Nhơn`.
@@ -36,39 +36,39 @@ Website được xây dựng để:
 
 Khối dịch vụ trình bày các nhu cầu chính: đưa đón sân bay, taxi nội khu, đi tỉnh, khứ hồi và thuê xe theo lịch trình. Nội dung được quản lý trong `src/content/services.ts`.
 
-![Khối dịch vụ Taxi VILA](docs/screenshots/home-services.png)
+![Khối dịch vụ Taxi Vila](docs/screenshots/home-services.png)
 
-### 2. Lý do chọn Taxi VILA
+### 2. Lý do chọn Taxi Vila
 
 Phần này làm rõ lợi thế báo giá trước, xe điện, hiểu địa phương và quy trình phục vụ. Dữ liệu nằm trong `src/content/why-vila.ts`.
 
-![Lý do chọn Taxi VILA](docs/screenshots/home-why-vila.png)
+![Lý do chọn Taxi Vila](docs/screenshots/home-why-vila.png)
 
 ### 3. Đội xe
 
 Giới thiệu hình ảnh xe thực tế, ngoại thất, nội thất và các đặc điểm chính của đội xe điện 5–7 chỗ. Dữ liệu hình ảnh nằm trong `src/content/fleet.ts`.
 
-![Đội xe Taxi VILA](docs/screenshots/home-fleet.png)
+![Đội xe Taxi Vila](docs/screenshots/home-fleet.png)
 
 ### 4. Khu vực và tuyến phổ biến
 
 Các tuyến thường dùng được hiển thị dưới dạng thẻ, liên kết Google Maps và nút yêu cầu báo giá. Nội dung nằm trong `src/content/service-areas.ts`.
 
-![Khu vực Taxi VILA phục vụ](docs/screenshots/home-service-areas.png)
+![Khu vực Taxi Vila phục vụ](docs/screenshots/home-service-areas.png)
 
 ### 5. Đặt xe trực tuyến
 
 Form nhận họ tên, số điện thoại, điểm đón, điểm đến, ngày giờ, loại chuyến và số hành khách. Sau khi hợp lệ, website tạo nội dung chuyến đi để khách gửi qua Zalo.
 
-![Form đặt xe Taxi VILA](docs/screenshots/home-booking.png)
+![Form đặt xe Taxi Vila](docs/screenshots/home-booking.png)
 
 > Hiện tại form là luồng tư vấn qua Zalo, chưa lưu đơn vào cơ sở dữ liệu. API và trang admin mới là bộ khung để phát triển sau.
 
 ### 6. Giới thiệu và FAQ
 
-Khối giới thiệu truyền tải định hướng phục vụ của Taxi VILA. FAQ giải đáp các câu hỏi phổ biến và đồng thời tạo dữ liệu có cấu trúc `FAQPage` cho SEO.
+Khối giới thiệu truyền tải định hướng phục vụ của Taxi Vila. FAQ giải đáp các câu hỏi phổ biến và đồng thời tạo dữ liệu có cấu trúc `FAQPage` cho SEO.
 
-![Giới thiệu Taxi VILA](docs/screenshots/home-about.png)
+![Giới thiệu Taxi Vila](docs/screenshots/home-about.png)
 
 ![Câu hỏi thường gặp](docs/screenshots/home-faq.png)
 
@@ -222,7 +222,7 @@ Gom toàn bộ nghiệp vụ đặt xe: form, validate dữ liệu, type và hư
 | Tiêu đề, mô tả, từ khóa, Maps, tọa độ | `src/config/seo.ts` |
 | Menu header và mobile | `src/config/navigation.ts` |
 | Danh sách dịch vụ | `src/content/services.ts` |
-| Lý do chọn Taxi VILA | `src/content/why-vila.ts` |
+| Lý do chọn Taxi Vila | `src/content/why-vila.ts` |
 | Đội xe và thư viện ảnh | `src/content/fleet.ts` |
 | Khu vực và tuyến phổ biến | `src/content/service-areas.ts` |
 | FAQ | `src/content/faqs.ts` |
@@ -247,7 +247,7 @@ Gom toàn bộ nghiệp vụ đặt xe: form, validate dữ liệu, type và hư
 
 ### Nhóm từ khóa ưu tiên
 
-1. `Taxi VILA`, `taxi điện Phù Cát`, `taxi Phù Mỹ`.
+1. `Taxi Vila`, `taxi điện Phù Cát`, `taxi Phù Mỹ`.
 2. `Taxi sân bay Phù Cát`, `taxi đưa đón sân bay Phù Cát`.
 3. `Taxi Phù Cát đi Quy Nhơn`, `xe đưa đón Phù Cát Quy Nhơn`.
 

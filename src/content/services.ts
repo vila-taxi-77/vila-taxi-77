@@ -24,7 +24,7 @@ export const taxiServices: TaxiService[] = [
     ctaLabel: "Xem dịch vụ",
     image: {
       src: "/images/hero/taxi-vila-phu-cat-airport-service.png",
-      alt: "Taxi VILA đưa đón khách tại sân bay Phù Cát",
+      alt: "Taxi Vila đưa đón khách tại sân bay Phù Cát",
       position: "50% 28%",
     },
   },

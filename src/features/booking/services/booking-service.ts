@@ -13,7 +13,7 @@ const tripTypeLabels = {
 
 export function createBookingSummary(values: BookingFormValues) {
   const lines = [
-    `YÊU CẦU ${requestTypeLabels[values.requestType].toUpperCase()} TAXI VILA`,
+    `YÊU CẦU ${requestTypeLabels[values.requestType].toUpperCase()} Taxi Vila`,
     `Họ tên: ${values.fullName.trim()}`,
     `Điện thoại: ${values.phone.trim()}`,
     `Điểm đón: ${values.pickup.trim()}`,

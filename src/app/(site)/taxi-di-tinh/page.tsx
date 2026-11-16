@@ -12,9 +12,9 @@ import { absoluteUrl, getSiteUrl, serializeJsonLd } from "@/config/seo";
 import { siteConfig, siteContact } from "@/config/site";
 
 const pagePath = "/taxi-di-tinh";
-const pageTitle = "Taxi đi tỉnh từ Phù Cát – Phù Mỹ | Taxi VILA";
+const pageTitle = "Taxi đi tỉnh từ Phù Cát – Phù Mỹ | Taxi Vila";
 const pageDescription =
-  "Taxi VILA nhận chuyến đi tỉnh từ Phù Cát, taxi đường dài Phù Mỹ bằng xe điện 5–7 chỗ. Đón trả tận nơi, lịch trình linh hoạt và báo giá trước.";
+  "Taxi Vila nhận chuyến đi tỉnh từ Phù Cát, taxi đường dài Phù Mỹ bằng xe điện 5–7 chỗ. Đón trả tận nơi, lịch trình linh hoạt và báo giá trước.";
 const heroImage = "/images/fleet/overview/fleet-long-distance-service.png";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "taxi đường dài Phù Mỹ",
     "taxi đi tỉnh Phù Cát",
     "xe đi tỉnh Phù Mỹ",
-    "taxi đường dài Taxi VILA",
+    "taxi đường dài Taxi Vila",
   ],
   alternates: { canonical: pagePath },
   openGraph: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: heroImage,
         width: 1672,
         height: 941,
-        alt: "Đội xe điện Taxi VILA phục vụ chuyến đi tỉnh từ Phù Cát – Phù Mỹ",
+        alt: "Đội xe điện Taxi Vila phục vụ chuyến đi tỉnh từ Phù Cát – Phù Mỹ",
       },
     ],
   },
@@ -149,7 +149,7 @@ export default function InterprovincialTaxiPage() {
         <section id="top" className="relative isolate overflow-hidden bg-[#07172f] text-white">
           <Image
             src={heroImage}
-            alt="Đội xe điện Taxi VILA phục vụ taxi đi tỉnh từ Phù Cát và Phù Mỹ"
+            alt="Đội xe điện Taxi Vila phục vụ taxi đi tỉnh từ Phù Cát và Phù Mỹ"
             fill
             priority
             sizes="100vw"
@@ -172,7 +172,7 @@ export default function InterprovincialTaxiPage() {
                 Taxi đi tỉnh từ Phù Cát – Phù Mỹ
               </h1>
               <p className="mt-6 max-w-2xl text-base font-medium leading-relaxed text-white/78 sm:text-lg">
-                Taxi VILA nhận chuyến đường dài bằng xe điện 5–7 chỗ, đón trả tận nơi theo lịch trình đã thống nhất. Phù hợp đi công tác, về quê, khám bệnh, du lịch và đặt xe khứ hồi.
+                Taxi Vila nhận chuyến đường dài bằng xe điện 5–7 chỗ, đón trả tận nơi theo lịch trình đã thống nhất. Phù hợp đi công tác, về quê, khám bệnh, du lịch và đặt xe khứ hồi.
               </p>
 
               <ul className="mt-6 flex flex-wrap gap-2.5" aria-label="Ưu điểm dịch vụ">
@@ -195,7 +195,7 @@ export default function InterprovincialTaxiPage() {
               <p className="text-xs font-black uppercase tracking-[0.16em] text-[var(--brand-accent)]">Chuẩn bị hành trình</p>
               <h2 className="mt-2 text-2xl font-black tracking-[-0.03em] sm:text-3xl">Báo giá đi tỉnh nhanh hơn</h2>
               <p className="mt-3 text-sm font-medium leading-relaxed text-[var(--text-muted)] sm:text-base">
-                Gửi đủ thông tin để Taxi VILA kiểm tra quãng đường, lịch xe và tư vấn phương án phù hợp.
+                Gửi đủ thông tin để Taxi Vila kiểm tra quãng đường, lịch xe và tư vấn phương án phù hợp.
               </p>
               <ul className="mt-6 grid gap-3">
                 {["Điểm đón và tỉnh cần đến", "Ngày giờ đi, thời gian về", "Số khách, hành lý và điểm dừng"].map((item, index) => (
@@ -218,7 +218,7 @@ export default function InterprovincialTaxiPage() {
               <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Chuyến đi đường dài</p>
               <h2 id="long-trip-needs-title" className="section-title mt-4">Linh hoạt cho từng mục đích di chuyển</h2>
               <p className="mt-5 text-base font-medium leading-relaxed text-[var(--text-muted)] sm:text-lg">
-                Mỗi hành trình có thời gian và nhu cầu khác nhau. Gửi thông tin thực tế để Taxi VILA tư vấn loại xe và cách sắp xếp phù hợp.
+                Mỗi hành trình có thời gian và nhu cầu khác nhau. Gửi thông tin thực tế để Taxi Vila tư vấn loại xe và cách sắp xếp phù hợp.
               </p>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -236,7 +236,7 @@ export default function InterprovincialTaxiPage() {
         <section aria-labelledby="long-trip-plan-title" className="bg-[#f5f7fb] py-16 sm:py-20 lg:py-24">
           <div className="mx-auto grid max-w-[1220px] gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-14 lg:px-5">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] bg-[#07172f] shadow-[0_24px_65px_rgba(10,25,47,0.14)]">
-              <Image src="/images/fleet/overview/fleet-convoy-road.png" alt="Đội xe Taxi VILA phục vụ hành trình đường dài" fill sizes="(max-width: 1023px) 100vw, 48vw" className="object-cover" />
+              <Image src="/images/fleet/overview/fleet-convoy-road.png" alt="Đội xe Taxi Vila phục vụ hành trình đường dài" fill sizes="(max-width: 1023px) 100vw, 48vw" className="object-cover" />
               <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,23,47,0.03)_30%,rgba(7,23,47,0.72)_100%)]" />
               <span className="absolute bottom-5 left-5 rounded-full bg-[var(--brand-accent)] px-4 py-2 text-sm font-black text-white shadow-lg">Taxi đường dài 5–7 chỗ</span>
             </div>
@@ -264,7 +264,7 @@ export default function InterprovincialTaxiPage() {
         <section aria-labelledby="long-trip-benefits-title" className="bg-white py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-[1220px] px-4 sm:px-6 lg:px-5">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="section-eyebrow justify-center !text-[var(--brand-accent)]"><span aria-hidden="true" />Đi tỉnh cùng Taxi VILA</p>
+              <p className="section-eyebrow justify-center !text-[var(--brand-accent)]"><span aria-hidden="true" />Đi tỉnh cùng Taxi Vila</p>
               <h2 id="long-trip-benefits-title" className="section-title mt-4">Thoải mái hơn trên hành trình dài</h2>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -305,7 +305,7 @@ export default function InterprovincialTaxiPage() {
               <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Hỏi đáp đi tỉnh</p>
               <h2 id="long-trip-faq-title" className="section-title mt-4">Thông tin trước chuyến đường dài</h2>
               <p className="mt-5 text-base font-medium leading-relaxed text-[var(--text-muted)]">
-                Chưa thấy tuyến bạn cần? Gọi Taxi VILA để được kiểm tra lịch xe và tư vấn trực tiếp.
+                Chưa thấy tuyến bạn cần? Gọi Taxi Vila để được kiểm tra lịch xe và tư vấn trực tiếp.
               </p>
               <a href={siteContact.telephoneUrl} className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#07172f] px-6 font-black !text-white transition-colors hover:bg-[#102a50]">
                 <PhoneIcon /> {siteConfig.phoneDisplay}
