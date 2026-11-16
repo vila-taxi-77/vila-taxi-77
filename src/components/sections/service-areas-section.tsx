@@ -106,7 +106,7 @@ export function ServiceAreasSection() {
           <div className="relative min-h-[22rem] overflow-hidden rounded-[1.6rem] border border-[var(--border-soft)] bg-[var(--surface-muted)] sm:min-h-[27rem]">
             <iframe
               src={serviceAreaMapEmbedUrl}
-              title="Bản đồ khu vực Taxi VILA phục vụ"
+              title="Bản đồ khu vực Taxi Vila phục vụ"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute inset-0 h-full w-full border-0"
@@ -126,7 +126,7 @@ export function ServiceAreasSection() {
               ))}
             </ul>
             <p className="mt-6 border-t border-[#cbdcf2] pt-5 text-sm font-medium leading-relaxed text-[var(--text-muted)]">
-              Chưa có tuyến bạn cần? Gửi yêu cầu — Taxi VILA nhận đưa đón theo yêu cầu.
+              Chưa có tuyến bạn cần? Gửi yêu cầu — Taxi Vila nhận đưa đón theo yêu cầu.
             </p>
             <a
               href={siteContact.zaloUrl}

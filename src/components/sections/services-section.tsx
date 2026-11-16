@@ -127,13 +127,13 @@ export function ServicesSection() {
         <div className="max-w-4xl">
           <p className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-[var(--brand-accent)] sm:text-sm">
             <span className="h-px w-10 bg-[var(--brand-accent)]" />
-            Dịch vụ Taxi VILA
+            Dịch vụ Taxi Vila
           </p>
           <h2 className="mt-4 text-[clamp(2.25rem,5vw,4rem)] font-black leading-[1.02] tracking-[-0.045em] text-[#0a192f]">
             Một cuộc gọi – đi đâu cũng được đưa đón tận nơi
           </h2>
           <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-[#64748b] sm:text-xl">
-            Dịch vụ taxi Phù Cát Phù Mỹ của Taxi VILA sử dụng đội xe điện, phục vụ từ chuyến ra sân bay lúc sáng sớm đến chuyến về quê cuối tuần. Chọn hành trình phù hợp và để Taxi VILA lo phần còn lại.
+            Dịch vụ taxi Phù Cát Phù Mỹ của Taxi Vila sử dụng đội xe điện, phục vụ từ chuyến ra sân bay lúc sáng sớm đến chuyến về quê cuối tuần. Chọn hành trình phù hợp và để Taxi Vila lo phần còn lại.
           </p>
         </div>
 

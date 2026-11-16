@@ -7,11 +7,11 @@ import { siteConfig } from "@/config/site";
 const fallbackSiteUrl = "https://taxivila.com";
 
 export const seoConfig = {
-  businessName: "Taxi VILA",
-  displayName: "Taxi VILA",
-  title: "Taxi điện Phù Cát – Phù Mỹ | Taxi VILA – Báo giá trước",
+  businessName: "Taxi Vila",
+  displayName: "Taxi Vila",
+  title: "Taxi điện Phù Cát – Phù Mỹ | Taxi Vila – Báo giá trước",
   description:
-    "Taxi VILA phục vụ taxi điện 5–7 chỗ tại Phù Cát, Phù Mỹ, sân bay Phù Cát, Quy Nhơn và các tuyến liên tỉnh. Đội xe đa dạng, êm ái, báo giá trước chuyến đi, gọi đặt xe nhanh.",
+    "Taxi Vila phục vụ taxi điện 5–7 chỗ tại Phù Cát, Phù Mỹ, sân bay Phù Cát, Quy Nhơn và các tuyến liên tỉnh. Đội xe đa dạng, êm ái, báo giá trước chuyến đi, gọi đặt xe nhanh.",
   keywords: [
     "Taxi Vila",
     "Dịch vụ taxi Phù Cát Phù Mỹ",
@@ -25,7 +25,7 @@ export const seoConfig = {
     "taxi đường dài Phù Mỹ",
     "taxi điện 5 chỗ",
     "taxi điện 7 chỗ",
-    "đội xe Taxi VILA",
+    "đội xe Taxi Vila",
     "xe điện Phù Mỹ",
     "Taxi điện Bình Định",
     "Taxi Gia Lai",
@@ -139,8 +139,8 @@ export function createFleetJsonLd() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": `${siteUrl}/#fleet-gallery`,
-    name: "Thư viện đội xe điện Taxi VILA 5–7 chỗ",
-    description: "Hình ảnh đội xe điện Taxi VILA gồm ngoại thất, nội thất, đón sân bay và trạm sạc.",
+    name: "Thư viện đội xe điện Taxi Vila 5–7 chỗ",
+    description: "Hình ảnh đội xe điện Taxi Vila gồm ngoại thất, nội thất, đón sân bay và trạm sạc.",
     numberOfItems: fleetGallery.length,
     itemListElement: fleetGallery.map((item, index) => ({
       "@type": "ListItem",

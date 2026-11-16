@@ -32,7 +32,7 @@ export const interprovincialPlanningPoints = [
   },
   {
     title: "Số khách, hành lý và điểm dừng",
-    description: "Thông tin đầy đủ giúp Taxi VILA tư vấn xe và kiểm tra lộ trình phù hợp hơn.",
+    description: "Thông tin đầy đủ giúp Taxi Vila tư vấn xe và kiểm tra lộ trình phù hợp hơn.",
   },
 ] as const;
 
@@ -66,7 +66,7 @@ export const interprovincialBookingSteps = [
   },
   {
     title: "Kiểm tra hành trình",
-    description: "Taxi VILA kiểm tra lộ trình, loại xe và khả năng phục vụ tại thời điểm đặt.",
+    description: "Taxi Vila kiểm tra lộ trình, loại xe và khả năng phục vụ tại thời điểm đặt.",
   },
   {
     title: "Nhận báo giá",
@@ -80,23 +80,23 @@ export const interprovincialBookingSteps = [
 
 export const interprovincialFaqs = [
   {
-    question: "Taxi VILA nhận chuyến đi tỉnh từ Phù Cát và Phù Mỹ không?",
-    answer: "Có. Taxi VILA nhận tư vấn các chuyến đi tỉnh, tuyến đường dài và hành trình theo yêu cầu từ Phù Cát – Phù Mỹ. Bạn hãy gửi điểm đến cụ thể để được kiểm tra lịch xe và lộ trình.",
+    question: "Taxi Vila nhận chuyến đi tỉnh từ Phù Cát và Phù Mỹ không?",
+    answer: "Có. Taxi Vila nhận tư vấn các chuyến đi tỉnh, tuyến đường dài và hành trình theo yêu cầu từ Phù Cát – Phù Mỹ. Bạn hãy gửi điểm đến cụ thể để được kiểm tra lịch xe và lộ trình.",
   },
   {
     question: "Có thể đặt taxi đi tỉnh khứ hồi hoặc nhiều ngày không?",
-    answer: "Có. Bạn nên cung cấp ngày giờ đi, thời gian về dự kiến, các điểm dừng và số ngày sử dụng xe để Taxi VILA tư vấn lịch trình phù hợp.",
+    answer: "Có. Bạn nên cung cấp ngày giờ đi, thời gian về dự kiến, các điểm dừng và số ngày sử dụng xe để Taxi Vila tư vấn lịch trình phù hợp.",
   },
   {
     question: "Giá taxi đường dài được tính như thế nào?",
-    answer: "Chi phí phụ thuộc vào điểm đón, điểm đến, quãng đường, loại chuyến, thời gian chờ và yêu cầu thực tế. Taxi VILA sẽ trao đổi mức giá để bạn xác nhận trước chuyến đi.",
+    answer: "Chi phí phụ thuộc vào điểm đón, điểm đến, quãng đường, loại chuyến, thời gian chờ và yêu cầu thực tế. Taxi Vila sẽ trao đổi mức giá để bạn xác nhận trước chuyến đi.",
   },
   {
     question: "Đi tỉnh có được đón và trả tận nơi không?",
-    answer: "Có. Địa chỉ đón, trả và các điểm cần ghé sẽ được thống nhất trước. Nếu hành trình thay đổi, bạn nên báo sớm để Taxi VILA kiểm tra lại lộ trình và chi phí.",
+    answer: "Có. Địa chỉ đón, trả và các điểm cần ghé sẽ được thống nhất trước. Nếu hành trình thay đổi, bạn nên báo sớm để Taxi Vila kiểm tra lại lộ trình và chi phí.",
   },
   {
     question: "Nhóm 5–7 người có đặt xe đường dài được không?",
-    answer: "Taxi VILA có lựa chọn xe điện 5–7 chỗ. Hãy gửi số hành khách, trẻ em nếu có và lượng hành lý để được tư vấn dòng xe phù hợp với tình trạng xe tại thời điểm đặt.",
+    answer: "Taxi Vila có lựa chọn xe điện 5–7 chỗ. Hãy gửi số hành khách, trẻ em nếu có và lượng hành lý để được tư vấn dòng xe phù hợp với tình trạng xe tại thời điểm đặt.",
   },
 ] as const;

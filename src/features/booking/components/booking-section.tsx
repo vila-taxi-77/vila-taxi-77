@@ -5,7 +5,7 @@ import { siteConfig, siteContact } from "@/config/site";
 
 const bookingSteps = [
   { title: "Gửi yêu cầu", description: "Điền form hoặc nhắn trực tiếp qua Zalo.", icon: "form" },
-  { title: "Nhận báo giá", description: "Taxi VILA kiểm tra hành trình và phản hồi.", icon: "phone" },
+  { title: "Nhận báo giá", description: "Taxi Vila kiểm tra hành trình và phản hồi.", icon: "phone" },
   { title: "Đồng ý giá", description: "Xác nhận chi phí trước khi khởi hành.", icon: "check" },
   { title: "Xe đón tận nơi", description: "Tài xế đến đúng điểm và thời gian đã hẹn.", icon: "car" },
 ] as const;
@@ -42,7 +42,7 @@ export function BookingSection() {
             Đặt xe trong 30 giây, đón tận nơi
           </h2>
           <p className="mt-4 max-w-xl text-base font-medium leading-relaxed text-white/80">
-            Điền thông tin chuyến đi, Taxi VILA sẽ trao đổi và báo giá trước. Cần đi ngay? Gọi hotline để được điều xe nhanh nhất.
+            Điền thông tin chuyến đi, Taxi Vila sẽ trao đổi và báo giá trước. Cần đi ngay? Gọi hotline để được điều xe nhanh nhất.
           </p>
 
           <ol className="mt-6 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-1">

@@ -5,7 +5,7 @@ export default function AdminLoginPage() {
   return (
     <main className="grid min-h-screen place-items-center bg-[#f5f7fb] px-4 py-12">
       <section className="w-full max-w-md rounded-3xl border border-[#dce3ed] bg-white p-8 text-center shadow-sm">
-        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0563d8]">Taxi VILA</p>
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0563d8]">Taxi Vila</p>
         <h1 className="mt-3 text-3xl font-black text-[#0a192f]">Đăng nhập quản trị</h1>
         <p className="mt-4 leading-relaxed text-[#64748b]">
           Chức năng đăng nhập chưa được kích hoạt. Hệ thống sẽ được kết nối khi triển khai backend quản trị.
