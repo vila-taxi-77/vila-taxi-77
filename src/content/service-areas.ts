@@ -66,16 +66,16 @@ export const popularRoutes: PopularRoute[] = [
 ];
 
 export const servedAreaTags = [
-  "Taxi Phù Cát",
-  "Taxi Phù Mỹ",
-  "Taxi sân bay Phù Cát",
-  "Taxi Phù Cát đi Quy Nhơn",
-  "Taxi Phù Mỹ đi Quy Nhơn",
-  "Taxi Ngô Mây, Phù Cát",
-  "Taxi đi tỉnh từ Phù Cát",
+  "Taxi điện Phù Cát",
+  "Taxi điện Phù Mỹ",
+  "Taxi điện sân bay Phù Cát",
+  "Taxi điện Phù Cát đi Quy Nhơn",
+  "Taxi điện Phù Mỹ đi Quy Nhơn",
+  "Taxi điện Ngô Mây, Phù Cát",
+  "Taxi điện đi tỉnh từ Phù Cát",
   "Taxi điện Bình Định",
-  "Taxi Gia Lai",
-  "Taxi đưa đón theo yêu cầu",
+  "Taxi điện Gia Lai",
+  "Taxi điện đưa đón theo yêu cầu",
 ] as const;
 
 export const serviceAreaMapEmbedUrl =

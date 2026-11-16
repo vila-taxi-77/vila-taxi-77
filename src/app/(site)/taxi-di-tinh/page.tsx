@@ -12,20 +12,21 @@ import { absoluteUrl, getSiteUrl, serializeJsonLd } from "@/config/seo";
 import { siteConfig, siteContact } from "@/config/site";
 
 const pagePath = "/taxi-di-tinh";
-const pageTitle = "Taxi đi tỉnh từ Phù Cát – Phù Mỹ | Taxi Vila";
+const pageTitle = "Taxi điện đi tỉnh từ Phù Cát – Phù Mỹ | Taxi Vila";
 const pageDescription =
-  "Taxi Vila nhận chuyến đi tỉnh từ Phù Cát, taxi đường dài Phù Mỹ bằng xe điện 5–7 chỗ. Đón trả tận nơi, lịch trình linh hoạt và báo giá trước.";
+  "Taxi Vila nhận taxi điện đi tỉnh từ Phù Cát, taxi điện đường dài Phù Mỹ bằng xe 5–7 chỗ. Đón trả tận nơi, lịch trình linh hoạt và báo giá trước.";
 const heroImage = "/images/fleet/overview/fleet-long-distance-service.png";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
   description: pageDescription,
   keywords: [
+    "taxi điện đi tỉnh từ Phù Cát",
+    "taxi điện đường dài Phù Mỹ",
+    "taxi điện đi tỉnh Phù Cát",
+    "xe điện đi tỉnh Phù Mỹ",
     "taxi đi tỉnh từ Phù Cát",
     "taxi đường dài Phù Mỹ",
-    "taxi đi tỉnh Phù Cát",
-    "xe đi tỉnh Phù Mỹ",
-    "taxi đường dài Taxi Vila",
   ],
   alternates: { canonical: pagePath },
   openGraph: {
@@ -102,7 +103,7 @@ function createInterprovincialServiceJsonLd() {
       {
         "@type": "Service",
         "@id": `${pageUrl}#service`,
-        name: "Taxi đi tỉnh từ Phù Cát – Phù Mỹ",
+        name: "Taxi điện đi tỉnh từ Phù Cát – Phù Mỹ",
         description: pageDescription,
         url: pageUrl,
         image: absoluteUrl(heroImage),
@@ -169,7 +170,7 @@ export default function InterprovincialTaxiPage() {
                 <span className="h-px w-10 bg-current" />Dịch vụ đường dài
               </p>
               <h1 className="mt-4 max-w-3xl text-[clamp(2.5rem,6vw,4.8rem)] font-black leading-[0.98] tracking-[-0.045em] [text-wrap:balance]">
-                Taxi đi tỉnh từ Phù Cát – Phù Mỹ
+                Taxi điện đi tỉnh từ Phù Cát – Phù Mỹ
               </h1>
               <p className="mt-6 max-w-2xl text-base font-medium leading-relaxed text-white/78 sm:text-lg">
                 Taxi Vila nhận chuyến đường dài bằng xe điện 5–7 chỗ, đón trả tận nơi theo lịch trình đã thống nhất. Phù hợp đi công tác, về quê, khám bệnh, du lịch và đặt xe khứ hồi.
@@ -238,7 +239,7 @@ export default function InterprovincialTaxiPage() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] bg-[#07172f] shadow-[0_24px_65px_rgba(10,25,47,0.14)]">
               <Image src="/images/fleet/overview/fleet-convoy-road.png" alt="Đội xe Taxi Vila phục vụ hành trình đường dài" fill sizes="(max-width: 1023px) 100vw, 48vw" className="object-cover" />
               <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,23,47,0.03)_30%,rgba(7,23,47,0.72)_100%)]" />
-              <span className="absolute bottom-5 left-5 rounded-full bg-[var(--brand-accent)] px-4 py-2 text-sm font-black text-white shadow-lg">Taxi đường dài 5–7 chỗ</span>
+              <span className="absolute bottom-5 left-5 rounded-full bg-[var(--brand-accent)] px-4 py-2 text-sm font-black text-white shadow-lg">Taxi điện đường dài 5–7 chỗ</span>
             </div>
             <div>
               <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Chuẩn bị trước chuyến</p>

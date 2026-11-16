@@ -11,13 +11,20 @@ import { absoluteUrl, getSiteUrl, serializeJsonLd } from "@/config/seo";
 import { siteConfig, siteContact } from "@/config/site";
 
 const pagePath = "/taxi-san-bay-phu-cat";
-const pageTitle = "Taxi sân bay Phù Cát – Đưa đón tận nơi | Taxi Vila";
+const pageTitle = "Taxi điện sân bay Phù Cát – Đưa đón tận nơi | Taxi Vila";
 const pageDescription =
-  "Taxi Vila nhận đưa đón sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn và các tuyến theo yêu cầu. Xe điện 5–7 chỗ, hỗ trợ lịch bay và báo giá trước.";
+  "Taxi Vila cung cấp taxi điện đưa đón sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn và các tuyến theo yêu cầu. Xe điện 5–7 chỗ, hỗ trợ lịch bay và báo giá trước.";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
   description: pageDescription,
+  keywords: [
+    "taxi điện sân bay Phù Cát",
+    "taxi điện đưa đón sân bay Phù Cát",
+    "xe điện sân bay Phù Cát",
+    "taxi sân bay Phù Cát",
+    "taxi đưa đón sân bay Phù Cát",
+  ],
   alternates: { canonical: pagePath },
   openGraph: {
     type: "website",
@@ -122,7 +129,7 @@ function createAirportServiceJsonLd() {
           {
             "@type": "ListItem",
             position: 2,
-            name: "Taxi sân bay Phù Cát",
+            name: "Taxi điện sân bay Phù Cát",
             item: pageUrl,
           },
         ],
@@ -167,14 +174,14 @@ export default function AirportTaxiPage() {
               <nav aria-label="Đường dẫn trang" className="flex flex-wrap items-center gap-2 text-sm font-bold text-white/65">
                 <a href="/" className="transition-colors hover:text-[var(--brand-accent)]">Trang chủ</a>
                 <span aria-hidden="true">/</span>
-                <span aria-current="page" className="text-white">Taxi sân bay Phù Cát</span>
+                <span aria-current="page" className="text-white">Taxi điện sân bay Phù Cát</span>
               </nav>
 
               <p className="mt-7 flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-[var(--brand-accent)] sm:text-sm">
                 <span className="h-px w-10 bg-current" />Dịch vụ sân bay
               </p>
               <h1 className="mt-4 max-w-3xl text-[clamp(2.5rem,6vw,4.8rem)] font-black leading-[0.98] tracking-[-0.045em] [text-wrap:balance]">
-                Taxi sân bay Phù Cát – đưa đón tận nơi
+                Taxi điện sân bay Phù Cát – đưa đón tận nơi
               </h1>
               <p className="mt-6 max-w-2xl text-base font-medium leading-relaxed text-white/78 sm:text-lg">
                 Taxi Vila nhận đón và tiễn sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn cùng các tuyến theo yêu cầu. Xe điện 5–7 chỗ, hỗ trợ lịch bay và trao đổi chi phí trước chuyến đi.
