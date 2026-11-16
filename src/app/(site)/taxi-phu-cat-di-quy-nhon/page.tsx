@@ -12,14 +12,20 @@ import { absoluteUrl, getSiteUrl, serializeJsonLd } from "@/config/seo";
 import { siteConfig, siteContact } from "@/config/site";
 
 const pagePath = "/taxi-phu-cat-di-quy-nhon";
-const pageTitle = "Taxi Phù Cát đi Quy Nhơn – Xe điện 5–7 chỗ | Taxi Vila";
+const pageTitle = "Taxi điện Phù Cát đi Quy Nhơn – Xe 5–7 chỗ | Taxi Vila";
 const pageDescription =
-  "Taxi Vila nhận đưa đón từ Phù Cát đi Quy Nhơn bằng xe điện 5–7 chỗ. Đón trả tận nơi, nhận chuyến một chiều hoặc khứ hồi và báo giá trước.";
+  "Taxi Vila phục vụ taxi điện Phù Cát đi Quy Nhơn bằng xe 5–7 chỗ. Đón trả tận nơi, nhận chuyến một chiều hoặc khứ hồi và báo giá trước.";
 const heroImage = "/images/hero/taxi-vila-route-coastal-service.png";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
   description: pageDescription,
+  keywords: [
+    "taxi điện Phù Cát đi Quy Nhơn",
+    "xe điện Phù Cát đi Quy Nhơn",
+    "taxi Phù Cát đi Quy Nhơn",
+    "xe đưa đón Phù Cát Quy Nhơn",
+  ],
   alternates: { canonical: pagePath },
   openGraph: {
     type: "website",
@@ -95,7 +101,7 @@ function createQuyNhonServiceJsonLd() {
       {
         "@type": "Service",
         "@id": `${pageUrl}#service`,
-        name: "Taxi Phù Cát đi Quy Nhơn",
+        name: "Taxi điện Phù Cát đi Quy Nhơn",
         description: pageDescription,
         url: pageUrl,
         image: absoluteUrl(heroImage),
@@ -115,7 +121,7 @@ function createQuyNhonServiceJsonLd() {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Trang chủ", item: siteUrl },
-          { "@type": "ListItem", position: 2, name: "Taxi Phù Cát đi Quy Nhơn", item: pageUrl },
+          { "@type": "ListItem", position: 2, name: "Taxi điện Phù Cát đi Quy Nhơn", item: pageUrl },
         ],
       },
       {
@@ -155,14 +161,14 @@ export default function PhuCatToQuyNhonPage() {
               <nav aria-label="Đường dẫn trang" className="flex flex-wrap items-center gap-2 text-sm font-bold text-white/65">
                 <a href="/" className="transition-colors hover:text-[var(--brand-accent)]">Trang chủ</a>
                 <span aria-hidden="true">/</span>
-                <span aria-current="page" className="text-white">Taxi Phù Cát đi Quy Nhơn</span>
+                <span aria-current="page" className="text-white">Taxi điện Phù Cát đi Quy Nhơn</span>
               </nav>
 
               <p className="mt-7 flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-[var(--brand-accent)] sm:text-sm">
                 <span className="h-px w-10 bg-current" />Tuyến Phù Cát – Quy Nhơn
               </p>
               <h1 className="mt-4 max-w-3xl text-[clamp(2.5rem,6vw,4.8rem)] font-black leading-[0.98] tracking-[-0.045em] [text-wrap:balance]">
-                Taxi Phù Cát đi Quy Nhơn – đón trả tận nơi
+                Taxi điện Phù Cát đi Quy Nhơn – đón trả tận nơi
               </h1>
               <p className="mt-6 max-w-2xl text-base font-medium leading-relaxed text-white/78 sm:text-lg">
                 Taxi Vila phục vụ tuyến Phù Cát – Quy Nhơn bằng xe điện 5–7 chỗ. Nhận chuyến một chiều, khứ hồi và lịch trình theo yêu cầu; trao đổi chi phí trước khi khởi hành.

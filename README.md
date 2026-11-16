@@ -76,17 +76,17 @@ Khối giới thiệu truyền tải định hướng phục vụ của Taxi Vil
 
 Website hiện có ba trang dịch vụ độc lập. Mỗi trang có H1, metadata, nội dung, FAQ, liên kết nội bộ và JSON-LD riêng.
 
-#### Taxi sân bay Phù Cát
+#### Taxi điện sân bay Phù Cát
 
-![Trang Taxi sân bay Phù Cát](docs/screenshots/service-airport.png)
+![Trang Taxi điện sân bay Phù Cát](docs/screenshots/service-airport.png)
 
-#### Taxi Phù Cát đi Quy Nhơn
+#### Taxi điện Phù Cát đi Quy Nhơn
 
-![Trang Taxi Phù Cát đi Quy Nhơn](docs/screenshots/service-phu-cat-quy-nhon.png)
+![Trang Taxi điện Phù Cát đi Quy Nhơn](docs/screenshots/service-phu-cat-quy-nhon.png)
 
-#### Taxi đi tỉnh từ Phù Cát – Phù Mỹ
+#### Taxi điện đi tỉnh từ Phù Cát – Phù Mỹ
 
-![Trang Taxi đi tỉnh từ Phù Cát – Phù Mỹ](docs/screenshots/service-interprovincial.png)
+![Trang Taxi điện đi tỉnh từ Phù Cát – Phù Mỹ](docs/screenshots/service-interprovincial.png)
 
 ## Các route chính
 
@@ -247,9 +247,10 @@ Gom toàn bộ nghiệp vụ đặt xe: form, validate dữ liệu, type và hư
 
 ### Nhóm từ khóa ưu tiên
 
-1. `Taxi Vila`, `taxi điện Phù Cát`, `taxi Phù Mỹ`.
-2. `Taxi sân bay Phù Cát`, `taxi đưa đón sân bay Phù Cát`.
-3. `Taxi Phù Cát đi Quy Nhơn`, `xe đưa đón Phù Cát Quy Nhơn`.
+1. `Taxi Vila`, `taxi điện Phù Cát`, `taxi điện Phù Mỹ`.
+2. `Taxi điện sân bay Phù Cát`, `taxi điện đưa đón sân bay Phù Cát`.
+3. `Taxi điện Phù Cát đi Quy Nhơn`, `xe điện Phù Cát đi Quy Nhơn`.
+4. `Taxi điện đi tỉnh từ Phù Cát`, `taxi điện đường dài Phù Mỹ`.
 
 ### Khi thêm một trang dịch vụ mới
 
