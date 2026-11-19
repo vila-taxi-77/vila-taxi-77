@@ -70,7 +70,7 @@ export const servedAreaTags = [
   "Taxi điện Phù Mỹ",
   "Taxi điện sân bay Phù Cát",
   "Taxi điện Phù Cát đi Quy Nhơn",
-  "Taxi điện Phù Mỹ đi Quy Nhơn",
+  "Taxi Phù Mỹ đi Quy Nhơn bằng xe điện",
   "Taxi điện Ngô Mây, Phù Cát",
   "Taxi điện đi tỉnh từ Phù Cát",
   "Taxi điện Bình Định",

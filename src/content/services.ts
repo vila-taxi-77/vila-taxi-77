@@ -31,13 +31,13 @@ export const taxiServices: TaxiService[] = [
   {
     title: "Taxi nội khu Phù Cát – Phù Mỹ",
     description:
-      "Đi làm, đi học, đi chợ, đi bệnh viện, đi ăn uống – có mặt nhanh, phục vụ tận nơi.",
+      "Đặt xe taxi ở Phù Mỹ hoặc Phù Cát để đi làm, đi học, đi chợ, đi bệnh viện – xe điện đón tận nơi theo lịch đã thống nhất.",
     icon: "local",
   },
   {
     title: "Thuê xe theo chuyến – theo lịch trình",
     description:
-      "Du lịch, công tác, thăm người thân: xe riêng theo lịch trình của bạn.",
+      "Thuê xe điện có tài xế tại Phù Cát cho chuyến du lịch, công tác hoặc thăm người thân; trao đổi lịch trình và báo giá trước.",
     icon: "route",
     href: "/taxi-di-tinh",
     ctaLabel: "Xem dịch vụ",
