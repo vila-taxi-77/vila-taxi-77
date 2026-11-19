@@ -184,7 +184,7 @@ export default function AirportTaxiPage() {
                 Taxi điện sân bay Phù Cát – đưa đón tận nơi
               </h1>
               <p className="mt-6 max-w-2xl text-base font-medium leading-relaxed text-white/78 sm:text-lg">
-                Taxi Vila nhận đón và tiễn sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn cùng các tuyến theo yêu cầu. Xe điện 5–7 chỗ, hỗ trợ lịch bay và trao đổi chi phí trước chuyến đi.
+                Taxi Vila nhận đón và tiễn sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn cùng các tuyến theo yêu cầu. Dịch vụ xe đưa đón sân bay Phù Cát dùng xe điện 5–7 chỗ, hỗ trợ lịch bay và trao đổi chi phí trước chuyến đi.
               </p>
 
               <ul className="mt-6 flex flex-wrap gap-2.5" aria-label="Ưu điểm dịch vụ">

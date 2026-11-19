@@ -99,7 +99,7 @@ export function HeroSection() {
             <a href={siteContact.telephoneUrl} className="mt-2 flex items-center gap-2 text-2xl font-black text-[var(--brand-primary)] sm:text-3xl">
               <PhoneIcon /> {siteConfig.phoneDisplay}
             </a>
-            <p className="mt-2 text-sm leading-relaxed text-[#64748b]">Trao đổi điểm đón, điểm đến và thời gian đi để nhận mức giá phù hợp.</p>
+            <p className="mt-2 text-sm leading-relaxed text-[#64748b]">Cần gọi taxi tại Phù Cát? Đây là số điện thoại Taxi Vila; hãy cho biết điểm đón, điểm đến và giờ đi để nhận báo giá trước.</p>
           </div>
 
           <div className="mt-4 grid gap-3 sm:grid-cols-2">

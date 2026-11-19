@@ -7,7 +7,7 @@ export const airportRoutes = [
   {
     origin: "Sân bay Phù Cát",
     destination: "Phù Mỹ",
-    description: "Sắp xếp xe phù hợp cho khách cá nhân, gia đình và nhóm có hành lý.",
+    description: "Taxi sân bay Phù Cát về Phù Mỹ: sắp xếp xe điện theo số khách, hành lý và địa chỉ trả cụ thể.",
   },
   {
     origin: "Sân bay Phù Cát",

@@ -24,7 +24,7 @@ export const quyNhonTripNeeds = [
 export const quyNhonRoutePoints = [
   {
     title: "Điểm đón tại Phù Cát",
-    description: "Ngô Mây, khu vực Phù Cát và địa chỉ theo yêu cầu đã thống nhất.",
+    description: "Nếu cần taxi đi Quy Nhơn từ Phù Cát, bạn có thể chọn điểm đón tại Ngô Mây hoặc địa chỉ cụ thể đã thống nhất.",
   },
   {
     title: "Điểm trả tại Quy Nhơn",
