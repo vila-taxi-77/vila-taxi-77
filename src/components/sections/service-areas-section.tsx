@@ -50,7 +50,7 @@ export function ServiceAreasSection() {
             Phù Cát – Phù Mỹ là nhà. Đi đâu chúng tôi cũng đưa.
           </h2>
           <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-[var(--text-muted)] sm:text-lg">
-            Phục vụ khu vực Phù Cát – Phù Mỹ và các tuyến liên huyện, liên tỉnh theo yêu cầu. Khoảng cách và thời gian thực tế xem trực tiếp trên Google Maps.
+            Taxi Vila nhận đón tại Ngô Mây, Phù Cát và các khu vực thuộc Phù Mỹ theo địa chỉ bạn cung cấp. Có tuyến từ Phù Mỹ đi Quy Nhơn và xe đưa đón các địa điểm du lịch địa phương theo lịch trình. Hãy xem khoảng cách, thời gian thực tế trên Google Maps và gửi hành trình để được kiểm tra xe.
           </p>
         </header>
 
