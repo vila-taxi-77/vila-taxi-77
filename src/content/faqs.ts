@@ -25,6 +25,14 @@ export const faqs: FaqItem[] = [
     answer: "Chi phí được tư vấn theo tuyến đường, thời gian và điều kiện áp dụng. Taxi Vila sẽ trao đổi mức giá cụ thể để bạn kiểm tra trước chuyến đi.",
   },
   {
+    question: "Taxi ở Phù Cát giá bao nhiêu?",
+    answer: "Giá tham khảo là 5.000–12.000đ/km, tùy tuyến đường và điều kiện áp dụng. Hãy gửi điểm đón, điểm đến và thời gian đi để Taxi Vila kiểm tra hành trình và báo giá cụ thể trước khi bạn xác nhận chuyến.",
+  },
+  {
+    question: "Taxi Vila có tính tiền theo đồng hồ không?",
+    answer: "Taxi Vila trao đổi mức giá theo hành trình và các điều kiện áp dụng trước khi chốt chuyến, thay vì để bạn chỉ biết giá sau khi xe đến nơi. Nếu đổi điểm đến hoặc lịch trình, chi phí có thể thay đổi và sẽ được trao đổi lại để bạn xác nhận.",
+  },
+  {
     question: "Tôi có được biết giá trước khi xe khởi hành không?",
     answer: "Có. Mức giá và các điều kiện liên quan được trao đổi trước. Chuyến đi chỉ được chốt sau khi bạn đồng ý với báo giá và thời gian đón.",
   },

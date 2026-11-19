@@ -31,7 +31,7 @@ export const taxiServices: TaxiService[] = [
   {
     title: "Taxi nội khu Phù Cát – Phù Mỹ",
     description:
-      "Đặt xe taxi ở Phù Mỹ hoặc Phù Cát để đi làm, đi học, đi chợ, đi bệnh viện – xe điện đón tận nơi theo lịch đã thống nhất.",
+      "Đặt taxi ở Phù Mỹ để đi bệnh viện, đi làm, đi chợ; hoặc gọi xe đưa đón tận nhà tại Phù Cát. Xe điện đón theo địa chỉ và lịch đã thống nhất.",
     icon: "local",
   },
   {
