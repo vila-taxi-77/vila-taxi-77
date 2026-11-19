@@ -61,19 +61,11 @@ export const metadata: Metadata = {
     google: seoConfig.googleSiteVerification,
   },
   icons: {
-    icon: [
-      {
-        url: "/favicon.ico",
-        type: "image/x-icon",
-        sizes: "48x48 96x96 192x192",
-      },
-      {
-        url: "/favicon.png",
-        type: "image/png",
-        sizes: "96x96",
-      },
-    ],
-    shortcut: "/favicon.ico",
+    icon: {
+      url: "/favicon.png",
+      type: "image/png",
+      sizes: "96x96",
+    },
     apple: "/images/logo/taxi-vila-logo.png",
   },
   other: {
