@@ -131,13 +131,13 @@ export function FleetSection() {
         <div className="max-w-4xl">
           <p className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-[var(--brand-accent-dark)] sm:text-sm">
             <span className="h-px w-10 bg-[var(--brand-accent)]" />
-            Đội xe Taxi Vila
+            Đội xe Taxi VILA
           </p>
           <h2 id="fleet-title" className="mt-4 text-[clamp(2.25rem,5vw,4rem)] font-black leading-[1.02] tracking-[-0.045em] text-[#0a192f]">
             Xe điện 5–7 chỗ, đa dạng cho mọi hành trình
           </h2>
           <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-[#64748b] sm:text-xl">
-            Khám phá thư viện hình ảnh đội xe Taxi Vila: nhiều mẫu xe điện, nhiều góc nhìn ngoại thất và nội thất, sẵn sàng cho chuyến nội khu, đón sân bay và đi tỉnh.
+            Khám phá thư viện hình ảnh đội xe Taxi VILA: nhiều mẫu xe điện, nhiều góc nhìn ngoại thất và nội thất, sẵn sàng cho chuyến nội khu, đón sân bay và đi tỉnh.
           </p>
         </div>
 
@@ -147,7 +147,7 @@ export function FleetSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#07172f]/95 via-[#07172f]/20 to-[#07172f]/5" aria-hidden="true" />
             <div className="absolute inset-x-6 bottom-6 text-white sm:inset-x-8 sm:bottom-8">
               <span className="inline-flex rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-white/90 backdrop-blur-sm">Hình ảnh thực tế</span>
-              <h3 className="mt-3 text-3xl font-black tracking-[-0.04em] sm:text-4xl">Taxi Vila, nhiều lựa chọn xe điện</h3>
+              <h3 className="mt-3 text-3xl font-black tracking-[-0.04em] sm:text-4xl">Taxi VILA, nhiều lựa chọn xe điện</h3>
               <p className="mt-2 max-w-xl text-sm font-medium leading-relaxed text-white/78 sm:text-base">Từ xe 5 chỗ cho nhu cầu hằng ngày đến lựa chọn 5–7 chỗ cho gia đình và nhóm hành khách.</p>
             </div>
           </article>

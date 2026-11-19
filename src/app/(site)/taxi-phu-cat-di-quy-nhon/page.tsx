@@ -12,9 +12,9 @@ import { absoluteUrl, getSiteUrl, serializeJsonLd } from "@/config/seo";
 import { siteConfig, siteContact } from "@/config/site";
 
 const pagePath = "/taxi-phu-cat-di-quy-nhon";
-const pageTitle = "Taxi điện Phù Cát đi Quy Nhơn – Xe 5–7 chỗ | Taxi Vila";
+const pageTitle = "Taxi điện Phù Cát đi Quy Nhơn – Xe 5–7 chỗ | Taxi VILA";
 const pageDescription =
-  "Taxi Vila phục vụ taxi điện Phù Cát đi Quy Nhơn bằng xe 5–7 chỗ. Đón trả tận nơi, nhận chuyến một chiều hoặc khứ hồi và báo giá trước.";
+  "Taxi VILA phục vụ taxi điện Phù Cát đi Quy Nhơn bằng xe 5–7 chỗ. Đón trả tận nơi, nhận chuyến một chiều hoặc khứ hồi và báo giá trước.";
 const heroImage = "/images/hero/taxi-vila-route-coastal-service.png";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: heroImage,
         width: 2752,
         height: 1536,
-        alt: "Xe điện Taxi Vila phục vụ tuyến Phù Cát đi Quy Nhơn",
+        alt: "Xe điện Taxi VILA phục vụ tuyến Phù Cát đi Quy Nhơn",
       },
     ],
   },
@@ -148,7 +148,7 @@ export default function PhuCatToQuyNhonPage() {
         <section id="top" className="relative isolate overflow-hidden bg-[#07172f] text-white">
           <Image
             src={heroImage}
-            alt="Xe điện Taxi Vila phục vụ tuyến Phù Cát đi Quy Nhơn"
+            alt="Xe điện Taxi VILA phục vụ tuyến Phù Cát đi Quy Nhơn"
             fill
             priority
             sizes="100vw"
@@ -171,7 +171,7 @@ export default function PhuCatToQuyNhonPage() {
                 Taxi điện Phù Cát đi Quy Nhơn – đón trả tận nơi
               </h1>
               <p className="mt-6 max-w-2xl text-base font-medium leading-relaxed text-white/78 sm:text-lg">
-                Taxi Vila phục vụ tuyến Phù Cát – Quy Nhơn bằng xe điện 5–7 chỗ. Nhận chuyến một chiều, khứ hồi và lịch trình theo yêu cầu; trao đổi chi phí trước khi khởi hành.
+                Taxi VILA phục vụ tuyến Phù Cát – Quy Nhơn bằng xe điện 5–7 chỗ. Nhận chuyến một chiều, khứ hồi và lịch trình theo yêu cầu; trao đổi chi phí trước khi khởi hành.
               </p>
 
               <ul className="mt-6 flex flex-wrap gap-2.5" aria-label="Ưu điểm dịch vụ">
@@ -194,7 +194,7 @@ export default function PhuCatToQuyNhonPage() {
               <p className="text-xs font-black uppercase tracking-[0.16em] text-[var(--brand-accent)]">Chuẩn bị thông tin</p>
               <h2 className="mt-2 text-2xl font-black tracking-[-0.03em] sm:text-3xl">Nhận báo giá nhanh hơn</h2>
               <p className="mt-3 text-sm font-medium leading-relaxed text-[var(--text-muted)] sm:text-base">
-                Gửi ba thông tin chính để Taxi Vila kiểm tra hành trình và tư vấn xe phù hợp.
+                Gửi ba thông tin chính để Taxi VILA kiểm tra hành trình và tư vấn xe phù hợp.
               </p>
               <ul className="mt-6 grid gap-3">
                 {["Điểm đón và điểm đến", "Ngày giờ cần đón", "Số khách và loại chuyến"].map((item, index) => (
@@ -217,7 +217,7 @@ export default function PhuCatToQuyNhonPage() {
               <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Nhu cầu di chuyển</p>
               <h2 id="trip-needs-title" className="section-title mt-4">Một tuyến xe, linh hoạt cho nhiều hành trình</h2>
               <p className="mt-5 text-base font-medium leading-relaxed text-[var(--text-muted)] sm:text-lg">
-                Cho Taxi Vila biết mục đích chuyến đi để được tư vấn thời gian đón và loại xe phù hợp hơn.
+                Cho Taxi VILA biết mục đích chuyến đi để được tư vấn thời gian đón và loại xe phù hợp hơn.
               </p>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -235,7 +235,7 @@ export default function PhuCatToQuyNhonPage() {
         <section aria-labelledby="route-points-title" className="bg-[#f5f7fb] py-16 sm:py-20 lg:py-24">
           <div className="mx-auto grid max-w-[1220px] gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-14 lg:px-5">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] bg-[#07172f] shadow-[0_24px_65px_rgba(10,25,47,0.14)]">
-              <Image src="/images/fleet/overview/fleet-coastal-convoy.png" alt="Đội xe điện Taxi Vila trên hành trình Phù Cát đi Quy Nhơn" fill sizes="(max-width: 1023px) 100vw, 48vw" className="object-cover" />
+              <Image src="/images/fleet/overview/fleet-coastal-convoy.png" alt="Đội xe điện Taxi VILA trên hành trình Phù Cát đi Quy Nhơn" fill sizes="(max-width: 1023px) 100vw, 48vw" className="object-cover" />
               <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,23,47,0.02)_35%,rgba(7,23,47,0.7)_100%)]" />
               <span className="absolute bottom-5 left-5 rounded-full bg-[var(--brand-accent)] px-4 py-2 text-sm font-black text-white shadow-lg">Xe điện 5–7 chỗ</span>
             </div>
@@ -263,7 +263,7 @@ export default function PhuCatToQuyNhonPage() {
         <section aria-labelledby="route-benefits-title" className="bg-white py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-[1220px] px-4 sm:px-6 lg:px-5">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="section-eyebrow justify-center !text-[var(--brand-accent)]"><span aria-hidden="true" />Đi cùng Taxi Vila</p>
+              <p className="section-eyebrow justify-center !text-[var(--brand-accent)]"><span aria-hidden="true" />Đi cùng Taxi VILA</p>
               <h2 id="route-benefits-title" className="section-title mt-4">Chủ động lịch trình, an tâm chi phí</h2>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -304,7 +304,7 @@ export default function PhuCatToQuyNhonPage() {
               <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Hỏi đáp tuyến xe</p>
               <h2 id="route-faq-title" className="section-title mt-4">Thông tin trước khi đi Quy Nhơn</h2>
               <p className="mt-5 text-base font-medium leading-relaxed text-[var(--text-muted)]">
-                Có điểm đón hoặc lịch trình riêng? Gọi Taxi Vila để được kiểm tra và tư vấn trực tiếp.
+                Có điểm đón hoặc lịch trình riêng? Gọi Taxi VILA để được kiểm tra và tư vấn trực tiếp.
               </p>
               <a href={siteContact.telephoneUrl} className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#07172f] px-6 font-black !text-white transition-colors hover:bg-[#102a50]">
                 <PhoneIcon /> {siteConfig.phoneDisplay}

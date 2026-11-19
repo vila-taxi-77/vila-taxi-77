@@ -49,11 +49,11 @@ export function SiteFooter() {
         <div className="flex flex-col gap-5 rounded-[1.75rem] bg-[var(--brand-accent)] px-5 py-5 text-white sm:px-7 sm:py-6 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:px-8">
           <div className="[text-shadow:0_1px_3px_rgba(7,23,47,0.35)]">
             <h2 className="text-2xl font-black leading-tight tracking-[-0.03em] sm:text-3xl lg:text-4xl">Cần xe ngay bây giờ?</h2>
-            <p className="mt-2 text-sm font-medium leading-relaxed sm:text-base">Gọi Taxi Vila để được tư vấn và sắp xếp xe tại Phù Cát – Phù Mỹ.</p>
+            <p className="mt-2 text-sm font-medium leading-relaxed sm:text-base">Gọi Taxi VILA để được tư vấn và sắp xếp xe tại Phù Cát – Phù Mỹ.</p>
           </div>
           <a
             href={siteContact.telephoneUrl}
-            aria-label={`Gọi Taxi Vila theo số ${siteConfig.phoneDisplay}`}
+            aria-label={`Gọi Taxi VILA theo số ${siteConfig.phoneDisplay}`}
             className="inline-flex min-h-14 shrink-0 items-center justify-center gap-3 rounded-full bg-[#07172f] px-7 text-lg font-black !text-white shadow-[0_12px_28px_rgba(7,23,47,0.18)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[#142b4e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#07172f] sm:w-fit sm:text-xl"
           >
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
@@ -65,14 +65,14 @@ export function SiteFooter() {
 
         <div className="grid gap-8 pb-12 pt-9 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-9 sm:pb-14 sm:pt-10 lg:grid-cols-[1.3fr_1fr_0.8fr] lg:gap-12 lg:pb-16 lg:pt-12">
           <div className="max-w-md sm:col-span-2 lg:col-span-1">
-            <a href="#top" aria-label="Taxi Vila - về đầu trang" className="inline-flex items-center gap-3">
+            <a href="#top" aria-label="Taxi VILA - về đầu trang" className="inline-flex items-center gap-3">
               <Image src="/images/logo/taxi-vila-logo.png" alt="" width={64} height={64} className="h-14 w-14 rounded-full object-contain" />
               <span className="leading-none">
-                <span className="block text-xl font-black tracking-tight text-white">Taxi <span className="text-[var(--brand-accent)]">Vila</span></span>
+                <span className="block text-xl font-black tracking-tight text-white">Taxi <span className="text-[var(--brand-accent)]">VILA</span></span>
                 <span className="mt-1.5 block text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#94a3b8]">{siteConfig.tagline}</span>
               </span>
             </a>
-            <p className="mt-5 max-w-sm text-sm leading-relaxed text-[#a9b6c9] sm:text-base">Taxi Vila – Taxi điện Phù Cát – Phù Mỹ. Đón tận nơi, báo giá trước, an tâm mọi hành trình.</p>
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-[#a9b6c9] sm:text-base">Taxi VILA – Taxi điện Phù Cát – Phù Mỹ. Đón tận nơi, báo giá trước, an tâm mọi hành trình.</p>
             <p className="mt-5 text-lg font-black italic text-[var(--brand-accent)] sm:text-xl">Hạnh phúc khi được phục vụ!</p>
           </div>
 
@@ -99,7 +99,7 @@ export function SiteFooter() {
         </div>
 
         <div className="flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-[#8795aa] sm:text-sm xl:flex-row xl:items-center xl:justify-between">
-          <p>© {new Date().getFullYear()} Taxi Vila. Taxi điện Phù Cát – Phù Mỹ.</p>
+          <p>© {new Date().getFullYear()} Taxi VILA. Taxi điện Phù Cát – Phù Mỹ.</p>
           <a href="#top" className="w-fit transition-colors hover:text-white">Về đầu trang ↑</a>
         </div>
       </div>

@@ -1,6 +1,6 @@
 
 export const siteConfig = {
-  name: "Taxi Vila",
+  name: "Taxi VILA",
   tagline: "Taxi điện Phù Cát – Phù Mỹ",
   phone: "0978063463",
   phoneDisplay: "0978 063 463",

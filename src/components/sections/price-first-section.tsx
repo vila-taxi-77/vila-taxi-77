@@ -79,7 +79,7 @@ export function PriceFirstSection() {
             Biết giá trước – An tâm mọi chuyến đi
           </h2>
           <p className="mt-5 max-w-2xl text-base font-medium leading-relaxed text-white/82 sm:text-xl lg:text-base xl:text-lg">
-            Tại Taxi Vila, chi phí được trao đổi và thống nhất trước khi khởi hành. Bạn nắm rõ mức giá, không băn khoăn về chi phí phát sinh trong quá trình di chuyển.
+            Tại Taxi VILA, chi phí được trao đổi và thống nhất trước khi khởi hành. Bạn nắm rõ mức giá, không băn khoăn về chi phí phát sinh trong quá trình di chuyển.
           </p>
 
           <div className="mt-9 flex max-w-2xl flex-wrap items-center gap-x-3 gap-y-2 rounded-2xl border border-white/15 bg-white/[0.045] px-5 py-4 text-sm font-extrabold text-white sm:px-6 md:flex-nowrap md:whitespace-nowrap lg:gap-x-2 lg:px-4 lg:text-xs xl:gap-x-4 xl:px-6 xl:text-sm">
@@ -110,7 +110,7 @@ export function PriceFirstSection() {
 
             <article className="rounded-[1.25rem] bg-[var(--brand-accent)] p-4 text-[#0a192f] shadow-[0_24px_70px_rgba(245,158,11,0.14)] sm:p-5">
               <p className="text-xs font-black uppercase tracking-[0.14em]">
-                Taxi Vila
+                Taxi VILA
               </p>
               <ul className="mt-3 space-y-2.5">
                 {vilaPriceBenefits.map((item) => (

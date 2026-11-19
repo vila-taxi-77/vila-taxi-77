@@ -11,9 +11,9 @@ import { absoluteUrl, getSiteUrl, serializeJsonLd } from "@/config/seo";
 import { siteConfig, siteContact } from "@/config/site";
 
 const pagePath = "/taxi-san-bay-phu-cat";
-const pageTitle = "Taxi điện sân bay Phù Cát – Đưa đón tận nơi | Taxi Vila";
+const pageTitle = "Taxi điện sân bay Phù Cát – Đưa đón tận nơi | Taxi VILA";
 const pageDescription =
-  "Taxi Vila cung cấp taxi điện đưa đón sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn và các tuyến theo yêu cầu. Xe điện 5–7 chỗ, hỗ trợ lịch bay và báo giá trước.";
+  "Taxi VILA cung cấp taxi điện đưa đón sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn và các tuyến theo yêu cầu. Xe điện 5–7 chỗ, hỗ trợ lịch bay và báo giá trước.";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: "/images/hero/taxi-vila-phu-cat-airport-service.png",
         width: 1536,
         height: 1024,
-        alt: "Taxi Vila đưa đón khách tại sân bay Phù Cát",
+        alt: "Taxi VILA đưa đón khách tại sân bay Phù Cát",
       },
     ],
   },
@@ -161,7 +161,7 @@ export default function AirportTaxiPage() {
         <section id="top" className="relative isolate overflow-hidden bg-[#07172f] text-white">
           <Image
             src="/images/hero/taxi-vila-phu-cat-airport-service.png"
-            alt="Taxi Vila đưa đón khách tại sân bay Phù Cát"
+            alt="Taxi VILA đưa đón khách tại sân bay Phù Cát"
             fill
             priority
             sizes="100vw"
@@ -184,7 +184,7 @@ export default function AirportTaxiPage() {
                 Taxi điện sân bay Phù Cát – đưa đón tận nơi
               </h1>
               <p className="mt-6 max-w-2xl text-base font-medium leading-relaxed text-white/78 sm:text-lg">
-                Taxi Vila nhận đón và tiễn sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn cùng các tuyến theo yêu cầu. Dịch vụ xe đưa đón sân bay Phù Cát dùng xe điện 5–7 chỗ, hỗ trợ lịch bay và trao đổi chi phí trước chuyến đi.
+                Taxi VILA nhận đón và tiễn sân bay Phù Cát đi Phù Cát, Phù Mỹ, Quy Nhơn cùng các tuyến theo yêu cầu. Dịch vụ xe đưa đón sân bay Phù Cát dùng xe điện 5–7 chỗ, hỗ trợ lịch bay và trao đổi chi phí trước chuyến đi.
               </p>
 
               <ul className="mt-6 flex flex-wrap gap-2.5" aria-label="Ưu điểm dịch vụ">
@@ -209,7 +209,7 @@ export default function AirportTaxiPage() {
               <p className="text-xs font-black uppercase tracking-[0.16em] text-[var(--brand-accent)]">Chuẩn bị thông tin</p>
               <h2 className="mt-2 text-2xl font-black tracking-[-0.03em] sm:text-3xl">Đặt xe sân bay nhanh hơn</h2>
               <p className="mt-3 text-sm font-medium leading-relaxed text-[var(--text-muted)] sm:text-base">
-                Gửi đủ thông tin giúp Taxi Vila kiểm tra hành trình và tư vấn xe phù hợp ngay từ lần liên hệ đầu tiên.
+                Gửi đủ thông tin giúp Taxi VILA kiểm tra hành trình và tư vấn xe phù hợp ngay từ lần liên hệ đầu tiên.
               </p>
               <ul className="mt-6 grid gap-3">
                 {["Mã chuyến bay và giờ dự kiến", "Điểm đón hoặc điểm trả", "Số hành khách và hành lý"].map((item, index) => (
@@ -232,7 +232,7 @@ export default function AirportTaxiPage() {
               <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Tuyến sân bay phổ biến</p>
               <h2 id="airport-routes-title" className="section-title mt-4">Từ sân bay Phù Cát, đi đâu cũng thuận tiện</h2>
               <p className="mt-5 text-base font-medium leading-relaxed text-[var(--text-muted)] sm:text-lg">
-                Gửi điểm đón và điểm đến cụ thể để Taxi Vila kiểm tra lộ trình, sắp xếp xe và báo giá phù hợp.
+                Gửi điểm đón và điểm đến cụ thể để Taxi VILA kiểm tra lộ trình, sắp xếp xe và báo giá phù hợp.
               </p>
             </div>
 
@@ -304,7 +304,7 @@ export default function AirportTaxiPage() {
               <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Hỏi đáp sân bay</p>
               <h2 id="airport-faq-title" className="section-title mt-4">Thông tin cần biết trước khi đặt xe</h2>
               <p className="mt-5 text-base font-medium leading-relaxed text-[var(--text-muted)]">
-                Cần trao đổi hành trình riêng? Gọi trực tiếp để Taxi Vila kiểm tra lịch xe và hỗ trợ nhanh hơn.
+                Cần trao đổi hành trình riêng? Gọi trực tiếp để Taxi VILA kiểm tra lịch xe và hỗ trợ nhanh hơn.
               </p>
               <a href={siteContact.telephoneUrl} className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#07172f] px-6 font-black !text-white transition-colors hover:bg-[#102a50]">
                 <PhoneIcon /> {siteConfig.phoneDisplay}

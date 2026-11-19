@@ -49,7 +49,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "fleet-overview",
     src: "/images/fleet/overview/fleet-lineup.png",
-    alt: "Đội xe điện Taxi Vila nhiều màu sắc tại khu vực vận hành",
+    alt: "Đội xe điện Taxi VILA nhiều màu sắc tại khu vực vận hành",
     title: "Đội xe điện đa dạng",
     description: "Nhiều lựa chọn xe điện 5–7 chỗ cho gia đình, nhóm bạn và hành trình liên tỉnh.",
     category: "fleet",
@@ -59,9 +59,9 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "fleet-overview-showcase",
     src: "/images/fleet/overview/fleet-overview-showcase.png",
-    alt: "Nhiều xe điện Taxi Vila đỗ tại khu vực nhận diện thương hiệu",
+    alt: "Nhiều xe điện Taxi VILA đỗ tại khu vực nhận diện thương hiệu",
     title: "Nhận diện thương hiệu rõ ràng",
-    description: "Đội xe được bố trí đồng bộ, giúp khách hàng dễ nhận diện Taxi Vila khi đón xe.",
+    description: "Đội xe được bố trí đồng bộ, giúp khách hàng dễ nhận diện Taxi VILA khi đón xe.",
     category: "fleet",
     label: "Đội xe",
     seats: "5–7 chỗ",
@@ -69,7 +69,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "fleet-overview-parking",
     src: "/images/fleet/overview/fleet-overview-parking.png",
-    alt: "Các mẫu xe điện Taxi Vila đỗ trong khu vực vận hành",
+    alt: "Các mẫu xe điện Taxi VILA đỗ trong khu vực vận hành",
     title: "Sẵn sàng trước mỗi chuyến",
     description: "Hình ảnh đội xe tại khu vực đỗ, sẵn sàng phục vụ nhu cầu đi gần và đi xa.",
     category: "fleet",
@@ -79,9 +79,9 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "fleet-overview-aerial-parking",
     src: "/images/fleet/overview/fleet-overview-aerial-parking.png",
-    alt: "Toàn cảnh đội xe Taxi Vila nhìn từ trên cao",
+    alt: "Toàn cảnh đội xe Taxi VILA nhìn từ trên cao",
     title: "Toàn cảnh đội xe",
-    description: "Góc nhìn rộng cho thấy quy mô và sự phong phú của đội xe điện Taxi Vila.",
+    description: "Góc nhìn rộng cho thấy quy mô và sự phong phú của đội xe điện Taxi VILA.",
     category: "fleet",
     label: "Toàn cảnh",
     seats: "5–7 chỗ",
@@ -89,7 +89,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "airport-fleet",
     src: "/images/fleet/overview/airport-fleet.png",
-    alt: "Nhiều xe Taxi Vila đỗ trước nhà ga Cảng hàng không Phù Cát",
+    alt: "Nhiều xe Taxi VILA đỗ trước nhà ga Cảng hàng không Phù Cát",
     title: "Đón sân bay Phù Cát",
     description: "Xe 5–7 chỗ phục vụ đón và tiễn sân bay, phù hợp cho cả khách cá nhân lẫn gia đình.",
     category: "fleet",
@@ -99,7 +99,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "airport-transfer-service",
     src: "/images/fleet/overview/airport-transfer-service.png",
-    alt: "Xe điện Taxi Vila phục vụ đưa đón tại Cảng hàng không Phù Cát",
+    alt: "Xe điện Taxi VILA phục vụ đưa đón tại Cảng hàng không Phù Cát",
     title: "Đưa đón sân bay chuyên nghiệp",
     description: "Hình ảnh dịch vụ đưa đón sân bay với xe điện sạch sẽ và không gian rộng rãi.",
     category: "exterior",
@@ -109,7 +109,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "coastal-convoy",
     src: "/images/fleet/overview/fleet-coastal-convoy.png",
-    alt: "Đoàn xe điện Taxi Vila chạy dọc cung đường ven biển",
+    alt: "Đoàn xe điện Taxi VILA chạy dọc cung đường ven biển",
     title: "Đồng hành trên cung đường ven biển",
     description: "Đội xe nhiều màu sắc cho các chuyến đi tỉnh, du lịch và hành trình theo yêu cầu.",
     category: "exterior",
@@ -119,7 +119,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "coastal-sunset-drive",
     src: "/images/fleet/overview/fleet-coastal-sunset-drive.png",
-    alt: "Hai xe điện Taxi Vila di chuyển trên đường ven biển lúc hoàng hôn",
+    alt: "Hai xe điện Taxi VILA di chuyển trên đường ven biển lúc hoàng hôn",
     title: "Hành trình êm ái lúc hoàng hôn",
     description: "Góc chụp ngoại thất thể hiện khả năng phục vụ linh hoạt trong nhiều hành trình.",
     category: "exterior",
@@ -129,9 +129,9 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "coastal-brand-banner",
     src: "/images/fleet/overview/fleet-coastal-brand-banner.png",
-    alt: "Đội xe Taxi Vila nổi bật trên cung đường ven biển Bình Định",
+    alt: "Đội xe Taxi VILA nổi bật trên cung đường ven biển Bình Định",
     title: "Thương hiệu xanh trên mọi cung đường",
-    description: "Hình ảnh nhận diện Taxi Vila kết hợp cùng đội xe điện trong không gian ven biển.",
+    description: "Hình ảnh nhận diện Taxi VILA kết hợp cùng đội xe điện trong không gian ven biển.",
     category: "fleet",
     label: "Thương hiệu",
     seats: "5–7 chỗ",
@@ -139,7 +139,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "coastal-showcase-banner",
     src: "/images/fleet/overview/fleet-coastal-showcase-banner.png",
-    alt: "Nhiều mẫu xe điện Taxi Vila bên bờ biển",
+    alt: "Nhiều mẫu xe điện Taxi VILA bên bờ biển",
     title: "Đội xe đa dạng cho chuyến đi xa",
     description: "Nhiều mẫu xe điện cùng xuất hiện trong một khung hình, phù hợp nhu cầu cá nhân và nhóm.",
     category: "fleet",
@@ -149,8 +149,8 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "coastal-tourism-banner",
     src: "/images/fleet/overview/fleet-coastal-tourism-banner.png",
-    alt: "Xe điện Taxi Vila phục vụ các chuyến du lịch ven biển",
-    title: "Du lịch trọn vẹn cùng Taxi Vila",
+    alt: "Xe điện Taxi VILA phục vụ các chuyến du lịch ven biển",
+    title: "Du lịch trọn vẹn cùng Taxi VILA",
     description: "Lựa chọn xe điện phù hợp cho chuyến tham quan, nghỉ dưỡng và khám phá Bình Định.",
     category: "exterior",
     label: "Du lịch",
@@ -159,9 +159,9 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "convoy-road",
     src: "/images/fleet/overview/fleet-convoy-road.png",
-    alt: "Đoàn xe Taxi Vila di chuyển trên tuyến đường xanh",
+    alt: "Đoàn xe Taxi VILA di chuyển trên tuyến đường xanh",
     title: "Đoàn xe sẵn sàng phục vụ",
-    description: "Góc chụp trực diện giúp khách hàng hình dung rõ màu xe và nhận diện Taxi Vila.",
+    description: "Góc chụp trực diện giúp khách hàng hình dung rõ màu xe và nhận diện Taxi VILA.",
     category: "exterior",
     label: "Ngoại thất",
     seats: "5–7 chỗ",
@@ -169,7 +169,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "interprovincial-airport-banner",
     src: "/images/fleet/overview/fleet-interprovincial-airport-banner.png",
-    alt: "Xe Taxi Vila phục vụ tuyến đi tỉnh và sân bay",
+    alt: "Xe Taxi VILA phục vụ tuyến đi tỉnh và sân bay",
     title: "Đi tỉnh và sân bay 24/7",
     description: "Xe điện đồng hành trên các tuyến liên tỉnh, đưa đón sân bay và chuyến đi theo lịch.",
     category: "exterior",
@@ -179,7 +179,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "long-distance-service",
     src: "/images/fleet/overview/fleet-long-distance-service.png",
-    alt: "Đội xe Taxi Vila phục vụ hành trình đường dài",
+    alt: "Đội xe Taxi VILA phục vụ hành trình đường dài",
     title: "Taxi đi tỉnh, đường dài",
     description: "Không gian thoải mái và nhiều lựa chọn xe cho hành trình liên tỉnh cần báo giá trước.",
     category: "exterior",
@@ -189,7 +189,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "palm-road-convoy",
     src: "/images/fleet/overview/fleet-palm-road-convoy.png",
-    alt: "Đoàn xe Taxi Vila di chuyển trên tuyến đường rợp bóng dừa",
+    alt: "Đoàn xe Taxi VILA di chuyển trên tuyến đường rợp bóng dừa",
     title: "Phủ rộng các tuyến địa phương",
     description: "Đội xe điện phục vụ linh hoạt tại Phù Cát, Phù Mỹ, Quy Nhơn và khu vực lân cận.",
     category: "exterior",
@@ -199,7 +199,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "byd-white-front-angle",
     src: "/images/fleet/exterior/byd-white-77h09558-front-angle.png",
-    alt: "Xe điện Taxi Vila màu trắng chụp góc trước bên phải",
+    alt: "Xe điện Taxi VILA màu trắng chụp góc trước bên phải",
     title: "Ngoại thất hiện đại, dễ nhận diện",
     description: "Góc chụp 3/4 làm nổi bật thiết kế xe điện màu trắng và không gian phù hợp cho chuyến đi hằng ngày.",
     category: "exterior",
@@ -209,7 +209,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "byd-white-family-pickup",
     src: "/images/fleet/exterior/byd-white-77h09558-family-pickup.png",
-    alt: "Xe điện Taxi Vila màu trắng đón gia đình tại khu dân cư",
+    alt: "Xe điện Taxi VILA màu trắng đón gia đình tại khu dân cư",
     title: "Phù hợp cho gia đình",
     description: "Hình ảnh đón khách thực tế, thể hiện sự thuận tiện khi di chuyển cùng người thân và hành lý.",
     category: "exterior",
@@ -219,7 +219,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-airport-exterior",
     src: "/images/fleet/exterior/vinfast-blue-77h09162-airport-exterior.png",
-    alt: "Xe điện Taxi Vila màu xanh đỗ trước Cảng hàng không Phù Cát",
+    alt: "Xe điện Taxi VILA màu xanh đỗ trước Cảng hàng không Phù Cát",
     title: "Góc 3/4 tại sân bay",
     description: "Ngoại thất xe màu xanh nổi bật trong bối cảnh sân bay, dễ nhận ra khi đón khách.",
     category: "exterior",
@@ -229,7 +229,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-airport-family-pickup",
     src: "/images/fleet/exterior/vinfast-blue-77h09162-airport-family-pickup.png",
-    alt: "Xe điện Taxi Vila đón gia đình cùng hành lý tại sân bay",
+    alt: "Xe điện Taxi VILA đón gia đình cùng hành lý tại sân bay",
     title: "Đón gia đình và hành lý",
     description: "Hình ảnh phục vụ sân bay với cốp xe rộng, hỗ trợ hành khách có nhiều hành lý.",
     category: "exterior",
@@ -239,7 +239,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-airport-front-angle",
     src: "/images/fleet/exterior/vinfast-blue-77h09162-airport-front-angle.png",
-    alt: "Xe điện Taxi Vila màu xanh chụp góc trước tại sân bay Phù Cát",
+    alt: "Xe điện Taxi VILA màu xanh chụp góc trước tại sân bay Phù Cát",
     title: "Sẵn sàng đón chuyến bay",
     description: "Góc chụp trực diện giúp khách hàng nhận diện màu xe và biển hiệu khi đến sân bay.",
     category: "exterior",
@@ -249,7 +249,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-airport-pickup",
     src: "/images/fleet/exterior/vinfast-blue-77h09162-airport-pickup.png",
-    alt: "Xe điện Taxi Vila màu xanh đón khách tại nhà ga Phù Cát",
+    alt: "Xe điện Taxi VILA màu xanh đón khách tại nhà ga Phù Cát",
     title: "Đón khách tận nơi tại nhà ga",
     description: "Không gian đón khách chuyên nghiệp, phù hợp chuyến bay cá nhân, gia đình và nhóm nhỏ.",
     category: "exterior",
@@ -259,7 +259,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-exterior-angles",
     src: "/images/fleet/exterior/vinfast-blue-77h09162-exterior-angles.png",
-    alt: "Xe điện Taxi Vila màu xanh với góc nhìn bên hông và góc trước",
+    alt: "Xe điện Taxi VILA màu xanh với góc nhìn bên hông và góc trước",
     title: "Nhiều góc nhìn ngoại thất",
     description: "Bộ ảnh bên hông và góc 3/4 giúp khách hàng xem rõ kiểu dáng xe trước khi đặt chuyến.",
     category: "exterior",
@@ -269,7 +269,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-front-angle",
     src: "/images/fleet/exterior/vinfast-blue-77h09162-front-angle.png",
-    alt: "Xe điện Taxi Vila màu xanh chụp góc trước trong khuôn viên vận hành",
+    alt: "Xe điện Taxi VILA màu xanh chụp góc trước trong khuôn viên vận hành",
     title: "Thiết kế xe điện nổi bật",
     description: "Góc chụp ngoại thất rõ nét, làm nổi bật màu xanh thương hiệu và phần đầu xe.",
     category: "exterior",
@@ -279,7 +279,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "airport-pickup",
     src: "/images/fleet/exterior/airport-pickup.png",
-    alt: "Xe điện Taxi Vila đón khách tại sân bay Phù Cát",
+    alt: "Xe điện Taxi VILA đón khách tại sân bay Phù Cát",
     title: "Đón sân bay Phù Cát",
     description: "Ngoại thất nổi bật, dễ nhận diện và sẵn sàng phục vụ chuyến bay sớm hoặc muộn.",
     category: "exterior",
@@ -289,7 +289,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "coastal-route",
     src: "/images/fleet/exterior/coastal-route.png",
-    alt: "Đoàn xe điện Taxi Vila trên cung đường ven biển Bình Định",
+    alt: "Đoàn xe điện Taxi VILA trên cung đường ven biển Bình Định",
     title: "Sẵn sàng đi tỉnh",
     description: "Đội xe đồng hành cùng các tuyến Phù Cát – Phù Mỹ, Quy Nhơn và khu vực lân cận.",
     category: "exterior",
@@ -299,7 +299,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "byd-white-driver-cockpit",
     src: "/images/fleet/interior/byd-white-77h09558-driver-cockpit.png",
-    alt: "Khoang lái xe điện Taxi Vila màu trắng với màn hình trung tâm",
+    alt: "Khoang lái xe điện Taxi VILA màu trắng với màn hình trung tâm",
     title: "Khoang lái hiện đại",
     description: "Góc nhìn chi tiết vô-lăng, bảng đồng hồ và màn hình trung tâm trong khoang lái.",
     category: "interior",
@@ -309,7 +309,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "byd-white-front-cabin",
     src: "/images/fleet/interior/byd-white-77h09558-front-cabin.png",
-    alt: "Không gian cabin trước xe điện Taxi Vila màu trắng",
+    alt: "Không gian cabin trước xe điện Taxi VILA màu trắng",
     title: "Cabin trước rộng rãi",
     description: "Thiết kế cabin thoáng, ghế ngồi ôm người và khu vực điều khiển dễ quan sát.",
     category: "interior",
@@ -319,7 +319,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "byd-white-interior-comfort-banner",
     src: "/images/fleet/interior/byd-white-77h09558-interior-comfort-banner.png",
-    alt: "Hình ảnh nội thất hiện đại và êm ái của xe điện Taxi Vila",
+    alt: "Hình ảnh nội thất hiện đại và êm ái của xe điện Taxi VILA",
     title: "Nội thất hiện đại – êm ái",
     description: "Không gian nội thất sạch sẽ, phù hợp cho cả chuyến nội khu và hành trình dài.",
     category: "interior",
@@ -329,7 +329,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "byd-white-panoramic-cabin",
     src: "/images/fleet/interior/byd-white-77h09558-panoramic-cabin.png",
-    alt: "Toàn cảnh khoang lái xe điện Taxi Vila trên cung đường ven biển",
+    alt: "Toàn cảnh khoang lái xe điện Taxi VILA trên cung đường ven biển",
     title: "Toàn cảnh khoang lái",
     description: "Góc chụp rộng cho thấy tầm nhìn phía trước, màn hình dẫn đường và không gian hàng ghế trước.",
     category: "interior",
@@ -339,7 +339,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "byd-white-rear-seats",
     src: "/images/fleet/interior/byd-white-77h09558-rear-seats.png",
-    alt: "Hàng ghế sau xe điện Taxi Vila màu trắng",
+    alt: "Hàng ghế sau xe điện Taxi VILA màu trắng",
     title: "Hàng ghế sau thoải mái",
     description: "Hình ảnh thực tế hàng ghế sau, khoảng để chân và không gian phù hợp cho gia đình.",
     category: "interior",
@@ -349,7 +349,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-driver-cockpit",
     src: "/images/fleet/interior/vinfast-blue-77h09162-driver-cockpit.png",
-    alt: "Khoang lái xe điện Taxi Vila màu xanh với ghế bọc viền đỏ",
+    alt: "Khoang lái xe điện Taxi VILA màu xanh với ghế bọc viền đỏ",
     title: "Khoang lái nổi bật",
     description: "Thiết kế khoang lái màu tối, ghế viền đỏ và bảng điều khiển thuận tiện cho tài xế.",
     category: "interior",
@@ -359,7 +359,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-front-cabin",
     src: "/images/fleet/interior/vinfast-blue-77h09162-front-cabin.png",
-    alt: "Cabin trước xe điện Taxi Vila màu xanh với màn hình kép",
+    alt: "Cabin trước xe điện Taxi VILA màu xanh với màn hình kép",
     title: "Cabin trước tiện dụng",
     description: "Góc chụp phía trước làm rõ màn hình, khu vực để đồ và chất liệu ghế trong xe.",
     category: "interior",
@@ -369,7 +369,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-front-seats",
     src: "/images/fleet/interior/vinfast-blue-77h09162-front-seats.png",
-    alt: "Hàng ghế trước xe điện Taxi Vila màu xanh",
+    alt: "Hàng ghế trước xe điện Taxi VILA màu xanh",
     title: "Ghế trước sạch sẽ, dễ chịu",
     description: "Không gian ghế trước rộng rãi, sàn xe sạch và phù hợp cho các chuyến đi hằng ngày.",
     category: "interior",
@@ -379,7 +379,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vehicle-interior",
     src: "/images/fleet/interior/interior-fleet.png",
-    alt: "Không gian nội thất và nhiều mẫu xe điện Taxi Vila",
+    alt: "Không gian nội thất và nhiều mẫu xe điện Taxi VILA",
     title: "Nội thất tiện nghi",
     description: "Không gian cabin sạch sẽ, ghế ngồi thoải mái và trải nghiệm êm ái hơn.",
     category: "interior",
@@ -389,7 +389,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-charging-station",
     src: "/images/fleet/charging/vinfast-blue-77h09162-charging-station.png",
-    alt: "Xe điện Taxi Vila màu xanh tại trạm sạc",
+    alt: "Xe điện Taxi VILA màu xanh tại trạm sạc",
     title: "Sạc điện chủ động",
     description: "Hình ảnh xe điện được kết nối với trạm sạc trước khi tiếp tục phục vụ khách hàng.",
     category: "charging",
@@ -399,7 +399,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-charging-with-byd",
     src: "/images/fleet/charging/vinfast-blue-77h09162-charging-with-byd.png",
-    alt: "Hai xe điện Taxi Vila màu xanh và trắng cùng tại khu vực sạc",
+    alt: "Hai xe điện Taxi VILA màu xanh và trắng cùng tại khu vực sạc",
     title: "Nhiều xe cùng sẵn sàng",
     description: "Khu vực sạc cho nhiều mẫu xe điện, hỗ trợ đội xe vận hành linh hoạt trong ngày.",
     category: "charging",
@@ -409,7 +409,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "vinfast-blue-night-charging",
     src: "/images/fleet/charging/vinfast-blue-77h09162-night-charging.png",
-    alt: "Xe điện Taxi Vila sạc vào ban đêm tại trạm sạc",
+    alt: "Xe điện Taxi VILA sạc vào ban đêm tại trạm sạc",
     title: "Chuẩn bị cho chuyến sớm",
     description: "Hình ảnh sạc xe ban đêm, giúp đội xe chủ động chuẩn bị cho các chuyến bay và lịch hẹn sớm.",
     category: "charging",
@@ -419,7 +419,7 @@ export const fleetGallery: FleetGalleryItem[] = [
   {
     id: "charging-station",
     src: "/images/fleet/charging/charging-station.jpg",
-    alt: "Xe điện Taxi Vila tại trạm sạc",
+    alt: "Xe điện Taxi VILA tại trạm sạc",
     title: "Chủ động năng lượng",
     description: "Xe được sạc và kiểm tra trước khi phục vụ để hành trình luôn ổn định.",
     category: "charging",
