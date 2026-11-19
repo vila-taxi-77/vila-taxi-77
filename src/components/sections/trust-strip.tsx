@@ -22,7 +22,7 @@ function CommitmentIcon({ icon }: { icon: (typeof commitments)[number]["icon"] }
 
 export function TrustStrip() {
   return (
-    <section aria-label="Cam kết Taxi Vila" className="border-b border-[#e5eaf1] bg-white">
+    <section aria-label="Cam kết Taxi VILA" className="border-b border-[#e5eaf1] bg-white">
       <div className="mx-auto grid max-w-[1220px] grid-cols-2 gap-px bg-[#e5eaf1] sm:grid-cols-3 lg:grid-cols-5">
         {commitments.map((item, index) => (
           <div key={item.title} className={`flex min-h-[92px] items-center gap-3 bg-white px-4 py-4 sm:px-5 ${index === commitments.length - 1 ? "col-span-2 sm:col-span-1" : ""}`}>

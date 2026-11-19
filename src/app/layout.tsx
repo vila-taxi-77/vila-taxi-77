@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: seoConfig.image,
         width: 1672,
         height: 941,
-        alt: "Xe điện Taxi Vila phục vụ Phù Cát và Phù Mỹ",
+        alt: "Xe điện Taxi VILA phục vụ Phù Cát và Phù Mỹ",
       },
     ],
   },

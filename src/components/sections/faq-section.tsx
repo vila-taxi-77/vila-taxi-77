@@ -23,7 +23,7 @@ export function FaqSection() {
       <div className="mx-auto grid max-w-[1220px] gap-9 px-4 sm:px-6 lg:grid-cols-[0.68fr_1.32fr] lg:items-start lg:gap-14 lg:px-5">
         <div className="max-w-lg lg:mx-auto">
           <p className="section-eyebrow"><span aria-hidden="true" />Câu hỏi thường gặp</p>
-          <h2 id="faq-title" className="section-title mt-4 max-w-lg">Bạn hỏi, Taxi Vila trả lời</h2>
+          <h2 id="faq-title" className="section-title mt-4 max-w-lg">Bạn hỏi, Taxi VILA trả lời</h2>
           <p className="mt-5 max-w-lg text-base font-medium leading-relaxed text-[var(--text-muted)] sm:text-lg">
             Chưa thấy câu trả lời bạn cần? Gọi ngay, chúng tôi luôn sẵn sàng 24/7.
           </p>

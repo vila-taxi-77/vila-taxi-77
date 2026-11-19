@@ -32,7 +32,7 @@ export const quyNhonRoutePoints = [
   },
   {
     title: "Điểm dừng trên hành trình",
-    description: "Thông báo trước các điểm ghé để Taxi Vila kiểm tra lộ trình và tư vấn phù hợp.",
+    description: "Thông báo trước các điểm ghé để Taxi VILA kiểm tra lộ trình và tư vấn phù hợp.",
   },
 ] as const;
 
@@ -70,7 +70,7 @@ export const quyNhonBookingSteps = [
   },
   {
     title: "Nhận báo giá",
-    description: "Taxi Vila kiểm tra lịch trình và trao đổi mức giá trước chuyến đi.",
+    description: "Taxi VILA kiểm tra lịch trình và trao đổi mức giá trước chuyến đi.",
   },
   {
     title: "Xác nhận giờ đón",
@@ -80,8 +80,8 @@ export const quyNhonBookingSteps = [
 
 export const quyNhonFaqs = [
   {
-    question: "Taxi Vila có đón tận nhà tại Phù Cát không?",
-    answer: "Có. Bạn hãy gửi địa chỉ đón cụ thể tại Phù Cát cùng thời gian dự kiến. Taxi Vila sẽ kiểm tra hành trình và trao đổi lại trước khi xác nhận chuyến.",
+    question: "Taxi VILA có đón tận nhà tại Phù Cát không?",
+    answer: "Có. Bạn hãy gửi địa chỉ đón cụ thể tại Phù Cát cùng thời gian dự kiến. Taxi VILA sẽ kiểm tra hành trình và trao đổi lại trước khi xác nhận chuyến.",
   },
   {
     question: "Có thể đặt xe Phù Cát đi Quy Nhơn khứ hồi không?",
@@ -89,11 +89,11 @@ export const quyNhonFaqs = [
   },
   {
     question: "Giá taxi Phù Cát đi Quy Nhơn được tính như thế nào?",
-    answer: "Chi phí phụ thuộc vào điểm đón, điểm trả, loại chuyến, thời gian và yêu cầu thực tế. Taxi Vila sẽ kiểm tra thông tin và báo giá để bạn xác nhận trước khi khởi hành.",
+    answer: "Chi phí phụ thuộc vào điểm đón, điểm trả, loại chuyến, thời gian và yêu cầu thực tế. Taxi VILA sẽ kiểm tra thông tin và báo giá để bạn xác nhận trước khi khởi hành.",
   },
   {
     question: "Nhóm 5–7 người có đặt xe được không?",
-    answer: "Taxi Vila có các lựa chọn xe điện 5–7 chỗ. Bạn nên gửi số hành khách và số lượng hành lý để được tư vấn dòng xe phù hợp với tình trạng xe tại thời điểm đặt.",
+    answer: "Taxi VILA có các lựa chọn xe điện 5–7 chỗ. Bạn nên gửi số hành khách và số lượng hành lý để được tư vấn dòng xe phù hợp với tình trạng xe tại thời điểm đặt.",
   },
 ] as const;
 

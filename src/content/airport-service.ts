@@ -24,7 +24,7 @@ export const airportRoutes = [
 export const airportBenefits = [
   {
     title: "Theo sát lịch bay",
-    description: "Gửi mã chuyến bay và giờ dự kiến để Taxi Vila chủ động sắp xếp thời gian đón.",
+    description: "Gửi mã chuyến bay và giờ dự kiến để Taxi VILA chủ động sắp xếp thời gian đón.",
     icon: "flight",
   },
   {
@@ -51,7 +51,7 @@ export const airportBookingSteps = [
   },
   {
     title: "Nhận tư vấn và báo giá",
-    description: "Taxi Vila kiểm tra hành trình, số khách và hành lý để tư vấn xe phù hợp.",
+    description: "Taxi VILA kiểm tra hành trình, số khách và hành lý để tư vấn xe phù hợp.",
   },
   {
     title: "Xác nhận chuyến xe",
@@ -66,19 +66,19 @@ export const airportBookingSteps = [
 export const airportFaqs = [
   {
     question: "Nên đặt taxi sân bay Phù Cát trước bao lâu?",
-    answer: "Bạn nên gửi yêu cầu sớm ngay khi có lịch bay để Taxi Vila kiểm tra hành trình và chủ động sắp xếp xe. Với chuyến bay sáng sớm hoặc tối muộn, đặt trước sẽ thuận tiện hơn.",
+    answer: "Bạn nên gửi yêu cầu sớm ngay khi có lịch bay để Taxi VILA kiểm tra hành trình và chủ động sắp xếp xe. Với chuyến bay sáng sớm hoặc tối muộn, đặt trước sẽ thuận tiện hơn.",
   },
   {
-    question: "Taxi Vila có theo dõi giờ hạ cánh không?",
-    answer: "Khi đặt xe, bạn hãy cung cấp mã chuyến bay và giờ hạ cánh dự kiến. Taxi Vila sẽ dựa trên thông tin đó để trao đổi thời gian đón phù hợp với bạn.",
+    question: "Taxi VILA có theo dõi giờ hạ cánh không?",
+    answer: "Khi đặt xe, bạn hãy cung cấp mã chuyến bay và giờ hạ cánh dự kiến. Taxi VILA sẽ dựa trên thông tin đó để trao đổi thời gian đón phù hợp với bạn.",
   },
   {
     question: "Có xe 7 chỗ để chở nhiều hành lý không?",
-    answer: "Taxi Vila có các lựa chọn xe điện 5–7 chỗ. Bạn nên báo trước số khách, số vali và hành lý đặc biệt để được tư vấn dòng xe phù hợp với tình trạng xe tại thời điểm đặt.",
+    answer: "Taxi VILA có các lựa chọn xe điện 5–7 chỗ. Bạn nên báo trước số khách, số vali và hành lý đặc biệt để được tư vấn dòng xe phù hợp với tình trạng xe tại thời điểm đặt.",
   },
   {
     question: "Giá taxi sân bay Phù Cát được tính như thế nào?",
-    answer: "Chi phí phụ thuộc vào điểm đón, điểm đến, thời gian và yêu cầu thực tế. Taxi Vila sẽ kiểm tra lộ trình và báo giá để bạn xác nhận trước khi chuyến đi được chốt.",
+    answer: "Chi phí phụ thuộc vào điểm đón, điểm đến, thời gian và yêu cầu thực tế. Taxi VILA sẽ kiểm tra lộ trình và báo giá để bạn xác nhận trước khi chuyến đi được chốt.",
   },
 ] as const;
 

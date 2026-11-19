@@ -38,7 +38,7 @@ export function SiteHeader() {
         }`}
       >
         <div className="site-container site-header-height flex items-center justify-between gap-3 xl:gap-5">
-          <a href="/" className="shrink-0" aria-label="Về trang chủ Taxi Vila">
+          <a href="/" className="shrink-0" aria-label="Về trang chủ Taxi VILA">
             <SiteLogo priority />
           </a>
 
@@ -59,7 +59,7 @@ export function SiteHeader() {
               href={siteContact.zaloUrl}
               target="_blank"
               rel="noreferrer"
-              aria-label="Nhắn Taxi Vila qua Zalo"
+              aria-label="Nhắn Taxi VILA qua Zalo"
               className="header-zalo-action h-11 items-center gap-1.5 rounded-full border border-[#c8d1de] px-4 text-sm font-extrabold text-[#0563d8] transition-colors hover:border-[#0563d8]"
             >
               <ZaloMark />
@@ -69,7 +69,7 @@ export function SiteHeader() {
             <a
               href={siteContact.telephoneUrl}
               className="site-header-call cta-call-attention cta-call-accent flex h-11 items-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-5 text-[15px] font-black !text-white shadow-[0_9px_24px_rgba(245,158,11,0.28)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)]"
-              aria-label={`Gọi Taxi Vila theo số ${siteConfig.phoneDisplay}`}
+              aria-label={`Gọi Taxi VILA theo số ${siteConfig.phoneDisplay}`}
             >
               <PhoneIcon />
               <span className="header-phone-full">{siteConfig.phoneDisplay}</span>

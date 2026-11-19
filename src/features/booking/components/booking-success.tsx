@@ -12,7 +12,7 @@ export function BookingSuccess({ summary, copied, onCopy }: BookingSuccessProps)
         {copied ? "Đã sao chép nội dung và mở Zalo." : "Thông tin đã sẵn sàng để gửi qua Zalo."}
       </p>
       <p className="mt-1 leading-relaxed">
-        Hãy dán nội dung vào cuộc trò chuyện để Taxi Vila kiểm tra và phản hồi báo giá.
+        Hãy dán nội dung vào cuộc trò chuyện để Taxi VILA kiểm tra và phản hồi báo giá.
       </p>
       <details className="mt-3">
         <summary className="min-h-11 cursor-pointer py-2 font-bold text-[var(--brand-accent-dark)]">Xem lại nội dung</summary>

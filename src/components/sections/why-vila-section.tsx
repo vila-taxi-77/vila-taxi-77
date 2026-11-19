@@ -65,13 +65,13 @@ export function WhyVilaSection() {
         <div className="lg:flex lg:h-full lg:flex-col">
           <p className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-[var(--brand-accent)] sm:text-sm">
             <span className="h-px w-10 bg-[var(--brand-accent)]" />
-            Tại sao chọn Taxi Vila?
+            Tại sao chọn Taxi VILA?
           </p>
           <h2 id="why-vila-title" className="mt-4 max-w-xl text-[clamp(2.35rem,4vw,3.4rem)] font-black leading-[1.05] tracking-[-0.045em] text-[#0a192f]">
             Không chỉ là một chuyến xe – là sự an tâm
           </h2>
           <p className="mt-5 max-w-xl text-base font-medium leading-relaxed text-[#64748b] sm:text-lg">
-            Chúng tôi tin rằng một chuyến đi tốt bắt đầu từ sự rõ ràng và kết thúc bằng nụ cười. Đó là lý do khách hàng gọi lại Taxi Vila.
+            Chúng tôi tin rằng một chuyến đi tốt bắt đầu từ sự rõ ràng và kết thúc bằng nụ cười. Đó là lý do khách hàng gọi lại Taxi VILA.
           </p>
 
           <figure className="relative mt-9 h-[19rem] overflow-hidden rounded-[1.75rem] bg-[#eaf0f6] sm:h-[23rem] lg:min-h-[21rem] lg:flex-1 lg:h-auto">
@@ -85,7 +85,7 @@ export function WhyVilaSection() {
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#07172f]/45 to-transparent" aria-hidden="true" />
             <figcaption className="absolute inset-x-4 bottom-4 rounded-2xl bg-white/95 px-4 py-3 shadow-[0_12px_35px_rgba(10,25,47,0.16)] backdrop-blur-sm sm:inset-x-5 sm:bottom-5 sm:px-5">
               <span className="block text-sm font-black text-[#0a192f] sm:text-base">“Hạnh phúc khi được phục vụ!”</span>
-              <span className="mt-0.5 block text-xs font-medium text-[#64748b] sm:text-sm">Phương châm trong mỗi chuyến xe của Taxi Vila.</span>
+              <span className="mt-0.5 block text-xs font-medium text-[#64748b] sm:text-sm">Phương châm trong mỗi chuyến xe của Taxi VILA.</span>
             </figcaption>
           </figure>
         </div>

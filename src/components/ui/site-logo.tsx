@@ -27,7 +27,7 @@ export function SiteLogo({ className = "", priority = false, variant = "header" 
 
       <span className="site-logo-wordmark min-w-0 leading-none">
         <span className="site-logo-title block whitespace-nowrap text-[19px] font-black tracking-[0.02em] text-[#0a192f]">
-          Taxi <span className="text-[var(--brand-primary)]">Vila</span>
+          Taxi <span className="text-[var(--brand-primary)]">VILA</span>
         </span>
         <span className="site-logo-tagline mt-1 block whitespace-nowrap text-[9px] font-extrabold uppercase tracking-[0.23em] text-[#77859a]">
           {siteConfig.tagline}
