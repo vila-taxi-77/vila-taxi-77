@@ -5,6 +5,8 @@ export const siteConfig = {
   phone: "0978063463",
   phoneDisplay: "0978 063 463",
   zaloUrl: "https://zalo.me/0978063463",
+  tiktokUrl: "https://www.tiktok.com/@taxi_villa_quy_nhon",
+  facebookUrl: "https://www.facebook.com/vy.tran.839846/",
   priceRange: "5.000–12.000đ/km",
   priceNote: "Giá theo tuyến và điều kiện áp dụng; báo giá trước chuyến đi.",
   prebookMessage: "Đặt lịch trước – Cơ hội nhận ưu đãi hấp dẫn!",
