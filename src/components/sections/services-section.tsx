@@ -63,6 +63,15 @@ function ServiceCard({ service }: ServiceCardProps) {
   const hasImage = Boolean(service.image);
   const serviceHref = service.href ?? siteContact.telephoneUrl;
   const serviceCtaLabel = service.ctaLabel ?? "Đặt dịch vụ này";
+  const prebookLink = (
+    <a
+      href="/dat-xe-truoc"
+      aria-label={`Đặt xe trước: ${service.title}`}
+      className="inline-flex min-h-11 w-fit items-center justify-center rounded-full bg-[var(--brand-accent)] px-5 py-2.5 text-sm font-black !text-[#07172f] transition-colors hover:bg-[var(--brand-accent-dark)]"
+    >
+      Đặt xe trước
+    </a>
+  );
 
   if (hasImage && service.image) {
     return (
@@ -86,13 +95,16 @@ function ServiceCard({ service }: ServiceCardProps) {
           <p className="mt-3 max-w-3xl text-base font-medium leading-relaxed text-white/75 sm:text-lg">
             {service.description}
           </p>
-          <a
-            href={serviceHref}
-            className="mt-5 inline-flex w-fit items-center gap-1.5 text-sm font-black !text-[var(--brand-accent)] transition-[gap,color] hover:gap-2.5 hover:!text-[var(--brand-accent-dark)]"
-            aria-label={`${serviceCtaLabel}: ${service.title}`}
-          >
-            {serviceCtaLabel} <ArrowIcon />
-          </a>
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
+            {prebookLink}
+            <a
+              href={serviceHref}
+              className="inline-flex min-h-11 w-fit items-center gap-1.5 text-sm font-black !text-[var(--brand-accent)] transition-[gap,color] hover:gap-2.5 hover:!text-[var(--brand-accent-dark)]"
+              aria-label={`${serviceCtaLabel}: ${service.title}`}
+            >
+              {serviceCtaLabel} <ArrowIcon />
+            </a>
+          </div>
         </div>
       </article>
     );
@@ -109,13 +121,16 @@ function ServiceCard({ service }: ServiceCardProps) {
       <p className="mt-3 text-base font-medium leading-relaxed text-[#64748b] sm:text-lg">
         {service.description}
       </p>
-      <a
-        href={serviceHref}
-        className="mt-6 inline-flex w-fit items-center gap-1.5 text-sm font-black !text-[var(--brand-accent)] transition-[gap,color] hover:gap-2.5 hover:!text-[var(--brand-accent-dark)]"
-        aria-label={`${serviceCtaLabel}: ${service.title}`}
-      >
-        {serviceCtaLabel} <ArrowIcon />
-      </a>
+      <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+        {prebookLink}
+        <a
+          href={serviceHref}
+          className="inline-flex min-h-11 w-fit items-center gap-1.5 text-sm font-black text-[#07172f] transition-[gap,color] hover:gap-2.5 hover:text-[var(--brand-accent-dark)]"
+          aria-label={`${serviceCtaLabel}: ${service.title}`}
+        >
+          {serviceCtaLabel} <ArrowIcon />
+        </a>
+      </div>
     </article>
   );
 }

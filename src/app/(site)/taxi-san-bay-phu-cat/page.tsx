@@ -199,7 +199,7 @@ export default function AirportTaxiPage() {
                 <a href={siteContact.telephoneUrl} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-6 font-black !text-white shadow-[0_14px_32px_rgba(245,158,11,0.28)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)]">
                   <PhoneIcon /> Gọi {siteConfig.phoneDisplay}
                 </a>
-                <a href="#dat-xe-truc-tuyen" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/[0.08] px-6 font-black !text-white backdrop-blur-sm transition-colors hover:border-[var(--brand-accent)] hover:bg-white/12">
+                <a href="/dat-xe-truoc" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/[0.08] px-6 font-black !text-white backdrop-blur-sm transition-colors hover:border-[var(--brand-accent)] hover:bg-white/12">
                   Đặt xe sân bay <ArrowIcon />
                 </a>
               </div>
@@ -249,7 +249,7 @@ export default function AirportTaxiPage() {
                     </div>
                   </div>
                   <p className="mt-4 text-sm font-medium leading-relaxed text-[var(--text-muted)] sm:text-base">{route.description}</p>
-                  <a href="#dat-xe-truc-tuyen" className="mt-auto inline-flex min-h-11 w-fit items-center gap-2 pt-4 text-sm font-black text-[var(--brand-accent-dark)] transition-[gap,color] hover:gap-3 hover:text-[var(--foreground)]">
+                  <a href="/dat-xe-truoc" className="mt-auto inline-flex min-h-11 w-fit items-center gap-2 pt-4 text-sm font-black text-[var(--brand-accent-dark)] transition-[gap,color] hover:gap-3 hover:text-[var(--foreground)]">
                     Nhận báo giá tuyến này <ArrowIcon />
                   </a>
                 </article>

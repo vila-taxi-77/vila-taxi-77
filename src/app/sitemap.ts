@@ -4,6 +4,7 @@ import { getSiteUrl } from "@/config/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    { url: `${getSiteUrl()}/dat-xe-truoc` },
     {
       url: `${getSiteUrl()}/`,
     },

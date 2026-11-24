@@ -58,11 +58,15 @@ Các tuyến thường dùng được hiển thị dưới dạng thẻ, liên k
 
 ### 5. Đặt xe trực tuyến
 
-Form nhận họ tên, số điện thoại, điểm đón, điểm đến, ngày giờ, loại chuyến và số hành khách. Sau khi hợp lệ, website tạo nội dung chuyến đi để khách gửi qua Zalo.
+Form được tách riêng tại `/dat-xe-truoc`, nhận họ tên, số điện thoại, điểm đón, điểm đến, ngày giờ Việt Nam, dịch vụ, loại chuyến và số hành khách. Trang chủ và các trang dịch vụ chỉ hiển thị nút dẫn đến trang này.
 
 ![Form đặt xe Taxi VILA](docs/screenshots/home-booking.png)
 
-> Hiện tại form là luồng tư vấn qua Zalo, chưa lưu đơn vào cơ sở dữ liệu. API và trang admin mới là bộ khung để phát triển sau.
+Form gửi đến `/api/bookings`. Cấu hình `BOOKING_WEBHOOK_URL` (HTTPS) và tùy chọn `BOOKING_WEBHOOK_TOKEN` trên máy chủ để chuyển thông báo tới người phụ trách. Receiver nhận JSON gồm các trường form, `summary` và `receivedAt`; cần đảm bảo lưu hoặc chuyển thông báo thực sự trước khi trả HTTP 2xx. API chỉ báo đã gửi sau khi receiver chấp nhận. Chưa có cơ sở dữ liệu đơn hàng hoặc quản trị tài xế.
+
+Khi chưa cấu hình hoặc gửi lỗi, trang thông báo rõ và cho khách sao chép lịch trình, mở Zalo để tự dán và gửi; không báo đặt xe thành công. Trước khi vận hành cần kiểm tra đầu cuối với người phụ trách, cấu hình giới hạn tần suất ở hạ tầng/receiver và quy trình phản hồi. Không tự động gửi lại khi timeout để tránh đơn trùng; nhân viên cần đối chiếu các yêu cầu lặp.
+
+Sau khi triển khai lên tên miền chính, người quản lý Google Business Profile có thể dùng `https://taxivila.com/dat-xe-truoc` làm liên kết đặt lịch. Thay đổi trong repository không tự cập nhật Google Maps.
 
 ### 6. Giới thiệu và FAQ
 
@@ -96,10 +100,11 @@ Website hiện có ba trang dịch vụ độc lập. Mỗi trang có H1, metada
 | `/taxi-san-bay-phu-cat` | Landing page SEO dịch vụ sân bay Phù Cát |
 | `/taxi-phu-cat-di-quy-nhon` | Landing page SEO tuyến Phù Cát – Quy Nhơn |
 | `/taxi-di-tinh` | Landing page SEO taxi đi tỉnh và tuyến đường dài |
+| `/dat-xe-truoc` | Trang đặt lịch trước, nhận báo giá và hỏi ưu đãi |
 | `/sitemap.xml` | Danh sách URL gửi cho công cụ tìm kiếm |
 | `/robots.txt` | Quy tắc thu thập dữ liệu |
 | `/admin` | Bộ khung khu vực quản trị, chưa dùng trong production |
-| `/api/bookings` | Bộ khung API đặt xe để phát triển sau |
+| `/api/bookings` | Kiểm tra yêu cầu và chuyển đến webhook tiếp nhận |
 
 ## Khởi chạy dự án
 

@@ -22,7 +22,7 @@ function PhoneIcon() {
   return <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7.2 3.8 9.5 8l-2.1 1.8c1.1 2.5 2.9 4.3 5.4 5.4l1.8-2.1 4.2 2.3-.5 3.5c-.2 1.1-1.2 1.9-2.3 1.8C9.2 20 4 14.8 3.3 8c-.1-1.1.7-2.1 1.8-2.3l2.1-.4Z" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 }
 
-export function BookingSection() {
+export function BookingSection({ standalone = false }: { standalone?: boolean }) {
   return (
     <section id="dat-xe-truc-tuyen" aria-labelledby="booking-title" className="relative scroll-mt-24 overflow-hidden bg-[#07172f] py-10 text-white sm:py-12 lg:py-14">
       <div aria-hidden="true" className="absolute inset-0">
@@ -37,15 +37,13 @@ export function BookingSection() {
       </div>
       <div className="relative mx-auto grid max-w-[1220px] gap-8 px-4 sm:px-6 lg:grid-cols-[0.86fr_1.14fr] lg:items-start lg:gap-10 lg:px-5">
         <div>
-          <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Đặt xe trực tuyến</p>
-          <h2 id="booking-title" className="mt-3 max-w-xl text-[clamp(2.25rem,4.5vw,3.4rem)] font-black leading-[1.02] tracking-[-0.045em] text-white [text-wrap:balance]">
-            Đặt xe trong 30 giây, đón tận nơi
-          </h2>
+          <p className="section-eyebrow !text-[var(--brand-accent)]"><span aria-hidden="true" />Đặt xe trước</p>
+          {standalone ? <h1 id="booking-title" className="mt-3 max-w-xl text-[clamp(2.25rem,4.5vw,3.4rem)] font-black leading-tight tracking-[-0.045em] text-white [text-wrap:balance]">Đặt Taxi Điện Phù Cát – Phù Mỹ Nhanh Chóng, Báo Giá Trước</h1> : <h2 id="booking-title" className="mt-3 max-w-xl text-[clamp(2.25rem,4.5vw,3.4rem)] font-black leading-tight tracking-[-0.045em] text-white [text-wrap:balance]">Có lịch trình rồi? Đặt xe trước cùng VILA</h2>}
           <p className="mt-4 max-w-xl text-base font-medium leading-relaxed text-white/80">
-            Điền thông tin chuyến đi, Taxi VILA sẽ trao đổi và báo giá trước. Cần đi ngay? Gọi hotline để được điều xe nhanh nhất.
+            Đặt taxi tại Phù Cát – Phù Mỹ, đi sân bay hoặc đi tỉnh. Gửi lịch trình để nhận báo giá và hỏi ưu đãi đặt trước. Cần đi ngay? Gọi hotline để kiểm tra lịch xe.
           </p>
 
-          <ol className="mt-6 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
+          {standalone ? <ol className="mt-6 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
             {bookingSteps.map((step, index) => (
               <li key={step.title} className="flex items-center gap-3 rounded-2xl border border-white/12 bg-white/[0.06] p-3 backdrop-blur-sm">
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--accent-soft)] text-[var(--brand-accent-dark)]"><StepIcon name={step.icon} /></span>
@@ -55,7 +53,7 @@ export function BookingSection() {
                 </div>
               </li>
             ))}
-          </ol>
+          </ol> : null}
 
           <div className="mt-6 flex flex-col gap-3 xs:flex-row">
             <a href={siteContact.telephoneUrl} className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-5 font-black !text-white transition-colors hover:bg-[var(--brand-accent-dark)]"><PhoneIcon /> {siteConfig.phoneDisplay}</a>
@@ -63,7 +61,13 @@ export function BookingSection() {
           </div>
         </div>
 
-        <BookingForm />
+        {standalone ? <BookingForm /> : <div className="rounded-3xl border border-white/20 bg-white p-6 text-[var(--foreground)] sm:p-8 lg:self-center">
+          <p className="text-sm font-extrabold text-[var(--brand-accent-dark)]">CHỦ ĐỘNG LỊCH ĐI · BÁO GIÁ TRƯỚC</p>
+          <h3 className="mt-3 text-2xl font-black leading-snug">Một lịch hẹn cho chuyến đi sắp tới</h3>
+          <p className="mt-3 leading-relaxed text-[var(--text-muted)]">Cho VILA biết điểm đón, điểm đến và thời gian bạn cần. Nhân viên sẽ liên hệ trao đổi giá và xác nhận lịch xe.</p>
+          <a href="/dat-xe-truoc" className="mt-6 flex min-h-12 items-center justify-center rounded-full bg-[var(--brand-accent)] px-5 py-3 text-center font-black !text-[#07172f] transition-colors hover:bg-[var(--brand-accent-dark)]">Đặt lịch trước – Nhận báo giá</a>
+          <p className="mt-3 text-center text-sm leading-relaxed text-[var(--text-muted)]">Ưu đãi tùy tuyến, thời điểm và điều kiện áp dụng.</p>
+        </div>}
       </div>
     </section>
   );

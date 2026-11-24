@@ -101,6 +101,7 @@ export function MobileMenu({ isOpen, onClose, onNavigate }: MobileMenuProps) {
         </nav>
 
         <div className="grid shrink-0 gap-3 border-t border-[#e7ebf0] pt-4">
+          <a href="/dat-xe-truoc" onClick={onNavigate} className="flex min-h-12 items-center justify-center rounded-full bg-[var(--brand-accent)] px-4 font-black !text-[#07172f]">Đặt xe trước</a>
           <a
             href={siteContact.zaloUrl}
             target="_blank"

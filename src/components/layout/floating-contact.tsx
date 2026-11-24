@@ -3,7 +3,7 @@ import { siteConfig, siteContact } from "@/config/site";
 
 export function FloatingContact() {
   return (
-    <aside aria-label="Liên hệ nhanh Taxi VILA" className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 z-40 flex flex-col items-center gap-2.5 sm:bottom-6 sm:right-6 sm:gap-3">
+    <aside aria-label="Liên hệ nhanh Taxi VILA" className="fixed bottom-[calc(5.5rem+env(safe-area-inset-bottom))] right-4 z-40 flex flex-col items-center gap-2.5 sm:right-6 sm:gap-3 md:bottom-6">
       <a
         href={siteContact.zaloUrl}
         target="_blank"
