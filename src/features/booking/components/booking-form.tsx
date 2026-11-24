@@ -10,7 +10,7 @@ import {
   validateBooking,
   validateBookingField,
 } from "@/features/booking/schemas/booking-schema";
-import { createBookingSummary } from "@/features/booking/services/booking-service";
+import { createBookingSummary, serviceTypeLabels } from "@/features/booking/services/booking-service";
 import type {
   BookingFieldErrors,
   BookingFormValues,
@@ -46,16 +46,22 @@ export function BookingForm() {
   const [errors, setErrors] = useState<BookingFieldErrors>({});
   const [summary, setSummary] = useState("");
   const [copied, setCopied] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const setValue = <K extends keyof BookingFormValues>(name: K, value: BookingFormValues[K]) => {
     setValues((current) => ({ ...current, [name]: value }));
     if (errors[name]) setErrors((current) => ({ ...current, [name]: undefined }));
     if (summary) setSummary("");
+    setSent(false);
+    setSubmitError("");
   };
 
   const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const name = event.target.name as TextFieldName | "passengers";
-    setValue(name, event.target.value);
+    const name = event.target.name as TextFieldName | "passengers" | "serviceType";
+    if (name === "serviceType") setValue(name, event.target.value as BookingFormValues["serviceType"]);
+    else setValue(name, event.target.value);
   };
 
   const handleBlur = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -73,8 +79,10 @@ export function BookingForm() {
     }
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (sending || sent) return;
+    setSubmitError("");
     const nextErrors = validateBooking(values);
     setErrors(nextErrors);
 
@@ -87,20 +95,33 @@ export function BookingForm() {
     }
 
     const nextSummary = createBookingSummary(values);
-    setSummary(nextSummary);
-    setCopied(false);
-    void copySummary(nextSummary);
-
-    const zaloLink = document.createElement("a");
-    zaloLink.href = siteContact.zaloUrl;
-    zaloLink.target = "_blank";
-    zaloLink.rel = "noreferrer";
-    zaloLink.click();
+    setSending(true);
+    try {
+      const response = await fetch("/api/bookings", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values), signal: AbortSignal.timeout(20000),
+      });
+      const result = await response.json();
+      if (!response.ok) {
+        if (result.errors) setErrors(result.errors);
+        throw new Error(result.message || "Chưa thể xác nhận gửi yêu cầu. Vui lòng liên hệ hotline hoặc Zalo.");
+      }
+      setSent(true);
+      setSummary("");
+    } catch (error) {
+      setSubmitError(error instanceof Error && error.name !== "TimeoutError" ? error.message : "Chưa thể xác nhận gửi yêu cầu. Vui lòng liên hệ hotline hoặc Zalo để kiểm tra.");
+      setSummary(nextSummary);
+      setCopied(false);
+    } finally {
+      setSending(false);
+    }
   };
 
   const fieldProps = (name: TextFieldName) => ({
     id: `booking-${name}`,
     name,
+    required: name !== "note",
+    maxLength: name === "note" ? 2000 : 300,
     value: values[name],
     onChange: handleChange,
     onBlur: handleBlur,
@@ -114,6 +135,9 @@ export function BookingForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate className="w-full max-w-[39rem] rounded-[1.5rem] bg-white p-5 text-[var(--foreground)] shadow-[0_28px_80px_rgba(0,0,0,0.24)] sm:p-6 lg:justify-self-end">
+      <h2 className="mb-2 text-2xl font-black">Lịch trình bạn muốn đặt</h2>
+      <p className="mb-5 text-sm leading-relaxed text-[var(--text-muted)]">Điền các mục có dấu *. Giờ đón theo giờ Việt Nam. VILA sẽ liên hệ qua số điện thoại bạn cung cấp.</p>
+      <fieldset disabled={sending} className="min-w-0">
       <RouteSelector<BookingRequestType>
         legend="Loại yêu cầu"
         name="requestType"
@@ -144,13 +168,20 @@ export function BookingForm() {
           <ErrorMessage name="destination" />
         </div>
         <div>
-          <label htmlFor="booking-departureDate" className="mb-2 block text-sm font-extrabold text-[#24344d]">Ngày đi</label>
+          <label htmlFor="booking-departureDate" className="mb-2 block text-sm font-extrabold text-[#24344d]">Ngày đi *</label>
           <input {...fieldProps("departureDate")} type="date" className={inputClassName} />
           <ErrorMessage name="departureDate" />
         </div>
         <div>
-          <label htmlFor="booking-pickupTime" className="mb-2 block text-sm font-extrabold text-[#24344d]">Giờ đón</label>
+          <label htmlFor="booking-pickupTime" className="mb-2 block text-sm font-extrabold text-[#24344d]">Giờ đón *</label>
           <input {...fieldProps("pickupTime")} type="time" className={inputClassName} />
+          <ErrorMessage name="pickupTime" />
+        </div>
+        <div className="sm:col-span-2">
+          <label htmlFor="booking-serviceType" className="mb-2 block text-sm font-extrabold text-[#24344d]">Loại dịch vụ</label>
+          <select id="booking-serviceType" name="serviceType" value={values.serviceType} onChange={handleChange} className={inputClassName}>
+            {Object.entries(serviceTypeLabels).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
+          </select>
         </div>
         <RouteSelector<BookingTripType>
           legend="Loại chuyến"
@@ -169,17 +200,21 @@ export function BookingForm() {
         <div className="sm:col-span-2">
           <label htmlFor="booking-note" className="mb-2 block text-sm font-extrabold text-[#24344d]">Ghi chú</label>
           <textarea {...fieldProps("note")} rows={2} placeholder="Số chuyến bay, hành lý, yêu cầu đặc biệt..." className={`${inputClassName} resize-y py-3`} />
+          <ErrorMessage name="note" />
         </div>
       </div>
 
-      <button type="submit" className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-6 font-black !text-white shadow-[0_14px_30px_rgba(245,158,11,0.24)] transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)] hover:shadow-[0_18px_36px_rgba(245,158,11,0.34)]">
-        <SendIcon /> {values.requestType === "booking" ? "Gửi yêu cầu qua Zalo" : "Nhận báo giá qua Zalo"}
+      <button type="submit" disabled={sending || sent} className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-6 font-black !text-[#07172f] shadow-[0_14px_30px_rgba(245,158,11,0.24)] transition-colors hover:bg-[var(--brand-accent-dark)] disabled:cursor-not-allowed disabled:opacity-65">
+        <SendIcon /> {sending ? "Đang gửi yêu cầu…" : sent ? "Đã gửi yêu cầu" : values.requestType === "booking" ? "Gửi yêu cầu đặt xe" : "Gửi yêu cầu báo giá"}
       </button>
+      </fieldset>
       <p className="mt-3 text-center text-xs font-medium leading-relaxed text-[var(--text-muted)]">
         Chuyến đi chỉ được chốt sau khi bạn đồng ý với báo giá và thời gian đón.
       </p>
-
+      {sent ? <div role="status" className="mt-4 rounded-2xl border border-green-700/20 bg-green-50 p-4 text-green-900"><p className="font-bold">Yêu cầu đã được gửi, đang chờ nhân viên xác nhận.</p><p className="mt-2 text-sm leading-relaxed">Taxi VILA sẽ liên hệ để trao đổi báo giá và lịch xe. Đây chưa phải xác nhận chuyến đi.</p></div> : null}
+      {submitError ? <p role="alert" className="mt-4 text-sm font-semibold text-red-800">{submitError}</p> : null}
       {summary ? <BookingSuccess summary={summary} copied={copied} onCopy={() => void copySummary(summary)} /> : null}
+      {summary ? <a href={siteContact.zaloUrl} target="_blank" rel="noreferrer" className="mt-3 flex min-h-11 items-center justify-center rounded-full border border-[var(--border-soft)] px-4 font-bold">Mở Zalo để gửi trực tiếp</a> : null}
     </form>
   );
 }

@@ -184,7 +184,7 @@ export default function PhuCatToQuyNhonPage() {
                 <a href={siteContact.telephoneUrl} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-6 font-black !text-white shadow-[0_14px_32px_rgba(245,158,11,0.28)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)]">
                   <PhoneIcon /> Gọi {siteConfig.phoneDisplay}
                 </a>
-                <a href="#dat-xe-truc-tuyen" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/[0.08] px-6 font-black !text-white backdrop-blur-sm transition-colors hover:border-[var(--brand-accent)] hover:bg-white/12">
+                <a href="/dat-xe-truoc" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/[0.08] px-6 font-black !text-white backdrop-blur-sm transition-colors hover:border-[var(--brand-accent)] hover:bg-white/12">
                   Nhận báo giá tuyến <ArrowIcon />
                 </a>
               </div>

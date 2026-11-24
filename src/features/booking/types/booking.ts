@@ -11,6 +11,7 @@ export type BookingFormValues = {
   departureDate: string;
   pickupTime: string;
   tripType: BookingTripType;
+  serviceType: "airport" | "local" | "province" | "other";
   passengers: string;
   note: string;
 };

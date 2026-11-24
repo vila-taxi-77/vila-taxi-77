@@ -1,6 +1,13 @@
 
 import type { BookingFormValues } from "@/features/booking/types/booking";
 
+export const serviceTypeLabels = {
+  airport: "Đưa đón sân bay",
+  local: "Taxi nội khu",
+  province: "Đi tỉnh",
+  other: "Lịch trình khác",
+} as const;
+
 const requestTypeLabels = {
   booking: "Đặt xe",
   quote: "Nhận báo giá",
@@ -19,6 +26,7 @@ export function createBookingSummary(values: BookingFormValues) {
     `Điểm đón: ${values.pickup.trim()}`,
     `Điểm đến: ${values.destination.trim()}`,
     `Loại chuyến: ${tripTypeLabels[values.tripType]}`,
+    `Dịch vụ: ${serviceTypeLabels[values.serviceType]}`,
     `Số hành khách: ${values.passengers}`,
   ];
 

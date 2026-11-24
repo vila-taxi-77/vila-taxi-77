@@ -13,6 +13,7 @@ export const initialBookingValues: BookingFormValues = {
   departureDate: "",
   pickupTime: "",
   tripType: "one-way",
+  serviceType: "airport",
   passengers: "1",
   note: "",
 };
@@ -27,7 +28,7 @@ export function validateBookingField(
 ): string | undefined {
   const trimmedValue = value.trim();
 
-  if (["fullName", "phone", "pickup", "destination"].includes(name) && !trimmedValue) {
+  if (["fullName", "phone", "pickup", "destination", "departureDate", "pickupTime"].includes(name) && !trimmedValue) {
     return "Vui lòng nhập thông tin này.";
   }
 
@@ -43,11 +44,18 @@ export function validateBookingField(
   }
 
   if (name === "departureDate" && trimmedValue) {
-    const selectedDate = new Date(`${trimmedValue}T23:59:59`);
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    if (selectedDate < today) return "Ngày đi không thể ở trong quá khứ.";
+    const selectedDate = new Date(`${trimmedValue}T00:00:00+07:00`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(trimmedValue) || Number.isNaN(selectedDate.getTime()) || new Date(`${trimmedValue}T00:00:00Z`).toISOString().slice(0, 10) !== trimmedValue) return "Ngày đi không hợp lệ.";
+    const today = new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Ho_Chi_Minh" }).format(new Date());
+    if (trimmedValue < today) return "Ngày đi không thể ở trong quá khứ.";
   }
+
+  if (name === "pickupTime" && !/^([01]\d|2[0-3]):[0-5]\d$/.test(trimmedValue)) return "Giờ đón không hợp lệ.";
+  if (name === "passengers" && !/^[1-7]$/.test(value)) return "Vui lòng chọn từ 1 đến 7 hành khách.";
+  if (name === "serviceType" && !["airport", "local", "province", "other"].includes(value)) return "Vui lòng chọn dịch vụ.";
+  if (name === "tripType" && !["one-way", "round-trip"].includes(value)) return "Loại chuyến không hợp lệ.";
+  if (name === "requestType" && !["booking", "quote"].includes(value)) return "Loại yêu cầu không hợp lệ.";
+  if (value.length > (name === "note" ? 2000 : 300)) return "Thông tin quá dài, vui lòng rút gọn.";
 
   return undefined;
 }
@@ -59,6 +67,10 @@ export function validateBooking(values: BookingFormValues): BookingFieldErrors {
     const error = validateBookingField(name, values[name]);
     if (error) errors[name] = error;
   });
+
+  if (!errors.departureDate && !errors.pickupTime && new Date(`${values.departureDate}T${values.pickupTime}:00+07:00`).getTime() <= Date.now()) {
+    errors.pickupTime = "Vui lòng chọn thời gian đón trong tương lai.";
+  }
 
   return errors;
 }
