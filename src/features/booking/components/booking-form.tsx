@@ -204,7 +204,7 @@ export function BookingForm() {
         </div>
       </div>
 
-      <button type="submit" disabled={sending || sent} className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-6 font-black !text-[#07172f] shadow-[0_14px_30px_rgba(245,158,11,0.24)] transition-colors hover:bg-[var(--brand-accent-dark)] disabled:cursor-not-allowed disabled:opacity-65">
+      <button type="submit" disabled={sending || sent} className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-6 font-black !text-white shadow-[0_14px_30px_rgba(245,158,11,0.24)] transition-[transform,background-color,box-shadow] enabled:hover:-translate-y-0.5 enabled:hover:bg-[var(--brand-accent-dark)] enabled:hover:shadow-[0_18px_36px_rgba(245,158,11,0.34)] motion-reduce:transform-none motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-65">
         <SendIcon /> {sending ? "Đang gửi yêu cầu…" : sent ? "Đã gửi yêu cầu" : values.requestType === "booking" ? "Gửi yêu cầu đặt xe" : "Gửi yêu cầu báo giá"}
       </button>
       </fieldset>

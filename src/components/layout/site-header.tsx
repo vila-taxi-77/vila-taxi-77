@@ -49,7 +49,7 @@ export function SiteHeader() {
           <div className="site-header-actions flex shrink-0 items-center gap-2.5">
             <a
               href="/dat-xe-truoc"
-              className="header-zalo-action h-11 items-center justify-center whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-4 text-sm font-extrabold !text-[#07172f] transition-colors hover:bg-[var(--brand-accent-dark)]"
+              className="header-zalo-action h-11 items-center justify-center whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-4 text-[15px] font-black !text-white shadow-[0_9px_24px_rgba(245,158,11,0.28)] transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)]"
             >
               Đặt xe trước
             </a>
