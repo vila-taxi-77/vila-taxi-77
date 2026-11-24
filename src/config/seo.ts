@@ -63,7 +63,7 @@ export function createWebsiteJsonLd() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": "LocalBusiness",
         "@id": `${siteUrl}/#organization`,
         name: seoConfig.businessName,
         alternateName: seoConfig.displayName,
@@ -72,22 +72,28 @@ export function createWebsiteJsonLd() {
         image: absoluteUrl(seoConfig.image),
         telephone: `+84${siteConfig.phone.slice(1)}`,
         priceRange: siteConfig.priceRange,
-        sameAs: [seoConfig.mapsUrl, seoConfig.zaloUrl],
+        address: {
+          "@type": "PostalAddress",
+          ...siteConfig.address,
+        },
+        hasMap: seoConfig.mapsUrl,
+        sameAs: [seoConfig.mapsUrl, seoConfig.zaloUrl, siteConfig.facebookUrl, siteConfig.tiktokUrl],
+        areaServed: seoConfig.serviceAreas.map((name) => ({
+          "@type": "Place",
+          name,
+        })),
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          opens: "00:00",
+          closes: "23:59",
+        },
         contactPoint: {
           "@type": "ContactPoint",
           telephone: `+84${siteConfig.phone.slice(1)}`,
           contactType: "customer service",
           areaServed: "VN",
           availableLanguage: "Vietnamese",
-        },
-        location: {
-          "@type": "Place",
-          name: "Khu vực phục vụ Taxi VILA",
-          geo: {
-            "@type": "GeoCoordinates",
-            latitude: seoConfig.latitude,
-            longitude: seoConfig.longitude,
-          },
         },
       },
       {
@@ -99,7 +105,7 @@ export function createWebsiteJsonLd() {
         publisher: { "@id": `${siteUrl}/#organization` },
       },
       {
-        "@type": "Service",
+        "@type": "TaxiService",
         "@id": `${siteUrl}/#taxi-service`,
         name: "Dịch vụ taxi điện Taxi VILA",
         serviceType: "Dịch vụ taxi điện Phù Cát Phù Mỹ, đưa đón sân bay và đi tỉnh",
