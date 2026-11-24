@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PromotionBanner } from "@/components/sections/promotion-banner";
 import { BookingSection } from "@/features/booking/components/booking-section";
 import { siteConfig, siteContact } from "@/config/site";
 import { createFaqJsonLd, serializeJsonLd } from "@/config/seo";
@@ -34,7 +35,7 @@ export default function PrebookingPage() {
           { title: "Đi tỉnh & khứ hồi", text: "Trao đổi trước điểm dừng, lịch về và số hành khách để nhận báo giá theo hành trình.", href: "/taxi-di-tinh" },
         ].map((item) => <article key={item.title} className="rounded-2xl border border-[var(--border-soft)] bg-white p-6"><h3 className="text-xl font-black">{item.title}</h3><p className="mt-3 leading-relaxed text-[var(--text-muted)]">{item.text}</p><a href={item.href} className="mt-4 inline-flex min-h-11 items-center font-bold underline underline-offset-4">Xem dịch vụ</a></article>)}
       </div>
-      <aside className="mt-6 rounded-2xl border border-[#f3d28e] bg-[var(--accent-soft)] p-6 sm:p-8"><h2 className="text-2xl font-black">Đặt lịch trước – Có cơ hội nhận ưu đãi</h2><p className="mt-3 max-w-3xl leading-relaxed text-[var(--text-muted)]">Taxi VILA báo giá theo hành trình và thỏa thuận trước chuyến đi. Ưu đãi phụ thuộc tuyến, thời điểm và điều kiện áp dụng; nhân viên sẽ tư vấn khi liên hệ xác nhận.</p></aside>
+      <PromotionBanner className="promotion-banner-expanded mt-6 w-full" />
     </section>
     <section aria-labelledby="prebook-faq" className="bg-white py-14">
       <div className="site-container grid gap-8 lg:grid-cols-2"><div><h2 id="prebook-faq" className="section-title">Trước khi đặt lịch</h2><p className="mt-4 leading-relaxed text-[var(--text-muted)]">Cần tư vấn hoặc kiểm tra yêu cầu đã gửi? Liên hệ trực tiếp Taxi VILA.</p><div className="mt-6 flex flex-wrap gap-3"><a href={siteContact.telephoneUrl} className="inline-flex min-h-12 items-center rounded-full bg-[#07172f] px-5 font-bold !text-white">Gọi {siteConfig.phoneDisplay}</a><a href={siteContact.zaloUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center rounded-full border border-[var(--border-soft)] px-5 font-bold">Nhắn Zalo</a></div></div><div className="space-y-3">{faqs.map((faq) => <details key={faq.question} className="rounded-2xl border border-[var(--border-soft)] p-5"><summary className="min-h-11 cursor-pointer font-bold">{faq.question}</summary><p className="mt-3 leading-relaxed text-[var(--text-muted)]">{faq.answer}</p></details>)}</div></div>
