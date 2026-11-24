@@ -73,13 +73,13 @@ export function HeroSection() {
             </span>
           </div>
 
-          <PromotionBanner />
+          <PromotionBanner className="mt-4 w-full max-w-2xl" />
 
-          <div className="hero-fade-up hero-delay-4 mt-7 flex flex-col gap-3 sm:flex-row sm:flex-nowrap">
-            <a href={siteContact.telephoneUrl} className="hero-call-cta cta-call-attention cta-call-accent inline-flex h-14 items-center justify-center gap-2.5 whitespace-nowrap rounded-full bg-[var(--brand-accent)] px-5 text-sm font-black !text-white shadow-[0_14px_32px_rgba(245,158,11,0.32)] transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)] hover:shadow-[0_18px_38px_rgba(245,158,11,0.42)] xl:px-6 xl:text-base">
+          <div className="hero-fade-up hero-delay-4 mt-7 grid w-full max-w-2xl gap-3 sm:grid-cols-2">
+            <a href={siteContact.telephoneUrl} className="hero-call-cta cta-call-attention cta-call-accent inline-flex min-h-14 min-w-0 items-center justify-center gap-2.5 rounded-full bg-[var(--brand-accent)] px-4 py-3 text-center text-sm font-black leading-snug !text-white shadow-[0_14px_32px_rgba(245,158,11,0.32)] transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-[var(--brand-accent-dark)] hover:shadow-[0_18px_38px_rgba(245,158,11,0.42)] xl:px-5 xl:text-base [&>svg]:shrink-0">
               <PhoneIcon /> Gọi xe ngay – {siteConfig.phoneDisplay}
             </a>
-            <a href="/dat-xe-truoc" className="inline-flex h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/35 bg-white/10 px-5 text-sm font-bold !text-white backdrop-blur-md transition-colors hover:border-[var(--brand-accent)] hover:bg-[var(--brand-accent)] xl:px-6 xl:text-base">
+            <a href="/dat-xe-truoc" className="inline-flex min-h-14 min-w-0 items-center justify-center gap-2 rounded-full border border-white/35 bg-white/10 px-4 py-3 text-center text-sm font-bold leading-snug !text-white backdrop-blur-md transition-colors hover:border-[var(--brand-accent)] hover:bg-[var(--brand-accent)] xl:px-5 xl:text-base">
               Đặt xe trước – Nhận báo giá
             </a>
           </div>

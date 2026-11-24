@@ -19,7 +19,7 @@ function GiftIcon() {
   );
 }
 
-export function PromotionBanner() {
+export function PromotionBanner({ className = "mt-4 max-w-xl" }: { className?: string }) {
   const bannerRef = useRef<HTMLDivElement>(null);
   const [hasEnteredViewport, setHasEnteredViewport] = useState(false);
 
@@ -47,7 +47,7 @@ export function PromotionBanner() {
   return (
     <div
       ref={bannerRef}
-      className="hero-promotion-banner mt-4 max-w-xl"
+      className={`hero-promotion-banner ${className}`}
       data-visible={hasEnteredViewport ? "true" : "false"}
       role="group"
       aria-label="Ưu đãi dành cho khách đặt lịch trước"

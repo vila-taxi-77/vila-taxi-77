@@ -471,6 +471,54 @@ summary {
   }
 }
 
+.promotion-banner-expanded {
+  min-height: 8.5rem;
+  grid-template-columns: minmax(0, 1fr) 3.5rem;
+  gap: 1rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.promotion-banner-expanded .promotion-title {
+  display: block;
+  overflow: visible;
+  font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+  line-height: 1.4;
+}
+
+.promotion-banner-expanded .promotion-description {
+  max-width: 58rem;
+  margin-top: 0.65rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.promotion-banner-expanded .promotion-gift-decoration {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.promotion-banner-expanded .promotion-sparkle {
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .promotion-banner-expanded {
+    min-height: 9.5rem;
+    grid-template-columns: minmax(0, 1fr) 5rem;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .promotion-banner-expanded .promotion-gift-decoration {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
 .hero-background-art {
   z-index: 1;
   background:
