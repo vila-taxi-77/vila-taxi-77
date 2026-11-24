@@ -112,8 +112,9 @@ export function SiteFooter() {
                   </a>
                 </li>
               ))}
-              <li className="flex items-start gap-2.5 text-white/80"><FooterIcon name="location" /><span>Phù Cát – Phù Mỹ và khu vực lân cận</span></li>
-              <li className="flex items-start gap-2.5 text-white/80"><FooterIcon name="clock" /><span>Liên hệ đặt xe 24/7</span></li>
+              <li className="flex items-start gap-2.5 text-white/80"><FooterIcon name="location" /><address className="not-italic leading-relaxed">Địa chỉ: {siteConfig.addressDisplay}</address></li>
+              <li className="text-white/80">Khu vực phục vụ: Phù Cát – Phù Mỹ và khu vực lân cận</li>
+              <li className="flex items-start gap-2.5 text-white/80"><FooterIcon name="clock" /><span>{siteConfig.openingHoursDisplay}</span></li>
               <li className="flex items-start gap-2.5 text-white/80"><FooterIcon name="wallet" /><span>Tiền mặt hoặc chuyển khoản</span></li>
             </ul>
           </div>

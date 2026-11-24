@@ -244,9 +244,10 @@ Gom toàn bộ nghiệp vụ đặt xe: form, validate dữ liệu, type và hư
 - Canonical URL dùng domain `https://taxivila.com`.
 - Open Graph và Twitter metadata để chia sẻ liên kết.
 - `robots.txt` cho phép thu thập trang công khai và chặn `/admin`, `/api`.
-- `sitemap.xml` gồm trang chủ và ba trang dịch vụ.
+- `sitemap.xml` gồm trang chủ, ba trang dịch vụ và trang đặt xe trước.
 - Google Search Console verification qua biến môi trường.
-- JSON-LD cho `Organization`, `WebSite`, `Service`, `FAQPage` và thư viện đội xe.
+- JSON-LD cho `LocalBusiness`, `WebSite`, `TaxiService`, `FAQPage` và thư viện đội xe.
+- Schema doanh nghiệp dùng chung trên các trang công khai, giữ ID `#organization` để các liên kết provider/publisher trỏ cùng doanh nghiệp. Địa chỉ sau sáp nhập và giờ hoạt động 24/7 được xác nhận từ chủ doanh nghiệp, đồng thời hiển thị ở footer. Chưa khai báo mã bưu chính hoặc tọa độ doanh nghiệp khi chưa xác minh. Thông tin địa chỉ quản lý tại `src/config/site.ts`.
 - Ảnh có nội dung `alt` cụ thể theo dịch vụ.
 - Liên kết nội bộ từ trang chủ sang các landing page SEO.
 

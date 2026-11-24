@@ -10,15 +10,11 @@ import { TrustStrip } from "@/components/sections/trust-strip";
 import { WhyVilaSection } from "@/components/sections/why-vila-section";
 import { BookingSection } from "@/features/booking/components/booking-section";
 import { faqs } from "@/content/faqs";
-import { createFaqJsonLd, createFleetJsonLd, createWebsiteJsonLd, serializeJsonLd } from "@/config/seo";
+import { createFaqJsonLd, createFleetJsonLd, serializeJsonLd } from "@/config/seo";
 
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeJsonLd(createWebsiteJsonLd()) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(createFaqJsonLd(faqs)) }}
